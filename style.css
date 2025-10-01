@@ -47,3 +47,7 @@ nav {
     display: flex;
     align-items: flex-end;
 }
+
+@media (max-width: 1000px) {
+    
+}
