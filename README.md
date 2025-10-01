@@ -1,0 +1,1 @@
+Erstes Gruppenprojekt der Weiterbildung in den Bereichen HTML, CSS und JavaScript.
