@@ -53,7 +53,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 1;
 }
 
 footer {
@@ -63,14 +62,16 @@ footer {
     position: absolute;
     bottom: 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #footerIconContainer {
     margin-right: 160px;
     display: flex;
-    align-items: center;
-    gap: 8px;
+    justify-content: flex-end;
+    gap: 16px;
 }
 
 #footerIcon {
@@ -116,7 +117,6 @@ h3 {
     flex-direction: column;
     justify-content: center;
     text-align: start;
-    border: 2px solid black;
     border-radius: 8px;
     background-color: lightgray;
 }
