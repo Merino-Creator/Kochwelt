@@ -48,6 +48,27 @@ nav {
     align-items: flex-end;
 }
 
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footerIconContainer {
+    margin-right: 160px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#footerIcon {
+    height: 48px;
+}
+
 @media (max-width: 1000px) {
-    
+
 }
