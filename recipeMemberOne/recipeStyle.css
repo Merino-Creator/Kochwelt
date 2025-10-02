@@ -136,6 +136,11 @@ main {
     height: fit-content;
 }
 
+label {
+    display: flex;
+    align-items: center;
+}
+
 #ingredientsTable {
     margin-left: 160px;
     margin-right: 160px;
@@ -185,4 +190,13 @@ footer {
 
 #footerIcon {
     height: 48px;
+}
+
+button {
+    background-color: green;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    height: 32px;
+    width: 120px;
 }
