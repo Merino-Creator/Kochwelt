@@ -43,9 +43,63 @@
     </header>
 
     <main>
-        <table>
-
+        <div id="calculator">
+            <label for="peopleCount">Zutaten für:</label>
+            <input id="peopleCount" type="number" min="1" placeholder="1" required>
+            <button onclick="">Portionen</button>
+        </div>
+        <table id="ingredientsTable">
+            <tr class="tableRowColorOne">
+                <td>60 g Feldsalat</td>
+            </tr>
+            <tr>
+                <td>2 Laugenbrötchen</td>
+            </tr>
+            <tr class="tableRowColorOne">
+                <td>80 g Camembert</td>
+            </tr>
+            <tr>
+                <td>240 g Rinderhackfleisch</td>
+            </tr>
+            <tr class="tableRowColorOne">
+                <td>10 g Wildpreiselbeeren</td>
+            </tr>
+            <tr>
+                <td>1 EL Pflanzenöl</td>
+            </tr>
+            <tr class="tableRowColorOne">
+                <td>20 g Röstzwiebeln</td>
+            </tr>
+            <tr>
+                <td>2 TL Körniger Senf</td>
+            </tr>
         </table>
+
+        <div id="recipe">
+            <h2>Zubereitung</h2>
+            <div id="makingOff">
+                <p>
+                        1. Den Salat waschen und abtropfen lassen.
+                    <br>2. Das Rinderhackfleisch in einer mittelgroßen Schüssel mit Salz und Pfeffer würzen und gut mischen.
+                    <br>3. Das Hackfleisch zu Burger-Patties formen.
+                    <br>4. Käse in feine Scheiben schneiden.
+                    <br>5. In einer Pfanne Pflanzenöl auf mittlerer bis hoher Stufe erhitzen und Burger-Patties 2 Minuten von jeder Seite braten.
+                    <br>6. Hitze reduzieren und Camembert auf den Patties verteilen. Bei geschlossenem Deckel weiter braten, bis der Käse geschmolzen ist.
+                    <br>7. Laugenbrötchen halbieren und beide Hälften mit körnigem Senf bestreichen.
+                    <br>8. Laugenbrötchen mit Feldsalat, Camembert-Patty, Preiselbeeren und Röstzwiebeln belegen und genießen.
+                    <h4> Guten Appetit! </h4>
+                </p>
+            </div>
+        </div>
+
+        <div id="credit">
+            <h3>Rezept von</h3>
+            <div id="profile">
+                <img src="" alt="profilepicture">
+                <p>Daniel Stürmer</p>
+            </div>
+        </div>
+
     </main>
 
     <footer>
@@ -60,5 +114,7 @@
     </footer>
 
 </body>
+
+<script src="script.js"></script>
 
 </html>

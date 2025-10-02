@@ -49,6 +49,11 @@ nav {
     align-items: flex-end;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
     margin-left: 160px;
     margin-right: 160px;
@@ -110,7 +115,47 @@ h1 {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     flex: 1;
+}
+
+#calculator {
+    margin-top: 56px;
+    margin-left: 160px;
+    display: flex;
+    gap: 12px;
+    height: fit-content;
+}
+
+#ingredientsTable {
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 12px;
+}
+
+tr {
+    height: 28px;
+    border-radius: 8px;
+}
+
+.tableRowColorOne {
+    background-color: lightgray;
+}
+
+#recipe {
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+#credit {
+    margin-left: 160px;
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 
 footer {
@@ -135,12 +180,12 @@ footer {
 }
 
 h2 {
-    margin-left: 16px;
+    margin-left: 0px;
 }
 
 h3 {
     margin-bottom: 0;
-    margin-left: 16px;
+    margin-left: 0px;
     margin-right: 16px;
 }
 
