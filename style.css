@@ -11,6 +11,12 @@ body {
     font-family: Raleway; font-weight: bold; src: url("/fonts/raleway/Raleway-VariableFont_wght.ttf");
 }
 
+h1 {
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 60px;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -52,66 +58,6 @@ nav {
 header {
     display: flex;
     flex-direction: column;
-}
-
-h1 {
-    margin-left: 160px;
-    margin-right: 160px;
-    margin-top: 60px;
-}
-
-#headerImage {
-    background-image: url(/img/burger.jpg);
-    height: 150px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-left: 160px;
-    margin-right: 160px;
-    border-radius: 8px;
-}
-
-#iconsContainer {
-    margin-left: 160px;
-    display: flex;
-    gap: 24px;
-}
-
-.iconImage {
-    height: 20px;
-}
-
-#clockIcon {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 120px;
-    height: 28px;
-    margin-top: 32px;
-    background-color: rgba(238, 236, 236, 0.986);
-    border-radius: 8px;
-}
-
-#brainIcon {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 120px;
-    height: 28px;
-    margin-top: 32px;
-    background-color: rgba(238, 236, 236, 0.986);
-    border-radius: 8px;
-}
-
-#calendarIcon {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 120px;
-    height: 28px;
-    margin-top: 32px;
-    background-color: rgba(238, 236, 236, 0.986);
-    border-radius: 8px;
 }
 
 main {
