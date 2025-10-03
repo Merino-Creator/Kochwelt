@@ -97,7 +97,10 @@ main {
 
 #mainContainerOneBoxes {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-bottom: 40px;
 }
 
 #mainContainerOneImages {
@@ -110,6 +113,22 @@ main {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+#mainContainerTwoBox {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 160px;
+    margin-right: 160px;
+    text-align: start;
+}
+
+#mainContainerTwoImage {
+    height: 160px;
+    width: 180px;
+    border-radius: 8px;
 }
 
 /*Footer*/
@@ -121,8 +140,6 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
 }
 
 #footerIconContainer {
