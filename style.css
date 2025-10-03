@@ -29,6 +29,7 @@ a:hover {
     text-underline-offset: 4px;
 }
 
+/*Navigation*/ 
 nav {
     display: flex;
     justify-content: space-between;
@@ -55,17 +56,20 @@ nav {
     align-items: flex-end;
 }
 
+/*Header*/
 header {
     display: flex;
     flex-direction: column;
 }
 
+/*Main*/
 main {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 
+/*Footer*/
 footer {
     width: 100%;
     height: 100px;
