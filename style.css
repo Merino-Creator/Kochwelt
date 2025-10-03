@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
@@ -65,12 +64,13 @@ header {
     margin-left: 160px;
     margin-right: 160px;
     margin-top: 80px;
+    margin-bottom: 80px;
     display: flex;
     justify-content: space-between;
 }
 
 #headerImage {
-    height: 200px;
+    height: 220px;
     border-radius: 8px;
 }
 
@@ -91,15 +91,25 @@ main {
 #mainContainerOne {
     display: flex;
     flex-direction: column;
-    height: 50%;
     background-color: lightgray;
+    text-align: center;
+}
+
+#mainContainerOneBoxes {
+    display: flex;
+    justify-content: space-around;
+}
+
+#mainContainerOneImages {
+    height: 160px;
+    width: 180px;
+    border-radius: 8px;
 }
 
 #mainContainerTwo {
     display: flex;
     flex-direction: column;
-    height: 50%;
-    background-color: aqua;
+    text-align: center;
 }
 
 /*Footer*/
@@ -111,6 +121,8 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    position: absolute;
+    bottom: 0;
 }
 
 #footerIconContainer {
