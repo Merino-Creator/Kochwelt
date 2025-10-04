@@ -164,7 +164,7 @@ tr {
 #credit {
     margin-left: 160px;
 }
-#profilePicture {
+.profilePicture {
     width: 64px;
     height: 64px;
     border-radius: 50%;
