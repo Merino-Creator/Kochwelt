@@ -164,6 +164,11 @@ tr {
 #credit {
     margin-left: 160px;
 }
+#profilePicture {
+    background-image: url(/img/Bild.jpg);
+    height: 64px;
+    border-radius: 50%;
+}
 
 #profile {
     display: flex;
