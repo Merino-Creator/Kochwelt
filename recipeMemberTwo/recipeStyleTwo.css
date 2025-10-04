@@ -165,6 +165,7 @@ tr {
     margin-left: 160px;
 }
 .profilepicture {
+   background-image: url(/img/Bild.jpg);
     width: 64px;
     height: 64px;
     border-radius: 50%;
