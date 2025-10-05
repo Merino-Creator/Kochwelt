@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    height: 100vh;
+    max-width: 1920px;
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
@@ -70,7 +70,7 @@ h3 {
 
 #headerImage {
     background-image: url(/img/burger.jpg);
-    height: 150px;
+    height: 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
