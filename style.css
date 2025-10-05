@@ -131,6 +131,7 @@ main {
     margin-left: 160px;
     margin-right: 160px;
     text-align: start;
+    gap: 24px;
 }
 
 #mainContainerTwoImage {
