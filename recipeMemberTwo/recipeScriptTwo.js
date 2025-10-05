@@ -4,6 +4,7 @@ function changeAmount() {
         alert("Bitte gib eine gültige Anzahl an Portionen ein.");
         return;
     }
+
     let zeilen = document.querySelectorAll("#ingredientsTable td");
 
     for (let i = 0; i < zeilen.length; i++) {
