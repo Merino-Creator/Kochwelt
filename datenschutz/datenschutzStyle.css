@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+}
+
+@font-face {
+    font-family: Raleway; src: url("/fonts/raleway/Raleway-Italic-VariableFont_wght.ttf");
+    font-family: Raleway; font-weight: bold; src: url("/fonts/raleway/Raleway-VariableFont_wght.ttf");
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 4px;
+}
+
+/*Button*/
+button {
+    background-color: rgb(0, 161, 0);
+    border-radius: 4px;
+    border: none;
+    color: black;
+    height: 32px;
+    width: 120px;
+    box-shadow: 1px 1px 2px 1px black;
+}
+
+button:hover {
+    background-color: rgb(0, 141, 0);
+    cursor: pointer;
+}
+
+/*Navigation*/ 
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 2px 4px 1px lightgray;
+}
+
+#naviLogo {
+    margin-left: 160px;
+    display: flex;
+    align-items: center;
+}
+
+#naviImage {
+    height: 80px;
+}
+
+#naviLinks {
+    margin-right: 160px;
+    margin-bottom: 4px;
+    gap: 24px;
+    display: flex;
+    align-items: flex-end;
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    height: 100px;
+    background-color:lightgray;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#footerIconContainer {
+    margin-right: 160px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+#footerIcon {
+    height: 48px;
+}
+
+#generator_results {
+    margin-left: 160px;
+    margin-right: 160px;
+}
