@@ -66,11 +66,13 @@ nav {
     align-items: flex-end;
 }
 
+/*Main*/
 main {
     margin-left: 160px;
     margin-right: 160px;
     display: flex;
     justify-content: space-between;
+    flex: 1;
 }
 
 /*Footer*/
