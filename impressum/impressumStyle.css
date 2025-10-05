@@ -1,6 +1,7 @@
 body {
     margin: 0;
     max-width: 1920px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
@@ -72,6 +73,7 @@ main {
     margin-right: 160px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex: 1;
 }
 
@@ -84,7 +86,6 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    box-shadow: 0 -2px 4px 1px rgb(0, 0, 0);
 }
 
 #footerIconContainer {

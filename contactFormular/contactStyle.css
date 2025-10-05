@@ -1,6 +1,7 @@
 body {
     margin: 0;
     max-width: 1920px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
@@ -72,6 +73,13 @@ main {
     flex: 1;
 }
 
+#contactFormular {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: lightgray;
+}
+
 #nameBox {
     margin-left: 16px;
     margin-right: 16px;
@@ -109,15 +117,7 @@ button:hover {
 #buttonContainer {
     display: flex;
     justify-content: center;
-}
-
-#contactFormular {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: start;
-    border-radius: 8px;
-    background-color: lightgray;
+    margin-bottom: 12px;
 }
 
 /*Footer*/
