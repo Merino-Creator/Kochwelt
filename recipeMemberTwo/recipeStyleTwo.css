@@ -164,10 +164,11 @@ tr {
 #credit {
     margin-left: 160px;
 }
-#profilepicture {
-    background-image: url(/img/Bild.jpg);
-    width: 64px;
+#profilePicture {
     height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 #profile {
