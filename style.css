@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    max-width: 1920px;
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
@@ -102,7 +103,6 @@ main {
     display: flex;
     flex-direction: column;
     flex: 1;
-    box-shadow: -1px -1px 2px 1px black;
 }
 
 #mainContainerOne {
@@ -110,7 +110,6 @@ main {
     flex-direction: column;
     background-color: lightgray;
     text-align: center;
-    box-shadow: 0 2px 4px 1px rgb(0, 0, 0);
     padding-top: 40px;
 }
 
@@ -162,7 +161,6 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    box-shadow: 0 -2px 4px 1px rgb(0, 0, 0);
 }
 
 #footerIconContainer {
