@@ -69,8 +69,8 @@ h3 {
 }
 
 #headerImage {
-    background-image: url(/img/brokoli-auflauf.jpg);
-    height: 370px;
+    background-image: url(/img/burger.jpg);
+    height: 150px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -163,11 +163,6 @@ tr {
 
 #credit {
     margin-left: 160px;
-}
-#profilepicture {
-    background-image: url(/img/Bild.jpg);
-    width: 64px;
-    height: 64px;
 }
 
 #profile {
