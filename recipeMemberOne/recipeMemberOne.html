@@ -46,32 +46,32 @@
         <div id="calculator">
             <label for="peopleCount">Zutaten für:</label>
             <input id="peopleCount" type="number" min="1" placeholder="1" required>
-            <button id="button" onclick="">Portionen</button>
+            <button id="button" onclick="changeAmount()">Portionen</button>
         </div>
         <table id="ingredientsTable">
             <tr class="tableRowColorOne">
-                <td>60 g Feldsalat</td>
+                <td data-original="60">60 g Feldsalat</td>
             </tr>
             <tr>
-                <td>2 Laugenbrötchen</td>
+                <td data-original="2">2 Laugenbrötchen</td>
             </tr>
             <tr class="tableRowColorOne">
-                <td>80 g Camembert</td>
+                <td data-original="80">80 g Camembert</td>
             </tr>
             <tr>
-                <td>240 g Rinderhackfleisch</td>
+                <td data-original="240">240 g Rinderhackfleisch</td>
             </tr>
             <tr class="tableRowColorOne">
-                <td>10 g Wildpreiselbeeren</td>
+                <td data-original="10">10 g Wildpreiselbeeren</td>
             </tr>
             <tr>
-                <td>1 EL Pflanzenöl</td>
+                <td data-original="1">1 EL Pflanzenöl</td>
             </tr>
             <tr class="tableRowColorOne">
-                <td>20 g Röstzwiebeln</td>
+                <td data-original="20">20 g Röstzwiebeln</td>
             </tr>
             <tr>
-                <td>2 TL Körniger Senf</td>
+                <td data-original="2">2 TL Körniger Senf</td>
             </tr>
         </table>
 
@@ -115,6 +115,6 @@
 
 </body>
 
-<script src="script.js"></script>
+    <script src="/recipeMemberOne/script.js"></script>
 
 </html>
