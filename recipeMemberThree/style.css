@@ -1,0 +1,263 @@
+/* =========
+   Grundlayout & Design-Tokens
+   ========= */
+:root{
+  /* Light-Default (wird ggf. von prefers-color-scheme: dark überschrieben) */
+  --bg: #f4f6f8;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #6b778d;
+  --primary: #2d58b7;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(2, 6, 23, .08);
+
+  /* Zebra-Töne + Border */
+  --tone-1: #fefefe;
+  --tone-2: #f6f7fb;
+  --zebra-border: #e0e3ea;
+
+  /* Zubereitungskarte */
+  --prep-bg: #ffffff;
+  --prep-border: #e9edf2;
+}
+
+/* System-Dark als Standard, falls kein Override via data-theme */
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg: #0b1220;
+    --card: #0f172a;
+    --text: #e6e8ee;
+    --muted: #969180;
+    --primary: #60a5fa;
+    --shadow: 0 10px 30px rgba(0,0,0,.45);
+
+    --tone-1: #121a2c;
+    --tone-2: #0e1628;
+    --zebra-border: #2a3855;
+
+    --prep-bg: #0e162a;
+    --prep-border: #213055;
+  }
+}
+
+/* Explizite Overrides per Button:
+   body[data-theme="light"] / body[data-theme="dark"] */
+body[data-theme="light"]{
+  --bg: #f4f6f8;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #6b778d;
+  --primary: #2d58b7;
+  --shadow: 0 10px 30px rgba(2, 6, 23, .08);
+  --tone-1: #fefefe;
+  --tone-2: #f6f7fb;
+  --zebra-border: #e0e3ea;
+  --prep-bg: #ffffff;
+  --prep-border: #e9edf2;
+}
+body[data-theme="dark"]{
+  --bg: #0b1220;
+  --card: #0f172a;
+  --text: #e6e8ee;
+  --muted: #93a3b8;
+  --primary: #60a5fa;
+  --shadow: 0 10px 30px rgba(0,0,0,.45);
+  --tone-1: #121a2c;
+  --tone-2: #0e1628;
+  --zebra-border: #2a3855;
+  --prep-bg: #0e162a;
+  --prep-border: #213055;
+}
+
+/* =========
+   Base
+   ========= */
+
+
+   /* Das ist eine globale CSS-Regel (ein „Reset“): */
+*, *::before, *::after { box-sizing: border-box; }
+
+
+
+html, body { height: 100%; }
+body{
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+}
+
+.overlay{
+  width: min(100%, 980px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px 24px 16px;
+}
+
+/* =========
+   Header
+   ========= */
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+#rezeptTitel{
+  margin: 0;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  letter-spacing: .2px;
+}
+
+.buttonDarkmode{
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform .05s ease, filter .2s ease;
+}
+.buttonDarkmode:hover{ filter: brightness(1.05); }
+.buttonDarkmode:active{ transform: translateY(1px); }
+
+
+
+.sauerbratenPic { 
+  
+  display: flex;
+  max-width: auto;}
+
+
+
+/* =========
+   Controls
+   ========= */
+.controls{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 16px;
+  padding: 10px 12px;
+ 
+}
+.controls label{ color: var(--muted); }
+.controls input[type="number"]{
+  width: 100px;
+  appearance: textfield;
+  padding: 10px 12px;
+  border: 1px solid color-mix(in oklab, var(--prep-border), var(--text) 12%);
+  border-radius: 10px;
+  background: var(--card);
+  color: var(--text);
+  font-size: 16px;
+}
+.controls button{
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 0px;
+  background: #008000 ;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform .05s ease, filter .2s ease;
+}
+.controls button:hover{ filter: brightness(1.05); }
+.controls button:active{ transform: translateY(1px); }
+
+/* =========
+   Karten / Sektionen
+   ========= */
+section#zutaten,
+section#zubereitung{
+  background: var(--card);
+  border: 1px solid var(--prep-border);
+  border-radius: calc(var(--radius) - 2px);
+  padding: 16px 18px;
+}
+
+#zutaten h2, #zubereitung h2{
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  color: var(--muted);
+  font-weight: 700;
+  letter-spacing: .3px;
+}
+
+/* =========
+   Zutatenliste
+   ========= */
+.zutatenListe{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+.zutatenListe li{
+  border: 1px solid transparent;
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: var(--tone-1);          /* hell */
+}
+
+/* Zebra ab ERSTEM Eintrag (Rindfleisch) */
+.zutatenListe li:nth-child(odd){
+  background: var(--tone-2);          /* grau */
+  border-color: var(--zebra-border);  /* graue Umrandung */
+}
+
+.zutatenListe .amount{ min-width: 110px; font-weight: 700; }
+.zutatenListe .title{ flex: 1; }
+
+/* =========
+   Zubereitung
+   ========= */
+.zubereitungListe{
+  margin: 0;
+  padding-left: 22px; /* für OL-Zahlen */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.zubereitungListe li{
+  background: var(--prep-bg);
+  border: 1px solid var(--prep-border);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+/* =========
+   Footer
+   ========= */
+.footer{
+  display: block;
+  width: min(100%, 980px);
+  height: 120px;
+  margin: 12px auto 0;
+  border: 0;
+  border-radius: calc(var(--radius) - 2px);
+  box-shadow: var(--shadow);
+}
+
+/* =========
+   Responsive
+   ========= */
+@media (max-width: 640px){
+  .controls{ justify-content: center; }
+  .zutatenListe .amount{ min-width: 90px; }
+}

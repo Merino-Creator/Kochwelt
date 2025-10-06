@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rezept: Zutaten & Zubereitung</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+   <iframe title="header" class="header" src="./header_frame.html" frameborder="0"></iframe>
+  <main class="overlay">
+    <header class="header">
+      <h1 id="rezeptTitel">Rezept</h1>
+
+      <!-- Theme-Toggle: folgt System, kann per Button überschrieben werden -->
+      <button id="themeToggleBtn" class="buttonDarkmode" type="button">
+        Theme: System
+      </button>
+    </header>
+
+
+    
+      <img class="sauerbratenPic" src="./assets/img/sauerbraten.png" alt="Bild von Sauerbraten">
+
+
+    <section class="controls">
+      <label for="AnzahlPersonen">Zutaten für</label>
+      <input id="AnzahlPersonen" type="number" value="4" min="1" step="1" />
+      <button id="calculateButton" type="button">Portionen anpassen</button>
+    </section>
+
+    <section id="zutaten"></section>
+    <section id="zubereitung"></section>
+  </main>
+
+  <iframe title="Footer" class="footer" src="./footer_frame.html" frameborder="0"></iframe>
+</body>
+</html>
