@@ -71,6 +71,8 @@ main {
     justify-content: center;
     align-items: center;
     flex: 1;
+    margin-left: 160px;
+    margin-right: 160px;
 }
 
 #contactFormular {
