@@ -208,4 +208,5 @@ button {
 
 #datenschutzLink {
     display: flex;
+    justify-content: center;
 }

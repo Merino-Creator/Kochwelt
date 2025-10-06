@@ -176,4 +176,5 @@ footer {
 
 #datenschutzLink {
     display: flex;
+    justify-content: center;
 }
