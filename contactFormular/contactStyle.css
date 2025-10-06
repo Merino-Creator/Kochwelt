@@ -141,3 +141,7 @@ footer {
 #footerIcon {
     height: 48px;
 }
+
+#datenschutzLink {
+    display: flex;
+}
