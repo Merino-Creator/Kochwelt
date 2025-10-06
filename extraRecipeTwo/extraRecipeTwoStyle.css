@@ -23,23 +23,21 @@ a:hover {
     text-underline-offset: 4px;
 }
 
-/*Button*/
-button {
-    background-color: rgb(0, 161, 0);
-    border-radius: 4px;
-    border: none;
-    color: black;
-    height: 32px;
-    width: 120px;
-    box-shadow: 1px 1px 2px 1px black;
+h1 {
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 60px;
 }
 
-button:hover {
-    background-color: rgb(0, 141, 0);
-    cursor: pointer;
+h2 {
+    margin-left: 0px;
 }
 
-/*Navigation*/ 
+h3 {
+    margin-left: 0px;
+}
+
+/*Navigation*/
 nav {
     display: flex;
     justify-content: space-between;
@@ -66,16 +64,126 @@ nav {
     align-items: flex-end;
 }
 
+/*Header*/
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+#headerImage {
+    background-image: url(/img/salad.jpg);
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 160px;
+    margin-right: 160px;
+    border-radius: 8px;
+}
+
+#iconsContainer {
+    margin-left: 160px;
+    display: flex;
+    gap: 24px;
+}
+
+.iconImage {
+    height: 20px;
+}
+
+#clockIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 120px;
+    height: 28px;
+    margin-top: 32px;
+    background-color: rgba(238, 236, 236, 0.986);
+    border-radius: 8px;
+}
+
+#brainIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 120px;
+    height: 28px;
+    margin-top: 32px;
+    background-color: rgba(238, 236, 236, 0.986);
+    border-radius: 8px;
+}
+
+#calendarIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 120px;
+    height: 28px;
+    margin-top: 32px;
+    background-color: rgba(238, 236, 236, 0.986);
+    border-radius: 8px;
+}
+
+/*Main*/
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#calculator {
+    margin-top: 56px;
+    margin-left: 160px;
+    display: flex;
+    gap: 12px;
+    height: fit-content;
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+#ingredientsTable {
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 12px;
+}
+
+tr {
+    height: 28px;
+    border-radius: 8px;
+}
+
+.tableRowColorOne {
+    background-color: lightgray;
+}
+
+#recipe {
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+#credit {
+    margin-left: 160px;
+    margin-bottom: 40px;
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
 /*Footer*/
 footer {
     width: 100%;
     height: 100px;
-    background-color:lightgray;
+    background-color: gray;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    box-shadow: 0 -2px 4px 1px rgb(0, 0, 0);
 }
 
 #footerIconContainer {
@@ -87,4 +195,13 @@ footer {
 
 #footerIcon {
     height: 48px;
+}
+
+button {
+    background-color: green;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    height: 32px;
+    width: 120px;
 }
