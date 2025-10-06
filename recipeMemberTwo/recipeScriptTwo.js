@@ -1,15 +1,24 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const recipeImage = document.getElementById('recipeImage');
-    const imageInput = document.getElementById('imageInput');
+function changeAmount() {
+    let personen = parseFloat(document.getElementById("peopleCount").value);
+    if (isNaN(personen) || personen < 1) {
+        alert("Bitte gib eine gültige Anzahl an Portionen ein.");
+        return;
+    }
 
-    imageInput.addEventListener('change', function(event) {
-        const file = event.target.files[0];
-        if (file) {
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                recipeImage.src = e.target.result;
-            };
-            reader.readAsDataURL(file);
+    let zeilen = document.querySelectorAll("#ingredientsTable td");
+
+    for (let i = 0; i < zeilen.length; i++) {
+        let zelle = zeilen[i];
+        let originalMenge = parseFloat(zelle.getAttribute("data-original"));
+
+        if (!isNaN(originalMenge)) {
+            let neuerWert = Math.round(originalMenge * personen * 100) / 100;
+
+            // Text ohne Mengenangabe ermitteln
+            let einheitText = zelle.textContent.replace(/^\d+([.,]\d+)?\s*/, '');
+
+            // Neuen Text schreiben
+            zelle.textContent = neuerWert + ' ' + einheitText;
         }
-    }); 
-});
+    }
+}
