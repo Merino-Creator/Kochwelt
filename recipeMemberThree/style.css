@@ -173,7 +173,7 @@ body{
 
     display: flex;
     justify-content: start, space-between;
-    
+    height: 55px;
     
   }
 
@@ -181,6 +181,7 @@ body{
     
     display: flex;
     margin-right: 10px;
+    align-content: center;
     justify-content: space-around;
     gap: 10px;
   
