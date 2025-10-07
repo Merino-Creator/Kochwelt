@@ -22,6 +22,7 @@
 }
 
 /* System-Dark als Standard, falls kein Override via data-theme */
+
 @media (prefers-color-scheme: dark){
   :root{
     --bg: #0b1220;
@@ -42,7 +43,11 @@
 
 /* Explizite Overrides per Button:
    body[data-theme="light"] / body[data-theme="dark"] */
+
+
 body[data-theme="light"]{
+
+
   --bg: #f4f6f8;
   --card: #ffffff;
   --text: #0f172a;
@@ -106,6 +111,31 @@ body{
 /* =========
    Header
    ========= */
+
+
+.nav {
+    display: flex;
+    
+    width: 100vw;
+    width: 100vh;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+
+
+.navLinks {  
+  
+  display: flex;
+  min-width: 10px;
+
+    
+}
+
+
+
+
 .header{
   display: flex;
   align-items: center;
@@ -139,10 +169,42 @@ body{
   max-width: auto;}
 
 
+  .schwierigkeitZeitDatum {
+
+    display: flex;
+    justify-content: start, space-between;
+    
+    
+  }
+
+  .cookTime, .howHeavy, .DateToday {
+    
+    display: flex;
+    margin-right: 10px;
+    justify-content: space-around;
+    gap: 10px;
+  
+    background-color: rgba(238, 236, 236 );
+    border-radius: 10px;
+    padding: 10px;
+   
+  
+  }
+
+  .img {width: 20px;}
+
+
+
+
+  
+
+
 
 /* =========
    Controls
    ========= */
+
+
 .controls{
   display: flex;
   flex-wrap: wrap;
@@ -175,6 +237,9 @@ body{
 }
 .controls button:hover{ filter: brightness(1.05); }
 .controls button:active{ transform: translateY(1px); }
+
+
+
 
 /* =========
    Karten / Sektionen
@@ -261,3 +326,5 @@ section#zubereitung{
   .controls{ justify-content: center; }
   .zutatenListe .amount{ min-width: 90px; }
 }
+
+
