@@ -13,4 +13,4 @@ function sendMail(event){
     }).catch((error) => {
         console.log(error);
     });
-}
+} 
