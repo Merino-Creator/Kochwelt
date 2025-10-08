@@ -152,9 +152,6 @@ main {
     border-radius: 8px;
 }
 
-
-
-
 /*Footer*/
 footer {
     width: 100%;
@@ -325,9 +322,3 @@ footer {
         height: auto;
     }
 }
-
-#datenschutzLink {
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
