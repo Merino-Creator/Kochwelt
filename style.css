@@ -76,6 +76,10 @@ nav {
     align-items: flex-end;
 }
 
+#responsiveNavLinks {
+    display: none;
+}
+
 /*Header*/
 header {
     margin-left: 160px;
@@ -178,149 +182,192 @@ footer {
     display: flex;
     justify-content: center;
 }
-
-@media (max-width: 1000px) {
-    #naviLogo {
+@media (max-width: 1000px) { 
+    #naviLogo { 
+        margin-left: 80px; 
+    } #naviLinks { 
+        margin-right: 80px; 
+        gap: 16px; 
+    } header { 
         margin-left: 80px;
-    }
+         margin-right: 80px; 
+        } #mainContainerOneBoxes {
+             margin-left: 80px;
+             margin-right: 80px; 
+             flex-wrap: wrap; 
+             gap: 24px; 
+             justify-content: center; 
+         } #mainContainerTwoBox { 
+                margin-left: 80px; 
+                margin-right: 80px; 
+                flex-wrap: wrap; 
+                gap: 24px; 
+                justify-content: center; } 
+            } 
+            #footerIconContainer { 
+                margin-right: 80px; 
+            } 
+        #responsiveMenu { 
+            display: none; 
+        } .menu-toggle {
+            display: none; 
+        } #responsiveNavLinks { 
+            display: none; 
+        } 
+        @media (max-width: 800px) { 
+            #naviLinks { 
+                display: none; 
+            } #responsiveMenu { 
+                display: block; 
+                position: relative; 
+            } .menu-toggle { 
+                display: inline-block; 
+                font-size: 24px; 
+                width: 40px; 
+                height: 40px; 
+                border: 1px solid #ccc; 
+                border-radius: 8px; 
+                background: #fff; 
+                cursor: pointer; 
+                position: fixed; 
+                top: 30px; right: 20px; 
+                z-index: 1100; 
+            }
+            #responsiveNavLinks { 
+                display: flex; 
+                flex-direction: column; 
+                gap: 12px; 
+                position: fixed; 
+                top: 100px; 
+                left: 0; 
+                width: 260px; 
+                height: calc(100vh - 100px); 
+                padding: 16px; 
+                background: #fff; 
+                box-shadow: 2px 0 10px rgba(0,0,0,.15); 
+                z-index: 1090; 
+                transform: translateX(-100%);
+                 transition: transform .2s ease-out; 
+                }
+                 #responsiveNavLinks.open { 
+                    transform: translateX(0); 
+                } .responsiveNavLink { 
+                    padding: 10px 8px; 
+                    border-radius: 6px;
+                 } .responsiveNavLink:hover {
+                     background: #f3f4f6; 
+                    }
+                 }
+                  @media (max-width: 320px) { 
+                    .menu-toggle {
+                     width: 44px;
+                     height: 44px; 
+                     font-size: 26px; } 
+                 #responsiveNavLinks {
+                    width: 220px;
+                  } 
+                            
+                } 
+            @media (max-width: 700px) { 
+                 #naviLogo { 
+                     margin-left: 40px; 
+             } #naviLinks { 
+                 margin-right: 40px; 
+                  gap: 8px; 
+                  display: none; } 
+             header { 
+                 margin-left: 40px; 
+                 margin-right: 40px;
+                 } 
+                 #mainContainerOneBoxes {
+                 margin-left: 40px;
+                 margin-right: 40px;
+                 } #mainContainerTwoBox {
+                 margin-left: 40px;
+                 margin-right: 40px; } 
+                 #footerIconContainer { 
+                    margin-right: 40px; 
+                } 
+            }
+             @media(max-width: 530px) { 
+                #naviLogo {
+                 margin-left: 16px; 
+                } 
+                #datenschutzLink { 
+                    display: none;
+                }
+                #footerIconContainer {
+                    display: none;
+                }
 
-    #naviLinks {
-        margin-right: 80px;
-        gap: 16px;
-    }
-
-    header {
-        margin-left: 80px;
-        margin-right: 80px;
-    }
-
-    #mainContainerOneBoxes {
-        margin-left: 80px;
-        margin-right: 80px;
-        flex-wrap: wrap;
-        gap: 24px;
-        justify-content: center;
-    }
-
-    #mainContainerTwoBox {
-        margin-left: 80px;
-        margin-right: 80px;
-        flex-wrap: wrap;
-        gap: 24px;
-        justify-content: center;
-    }
-
-    #footerIconContainer {
-        margin-right: 80px;
-    }
-}
-
-@media (max-width: 800px) {
-    #naviLogo {
-        margin-left: 40px;
-    }
-
-    #naviLinks {
-        margin-right: 40px;
-        gap: 8px;
-    }
-
-    header {
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-
-    #mainContainerOneBoxes {
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-
-    #mainContainerTwoBox {
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-
-    #footerIconContainer {
-        margin-right: 40px;
-    }
-}
-
-@media(max-width: 700px) {
-    #naviLogo {
-        margin-left: 16px;
-    }
-
-    #naviLinks {
-        margin-right: 16px;
-        flex-direction: column;
-        align-items: flex-end;
-        background-color: white;
-        position: absolute;
-        top: 100px;
-        right: 0;
-        width: 200px;
-        box-shadow: 0 2px 4px 1px lightgray;
-        padding: 16px;
-        display: none;
-    }
-
-    #naviLinks a {
-        margin-bottom: 8px;
-    }
-
-    #naviLinks a:last-child {
-        margin-bottom: 0;
-    }
-
-    .menu-toggle {
-        font-size: 32px;
-        cursor: pointer;
-        user-select: none;
-        margin-right: 16px;
-        align-self: center;
-    }
-
-    #menuToggle:checked + .menu-toggle + #naviLinks {
-        display: flex;
-    }
-
-    header {
-        margin-left: 16px;
-        margin-right: 16px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-    }
-
-    #mainContainerOneBoxes {
-        margin-left: 16px;
-        margin-right: 16px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #mainContainerTwoBox {
-        margin-left: 16px;
-        margin-right: 16px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #footerIconContainer {
-        margin-right: 16px;
-    }
-}
-
-@media (max-width: 320px) {
-    #headerImage {
-        width: 100%;
-        height: auto;
-    }
-
-    #mainContainerOneImages, #mainContainerTwoImage {
-        width: 100%;
-        height: auto;
-    }
-}
-
-
+              #naviLinks { 
+                  margin-right: 16px;
+                  flex-direction: column;
+                  align-items: flex-end; 
+                  background-color: white;
+                  position: absolute; 
+                  top: 100px; 
+                  right: 0; 
+                  width: 200px; 
+                  box-shadow: 0 2px 4px 1px lightgray;
+                  padding: 16px; display: none;
+                 } 
+                
+             #naviLinks a {
+                 margin-bottom: 8px; 
+                } 
+               
+             #naviLinks a:last-child { 
+                margin-bottom: 0;
+                 } 
+                
+            .menu-toggle { 
+                  font-size: 32px; 
+                  cursor: pointer; 
+                  user-select: none; 
+                  margin-right: 16px; 
+                  align-self: center; 
+             } 
+            
+             #menuToggle:checked + .menu-toggle + #naviLinks { 
+                  display: flex; 
+            } 
+            header {
+                   margin-left: 16px; 
+                   margin-right: 16px; 
+                   flex-direction: column;
+                   align-items: flex-start;
+                   gap: 16px;
+                 } 
+            #mainContainerOneBoxes { 
+                    margin-left: 16px; 
+                    margin-right: 16px; 
+                    flex-direction: column;
+                     align-items: center;
+                     }
+             #mainContainerTwoBox { 
+                margin-left: 16px; 
+                margin-right: 16px; 
+                flex-direction: column;
+                 align-items: center; 
+                } 
+                #footerIconContainer { 
+                    margin-right: 16px;
+                 } 
+                } 
+                @media (max-width: 320px) {
+                   #headerImage {
+                     width: 100%; 
+                     height: auto;
+                     } 
+                     #mainContainerOneImages, #mainContainerTwoImage { 
+                        width: 100%; 
+                        height: auto; 
+                    }
+                 #datenschutzLink { 
+                    display: none;
+                }
+                #footerIconContainer {
+                    display: none;
+                }
+                }
