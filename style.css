@@ -179,6 +179,39 @@ footer {
     justify-content: center;
 }
 
+/*Responsive Menu*/
+
+.content {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.resp_menu_box {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: 180px;
+    height: 250px;
+
+    position: absolute;
+    top: 100px;
+    right: 0;
+
+    transition: all 250ms ease-in-out;
+}
+
+.resp_menu_closed {
+    transform: translateX(100%);
+}
+
+#respMenuButton {
+    display: none;
+}
+
 @media (max-width: 1000px) {
     #naviLogo {
         margin-left: 80px;
@@ -216,32 +249,27 @@ footer {
 }
 
 @media (max-width: 800px) {
-    #naviLogo {
-        margin-left: 40px;
-    }
-
     #naviLinks {
-        margin-right: 40px;
-        gap: 8px;
+        display: none;
     }
 
-    header {
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-
-    #mainContainerOneBoxes {
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-
-    #mainContainerTwoBox {
-        margin-left: 40px;
-        margin-right: 40px;
+    #datenschutzLink {
+        display: none;
     }
 
     #footerIconContainer {
-        margin-right: 40px;
+        display: none;
+    }
+
+    nav {
+        align-items: center;
+    }
+
+    #respMenuButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 80px;
     }
 }
 
@@ -250,26 +278,8 @@ footer {
         margin-left: 16px;
     }
 
-    #naviLinks {
-        margin-right: 16px;
-        flex-direction: column;
-        align-items: flex-end;
-        background-color: white;
-        position: absolute;
-        top: 100px;
-        right: 0;
-        width: 200px;
-        box-shadow: 0 2px 4px 1px lightgray;
-        padding: 16px;
-        display: none;
-    }
-
-    #naviLinks a {
-        margin-bottom: 8px;
-    }
-
-    #naviLinks a:last-child {
-        margin-bottom: 0;
+    #respMenuButton {
+        margin-right: 0;
     }
 
     .menu-toggle {
@@ -321,33 +331,4 @@ footer {
         width: 100%;
         height: auto;
     }
-}
-
-/*Responsive Menu*/
-
-.content {
-    position: relative;
-    overflow-x: hidden;
-}
-
-.resp_menu_box {
-    background-color: lightgray;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-
-    width: 180px;
-    height: 250px;
-
-    position: absolute;
-    top: 100px;
-    right: 0;
-
-    transition: all 250ms ease-in-out;
-}
-
-.resp_menu_closed {
-    transform: translateX(100%);
 }
