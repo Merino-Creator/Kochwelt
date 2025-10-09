@@ -299,37 +299,7 @@ footer {
                 #footerIconContainer {
                     display: none;
                 }
-
-<<<<<<< HEAD
-/*Responsive Menu*/
-
-.content {
-    position: relative;
-    overflow-x: hidden;
-}
-
-.resp_menu_box {
-    background-color: lightgray;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-
-    width: 180px;
-    height: 250px;
-
-    position: absolute;
-    top: 100px;
-    right: 0;
-
-    transition: all 250ms ease-in-out;
-}
-
-.resp_menu_closed {
-    transform: translateX(100%);
-}
-=======
+                
               #naviLinks { 
                   margin-right: 16px;
                   flex-direction: column;
