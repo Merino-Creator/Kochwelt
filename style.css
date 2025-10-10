@@ -321,6 +321,7 @@ footer {
     #mainContainerOneBoxes {
         margin-left: 40px;
         margin-right: 40px;
+        display: block;
     }
 
     #mainContainerTwoBox {
@@ -330,6 +331,31 @@ footer {
 
     #footerIconContainer {
         margin-right: 40px;
+    }
+}
+
+@media (max-width: 660px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+
+    #headerText {
+        margin-left: 0;
+        align-items: center;
+
+    }
+
+    #headerImage {
+        height: auto;
+        width: 100%;
+    }
+
+    #mainContainerTwoImage {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -374,6 +400,7 @@ footer {
         user-select: none;
         margin-right: 16px;
         align-self: center;
+        position: static;
     }
 
     #menuToggle:checked+.menu-toggle+#naviLinks {
@@ -426,4 +453,35 @@ footer {
     #footerIconContainer {
         display: none;
     }
+}
+
+/*Responsive Menu*/
+
+.content {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.resp_menu_box {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 180px;
+    height: 250px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+
+    transition: all 250ms ease-in-out;
+}
+
+.resp_menu_closed {
+    transform: translateX(100%);
+}
+
+.resp_menu_open {
+    transform: translateX(0);
 }
