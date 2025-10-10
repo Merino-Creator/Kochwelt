@@ -11,21 +11,11 @@
 
 <body>
 
-    <div class="content">
-
-        <nav>
-            <div id="naviLogo">
-                <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
-            </div>
-
-            <div id="naviLinks">
-                <a href="/index.html">Start</a>
-                <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
-                <a href="/contactFormular/contakt.html">Kontakt</a>
-                <a href="/impressum/impressum.html">Impressum</a>
-            </div>
-
-        </nav>
+<div class="content">
+    <nav>
+        <div id="naviLogo">
+            <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
+        </div>
 
         <div id="naviLinks">
             <a href="/index.html">Start</a>
@@ -33,28 +23,49 @@
             <a href="/contactFormular/contakt.html">Kontakt</a>
             <a href="/impressum/impressum.html">Impressum</a>
         </div>
-        </nav>
 
-     <nav id="responsiveMenu" aria-label="Mobiles Menü">
-     <div>
-     <button class="menu-toggle" id="menuButton"
-            aria-expanded="false"
-            aria-controls="responsiveNavLinks"
-            aria-label="Menü öffnen/schließen"
-            onclick="toggleMenu()">☰</button>
-     </div>
+        <!-- Responsive-Menü: Button + Panel -->
+        <button class="menu-toggle" id="menuButton"
+                        aria-expanded="false"
+                        aria-controls="responsiveNavLinks"
+                        aria-label="Menü öffnen/schließen"
+                        onclick="toggleMenu()">☰</button>
+        <div id="responsiveNavLinks" class="responsiveNavLinks" hidden aria-hidden="true">
+            <a class="responsiveNavLink" href="/index.html">Start</a>
+            <a class="responsiveNavLink" href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
+            <a class="responsiveNavLink" href="/contactFormular/contakt.html">Kontakt</a>
+            <a class="responsiveNavLink" href="/impressum/impressum.html">Impressum</a>
+            <a class="responsiveNavLink" href="/datenschutz/datenschutz.html">Datenschutz</a>
+            <a class="responsiveNavLink" href="https://www.facebook.com/?locale=de_DE" target="_blank">Facebook</a>
+            <a class="responsiveNavLink" href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a class="responsiveNavLink" href="https://x.com/" target="_blank">X</a>
+        </div>
+    </nav>
 
-    <div id="responsiveNavLinks">
-        <a class="responsiveNavLink" href="/index.html">Start</a>
-        <a class="responsiveNavLink" href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
-        <a class="responsiveNavLink" href="/contactFormular/contakt.html">Kontakt</a>
-        <a class="responsiveNavLink" href="/impressum/impressum.html">Impressum</a>
-        <a class="responsiveNavLink" href="/datenschutz/datenschutz.html">Datenschutz</a>
-        <a class="responsiveNavLink" href="https://www.facebook.com/?locale=de_DE" target="_blank">Facebook</a>
-        <a class="responsiveNavLink" href="https://www.instagram.com/" target="_blank">Instagram</a>
-        <a class="responsiveNavLink" href="https://x.com/" target="_blank">X</a>
-    </div>
-  </nav>
+  <div id="responsiveNavLinks" class="responsiveNavLinks" hidden aria-hidden="true">
+    <a class="responsiveNavLink" href="/index.html">Start</a>
+    <a class="responsiveNavLink" href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
+    <a class="responsiveNavLink" href="/contactFormular/contakt.html">Kontakt</a>
+    <a class="responsiveNavLink" href="/impressum/impressum.html">Impressum</a>
+    <a class="responsiveNavLink" href="/datenschutz/datenschutz.html">Datenschutz</a>
+    <a class="responsiveNavLink" href="https://www.facebook.com/?locale=de_DE" target="_blank">Facebook</a>
+    <a class="responsiveNavLink" href="https://www.instagram.com/" target="_blank">Instagram</a>
+    <a class="responsiveNavLink" href="https://x.com/" target="_blank">X</a>
+  </div>
+</nav>
+
+<header>
+  <img id="headerImage" src="/img/vegetables-4583549_1280.jpg" alt="Gemüsepfanne">
+  <div id="headerText">
+    <h1>Gemüsepfanne – gesund und vielseitig</h1>
+    <p>Eine Gemüsepfanne ist nicht nur schnell zubereitet, sondern auch ein echtes Multitalent in der Küche. Sie
+                steckt voller Vitamine, Mineralstoffe und Ballaststoffe – ideal für eine bewusste Ernährung. Ob mit
+                Reis, Nudeln, Fleisch, Tofu oder einfach pur: Die Kombinationen sind grenzenlos. Dabei lässt sich
+                frisches oder tiefgekühltes Gemüse ganz nach Saison und Geschmack verwenden. Einfach, lecker und rundum
+                gesund!</p>
+            <a href="/extraRecipeOne/extraRecipeOne.html"><button>Ausprobieren</button></a>
+        </div>
+    </header>
 
         <main>
             <div id="mainContainerOne">
@@ -100,12 +111,12 @@
             <div id="naviLogo">
                 <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
             </div>
-            <div id="datenschutzLink">
+            <div id="datenschutzLink" class="datenschutzLink">
                 <a href="/datenschutz/datenschutz.html">
                     <p>Datenschutz</p>
                 </a>
             </div>
-            <div id="footerIconContainer">
+            <div id="footerIconContainer" class="footerIconContainer">
                 <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img id="footerIcon" src="/img/icons/square-facebook-brands-solid-full.svg" alt="facebook logo"></a>
                 <a href="https://www.instagram.com/" target="_blank"><img id="footerIcon" src="/img/icons/square-instagram-brands-solid-full.svg" alt="instagram logo"></a>
                 <a href="https://x.com/" target="_blank"><img id="footerIcon" src="/img/icons/square-x-twitter-brands-solid-full.svg" alt="X logo"></a>

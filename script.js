@@ -1,39 +1,23 @@
+(function () {
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  const backdrop = document.getElementById('menuBackdrop');
 
-  function toggleMenu() {
-    const panel = document.getElementById('responsiveNavLinks');
-    const btn   = document.getElementById('menuButton');
-    const isOpen = panel.classList.toggle('open');      // Klasse an/aus
+  if (!btn || !menu || !backdrop) return;
 
-    // Zugänglichkeit:
-    btn.setAttribute('aria-expanded', String(isOpen));
-    // Seite hinten nicht scrollen, wenn offen:
-    document.body.style.overflow = isOpen ? 'hidden' : '';
+  function setOpen(on) {
+    btn.setAttribute('aria-expanded', String(on));
+    menu.classList.toggle('open', on);
+    backdrop.classList.toggle('show', on);
+    document.body.style.overflow = on ? 'hidden' : '';
   }
 
-  // Panel schließt, wenn man auf einen Link klickt
-  document.addEventListener('click', (e) => {
-    const panel = document.getElementById('responsiveNavLinks');
-    const btn   = document.getElementById('menuButton');
+  btn.addEventListener('click', () => setOpen(!menu.classList.contains('open')));
+  backdrop.addEventListener('click', () => setOpen(false));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') setOpen(false); });
 
-    if (!panel.classList.contains('open')) return;
-
-    const link = e.target.closest('.responsiveNavLink');
-    if (link) {
-      panel.classList.remove('open');
-      btn.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    }
-  });
-
-  // ESC schließt
-  document.addEventListener('keydown', (e) => {
-    if (e.key !== 'Escape') return;
-    const panel = document.getElementById('responsiveNavLinks');
-    const btn   = document.getElementById('menuButton');
-    if (panel.classList.contains('open')) {
-      panel.classList.remove('open');
-      btn.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    }
-  });
-
+  // Bei Breite > 800px sicher schließen
+  const mq = window.matchMedia('(max-width: 800px)');
+  function handleWidth(e){ if (!e.matches) setOpen(false); }
+  mq.addEventListener ? mq.addEventListener('change', handleWidth) : mq.addListener(handleWidth);
+})(); 
