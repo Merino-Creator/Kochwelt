@@ -304,10 +304,8 @@ footer {
         margin-left: 40px;
     }
 
-    #naviLinks {
+    #menuButtonPosition {
         margin-right: 40px;
-        gap: 8px;
-        display: none;
     }
 
     header {

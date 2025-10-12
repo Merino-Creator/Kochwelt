@@ -1,4 +1,4 @@
-(function (toggleMenu) {
+function toggleMenu() {
     const btn = document.getElementById('menuBtn');
     const menu = document.getElementById('mobileMenu');
     const backdrop = document.getElementById('menuBackdrop');
@@ -20,4 +20,5 @@
     const mq = window.matchMedia('(max-width: 800px)');
     function handleWidth(e){ if (!e.matches) setOpen(false); }
     mq.addEventListener ? mq.addEventListener('change', handleWidth) : mq.addListener(handleWidth);
-})(toggleMenu);
+    (toggleMenu);
+}
