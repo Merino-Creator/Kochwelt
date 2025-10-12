@@ -7,8 +7,11 @@ body {
 }
 
 @font-face {
-    font-family: Raleway; src: url("/fonts/raleway/Raleway-Italic-VariableFont_wght.ttf");
-    font-family: Raleway; font-weight: bold; src: url("/fonts/raleway/Raleway-VariableFont_wght.ttf");
+    font-family: Raleway;
+    src: url("/fonts/raleway/Raleway-Italic-VariableFont_wght.ttf");
+    font-family: Raleway;
+    font-weight: bold;
+    src: url("/fonts/raleway/Raleway-VariableFont_wght.ttf");
 }
 
 a {
@@ -165,6 +168,7 @@ tr {
     margin-left: 160px;
     margin-bottom: 40px;
 }
+
 #profilePicture {
     height: 64px;
     width: 64px;
@@ -211,4 +215,186 @@ button {
 #datenschutzLink {
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+        box-shadow: 0 2px 4px 1px lightgray;
+    }
+
+    #naviLogo {
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    #naviLinks {
+        margin-right: 20px;
+        margin-bottom: 4px;
+        gap: 24px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 40px;
+    }
+
+    #headerImage {
+        background-image: url(/img/brokoli-auflauf.jpg);
+        height: 370px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 8px;
+    }
+
+    #iconsContainer {
+        margin-left: 20px;
+        display: flex;
+        gap: 24px;
+    }
+
+    #calculator {
+        margin-top: 40px;
+        margin-left: 20px;
+        display: flex;
+        gap: 12px;
+        height: fit-content;
+    }
+
+    #ingredientsTable {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 12px;
+    }
+
+    #recipe {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #credit {
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+
+    footer {
+        width: 100%;
+        height: 100px;
+        background-color: gray;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #footerIconContainer {
+        margin-right: 20px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+    #naviLinks {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    #calculator {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 40px;
+    }
+
+    #datenschutzLink {
+        display: none;
+    }
+
+    #footerIconContainer {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    #calculator {
+        margin-left: 0px;
+        display: flex;
+        margin-right: 0px;
+        align-items: center;
+    }
+
+    #ingredientsTable {
+        margin-left: 0px;
+        right: 0;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    #headerImage {
+        height: 250px;
+    }
+
+    h1 {
+        font-size: 24px;
+        align-items: center;
+    }
+    #iconsContainer {
+        margin-left: 0px;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    #calculator {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 8px;
+    }
+
+    #ingredientsTable {
+        margin-left: 0px;
+        right: 0;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+        padding: 8px;
+    }
+
+    #recipe {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 8px;
+    }
+
+    #credit {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 8px;
+    }
+    #h3 {
+        font-size: 18px;
+        align-items: center;
+    }
 }
