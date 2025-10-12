@@ -207,7 +207,7 @@ button {
     background-color: green;
     border-radius: 4px;
     border: none;
-    color: white;
+    color: black;
     height: 32px;
     width: 120px;
 }
@@ -354,6 +354,86 @@ button {
     #naviLinks {
         display: none;
     }
+
+    #respMenuButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        font-size: large;
+        font-weight: bold;
+        background-color: lightgray;
+    }
+
+    #respMenuText {
+        display: flex;
+    }
+   #responsiveMenu {
+        display: block;
+        position: relative;
+    }
+
+    #menuButtonPosition {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 80px;
+        gap: 12px;
+    }
+
+    .menu-toggle {
+        display: inline-block;
+        font-size: 24px;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background: #fff;
+        cursor: pointer;
+        position: fixed;
+        top: 30px;
+        right: 20px;
+        z-index: 1100;
+        position: static;
+    }
+
+    #responsiveNavLinks {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 260px;
+        height: calc(100vh - 100px);
+        padding: 16px;
+        background: #fff;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, .15);
+        z-index: 1090;
+        transform: translateX(-100%);
+        transition: transform .2s ease-out;
+    }
+
+    #responsiveNavLinks.open {
+        transform: translateX(0);
+    }
+
+    .responsiveNavLink {
+        padding: 10px 8px;
+        border-radius: 6px;
+    }
+
+    .responsiveNavLink:hover {
+        background: #f3f4f6;
+    }
+
+    #footerIconContainer {
+        display: none;
+    }
+
+    #datenschutzLink {
+        display: none;
+    }
 }
 
 @media (max-width: 550px) {
@@ -370,6 +450,9 @@ button {
 
     #footerIconContainer {
         display: none;
+    }
+    #menuButtonPosition {
+        margin-right: 40px;
     }
 }
 
@@ -393,6 +476,11 @@ button {
 @media (max-width: 320px) {
     #headerImage {
         height: 250px;
+    }
+    #menu-toggle {
+        width: 44px;
+        height: 44px;
+        font-size: 26px;
     }
 
     h1 {
