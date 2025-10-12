@@ -272,6 +272,37 @@ footer {
         display: none;
     }
 
+    #respMenuButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        font-size: large;
+        font-weight: bold;
+    }
+
+    #naviLogo {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #mainContainerOneBoxes {
+        margin-left: 40px;
+        margin-right: 40px;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    #mainContainerTwoBox {
+        margin-left: 40px;
+        margin-right: 40px;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+    }
+
     #responsiveMenu {
         display: block;
         position: relative;
@@ -381,17 +412,20 @@ footer {
     #headerText {
         margin-left: 0;
         align-items: center;
-
     }
 
     #headerImage {
         height: auto;
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     #mainContainerTwoImage {
         width: 100%;
         height: auto;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -498,35 +532,4 @@ footer {
     #footerIconContainer {
         display: none;
     }
-}
-
-/*Responsive Menu*/
-
-.content {
-    position: relative;
-    overflow-x: hidden;
-}
-
-.resp_menu_box {
-    background-color: lightgray;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    width: 180px;
-    height: 250px;
-    position: absolute;
-    top: 100px;
-    right: 0;
-
-    transition: all 250ms ease-in-out;
-}
-
-.resp_menu_closed {
-    transform: translateX(100%);
-}
-
-.resp_menu_open {
-    transform: translateX(0);
 }
