@@ -48,8 +48,10 @@ button {
 }
 
 button:hover {
-    background-color: rgb(0, 141, 0);
+    background-color: rgb(2, 117, 2);
     cursor: pointer;
+    transition: 80ms;
+
 }
 
 /*Navigation*/
