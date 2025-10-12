@@ -72,14 +72,18 @@ nav {
 }
 
 #naviLinks {
-    margin-right: 160px;
     margin-bottom: 4px;
+    margin-right: 160px;
     gap: 24px;
     display: flex;
     align-items: flex-end;
 }
 
 #responsiveNavLinks {
+    display: none;
+}
+
+#menuButtonPosition {
     display: none;
 }
 
@@ -253,22 +257,6 @@ footer {
         gap: 24px;
         justify-content: center;
     }
-}
-
-#footerIconContainer {
-    margin-right: 80px;
-}
-
-#responsiveMenu {
-    display: none;
-}
-
-.menu-toggle {
-    display: none;
-}
-
-#responsiveNavLinks {
-    display: none;
 }
 
 @media (max-width: 800px) {
