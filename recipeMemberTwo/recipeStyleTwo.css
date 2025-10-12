@@ -454,6 +454,9 @@ button {
     #menuButtonPosition {
         margin-right: 40px;
     }
+    #naviImage {
+        height: 64px;
+    }
 }
 
 @media (max-width: 400px) {

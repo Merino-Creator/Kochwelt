@@ -210,7 +210,7 @@ footer {
 
     transition: all 250ms ease-in-out;
 }
-            
+
 .resp_menu_closed {
     transform: translateX(100%);
 }
@@ -445,7 +445,7 @@ footer {
     }
 
     #naviImage {
-        height: 68px;
+        height: 64px;
     }
 
     #datenschutzLink {
