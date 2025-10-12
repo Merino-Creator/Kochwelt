@@ -192,7 +192,7 @@ footer {
     justify-content: center;
 }
 
-    /*Responsive Menu*/
+/*Responsive Menu*/
 
 .content {
     position: relative;
@@ -313,52 +313,6 @@ footer {
         align-items: center;
         margin-right: 80px;
         gap: 12px;
-    }
-
-    .menu-toggle {
-        display: inline-block;
-        font-size: 24px;
-        width: 40px;
-        height: 40px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        background: #fff;
-        cursor: pointer;
-        position: fixed;
-        top: 30px;
-        right: 20px;
-        z-index: 1100;
-        position: static;
-    }
-
-    #responsiveNavLinks {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        position: fixed;
-        top: 100px;
-        left: 0;
-        width: 260px;
-        height: calc(100vh - 100px);
-        padding: 16px;
-        background: #fff;
-        box-shadow: 2px 0 10px rgba(0, 0, 0, .15);
-        z-index: 1090;
-        transform: translateX(-100%);
-        transition: transform .2s ease-out;
-    }
-
-    #responsiveNavLinks.open {
-        transform: translateX(0);
-    }
-
-    .responsiveNavLink {
-        padding: 10px 8px;
-        border-radius: 6px;
-    }
-
-    .responsiveNavLink:hover {
-        background: #f3f4f6;
     }
 
     #footerIconContainer {

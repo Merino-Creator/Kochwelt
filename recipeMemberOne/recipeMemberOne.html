@@ -24,23 +24,23 @@
             <a href="/impressum/impressum.html">Impressum</a>
         </div>
 
-        <!-- Responsive-Menü: Button + Panel -->
-        <button class="menu-toggle" id="menuButton"
-                        aria-expanded="false"
-                        aria-controls="responsiveNavLinks"
-                        aria-label="Menü öffnen/schließen"
-                        onclick="toggleMenu()">☰</button>
-        <div id="resp_menu" class="resp_menu_box resp_menu_closed">
-            <a class="responsiveNavLink" href="/index.html">Start</a>
-            <a class="responsiveNavLink" href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
-            <a class="responsiveNavLink" href="/contactFormular/contakt.html">Kontakt</a>
-            <a class="responsiveNavLink" href="/impressum/impressum.html">Impressum</a>
-            <a class="responsiveNavLink" href="/datenschutz/datenschutz.html">Datenschutz</a>
-            <a class="responsiveNavLink" href="https://www.facebook.com/?locale=de_DE" target="_blank">Facebook</a>
-            <a class="responsiveNavLink" href="https://www.instagram.com/" target="_blank">Instagram</a>
-            <a class="responsiveNavLink" href="https://x.com/" target="_blank">X</a>
+        <div role="navigationbutton" id="menuButtonPosition">
+            <p id="respMenuText" style="color: rgb(143, 143, 143);">MENU</p>
+            <button id="respMenuButton" onclick="toggleRespMenu()">☰</button>
         </div>
+        
     </nav>
+
+    <div role="navigationresponsivemenu" id="resp_menu" class="resp_menu_box resp_menu_closed">
+        <a href="">Start</a>
+        <a href="">Rezept des Tages</a>
+        <a href="">Kontakt</a>
+        <a href="">Impressum</a>
+        <a href="">Datenschutz</a>
+        <a href="">Facebook</a>
+        <a href="">Instagram</a>
+        <a href="">X</a>
+    </div>
 
     <header>
         <h1>Burger mit Camembert</h1>

@@ -23,8 +23,6 @@ function changeAmount() {
     }
 }
 
-function toggleMenu() {
-    const menu = document.getElementById("resp_menu");
-    menu.classList.toggle("resp_menu_open");
-    menu.classList.toggle("resp_menu_closed");
-}   
+function toggleRespMenu(){
+    document.getElementById("resp_menu").classList.toggle('resp_menu_closed')
+}
