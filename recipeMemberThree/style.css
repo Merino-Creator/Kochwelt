@@ -123,6 +123,10 @@ body{
     
 }
 
+iframe {
+  width: 100%;
+}
+
 
 
 .navLinks {  
