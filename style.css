@@ -439,9 +439,13 @@ footer {
     }
 }
 
-@media(max-width: 530px) {
+@media (max-width: 530px) {
     #naviLogo {
-        margin-left: 0;
+        margin-left: 8px;
+    }
+
+    #naviImage {
+        height: 68px;
     }
 
     #datenschutzLink {
@@ -483,10 +487,6 @@ footer {
         position: static;
     }
 
-    #menuToggle:checked+.menu-toggle+#naviLinks {
-        display: flex;
-    }
-
     header {
         margin-left: 16px;
         margin-right: 16px;
@@ -509,8 +509,8 @@ footer {
         align-items: center;
     }
 
-    #footerIconContainer {
-        margin-right: 16px;
+    #menuButtonPosition {
+        margin-right: 8px;
     }
 }
 
