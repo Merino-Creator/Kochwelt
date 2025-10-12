@@ -219,6 +219,10 @@ footer {
     display: none;
 }
 
+#respMenuText {
+    display: none;
+}
+
 @media (max-width: 1000px) {
     #naviLogo {
         margin-left: 80px;
@@ -279,10 +283,15 @@ footer {
         width: 40px;
         font-size: large;
         font-weight: bold;
+        background-color: lightgray;
+    }
+
+    #respMenuText {
+        display: flex;
     }
 
     #naviLogo {
-        margin-left: 0;
+        margin-left: 40px;
         display: flex;
         justify-content: center;
     }
@@ -313,6 +322,7 @@ footer {
         justify-content: center;
         align-items: center;
         margin-right: 80px;
+        gap: 12px;
     }
 
     .menu-toggle {
@@ -431,7 +441,7 @@ footer {
 
 @media(max-width: 530px) {
     #naviLogo {
-        margin-left: 16px;
+        margin-left: 0;
     }
 
     #datenschutzLink {
