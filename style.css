@@ -334,11 +334,6 @@ footer {
         margin-right: 40px;
     }
 
-    header {
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-
     #mainContainerOneBoxes {
         margin-left: 40px;
         margin-right: 40px;
@@ -361,6 +356,8 @@ footer {
         align-items: center;
         text-align: center;
         gap: 16px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     #headerText {
@@ -392,14 +389,6 @@ footer {
         height: 64px;
     }
 
-    #datenschutzLink {
-        display: none;
-    }
-
-    #footerIconContainer {
-        display: none;
-    }
-
     #naviLinks {
         margin-right: 16px;
         flex-direction: column;
@@ -412,23 +401,6 @@ footer {
         box-shadow: 0 2px 4px 1px lightgray;
         padding: 16px;
         display: none;
-    }
-
-    #naviLinks a {
-        margin-bottom: 8px;
-    }
-
-    #naviLinks a:last-child {
-        margin-bottom: 0;
-    }
-
-    .menu-toggle {
-        font-size: 32px;
-        cursor: pointer;
-        user-select: none;
-        margin-right: 16px;
-        align-self: center;
-        position: static;
     }
 
     header {
@@ -455,35 +427,5 @@ footer {
 
     #menuButtonPosition {
         margin-right: 8px;
-    }
-}
-
-@media (max-width: 320px) {
-    #headerImage {
-        width: 100%;
-        height: auto;
-    }
-    .menu-toggle {
-        width: 44px;
-        height: 44px;
-        font-size: 26px;
-    }
-
-    #responsiveNavLinks {
-        width: 220px;
-    }
-
-    #mainContainerOneImages,
-    #mainContainerTwoImage {
-        width: 100%;
-        height: auto;
-    }
-
-    #datenschutzLink {
-        display: none;
-    }
-
-    #footerIconContainer {
-        display: none;
     }
 }
