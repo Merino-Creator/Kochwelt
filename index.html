@@ -25,11 +25,13 @@
         </div>
 
         <!-- Responsive-Menü: Button + Panel -->
-        <button class="menu-toggle" id="menuButton"
-                        aria-expanded="false"
-                        aria-controls="responsiveNavLinks"
-                        aria-label="Menü öffnen/schließen"
-                        onclick="toggleMenu()">☰</button>
+        <div id="menuButtonPosition">
+            <button class="menu-toggle" id="menuButton"
+                    aria-expanded="false"
+                    aria-controls="responsiveNavLinks"
+                    aria-label="Menü öffnen/schließen"
+                    onclick="toggleMenu()">☰</button>
+        </div>
         <div id="resp_menu" class="resp_menu_box resp_menu_closed">
             <a class="responsiveNavLink" href="/index.html">Start</a>
             <a class="responsiveNavLink" href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
