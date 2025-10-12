@@ -186,7 +186,7 @@ footer {
     justify-content: center;
 }
 
-/*Responsive Menu*/
+    /*Responsive Menu*/
 
 .content {
     position: relative;
@@ -210,7 +210,7 @@ footer {
 
     transition: all 250ms ease-in-out;
 }
-
+            
 .resp_menu_closed {
     transform: translateX(100%);
 }
