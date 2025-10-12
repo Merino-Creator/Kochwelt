@@ -186,6 +186,39 @@ footer {
     justify-content: center;
 }
 
+/*Responsive Menu*/
+
+.content {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.resp_menu_box {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: 180px;
+    height: 250px;
+
+    position: absolute;
+    top: 100px;
+    right: 0;
+
+    transition: all 250ms ease-in-out;
+}
+
+.resp_menu_closed {
+    transform: translateX(100%);
+}
+
+#respMenuButton {
+    display: none;
+}
+
 @media (max-width: 1000px) {
     #naviLogo {
         margin-left: 80px;
@@ -295,6 +328,14 @@ footer {
 
     .responsiveNavLink:hover {
         background: #f3f4f6;
+    }
+
+    #footerIconContainer {
+        display: none;
+    }
+
+    #datenschutzLink {
+        display: none;
     }
 }
 
