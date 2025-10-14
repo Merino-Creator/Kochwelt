@@ -26,25 +26,6 @@ a:hover {
     text-underline-offset: 4px;
 }
 
-/* Button*/
-
-button {
-    background-color: green;
-    border-radius: 4px;
-    border: none;
-    color: white;
-    height: 32px;
-    width: 120px;
-    box-shadow: 1px 1px 2px 1px black;
-}
-
-button:hover {
-    background-color: rgb(2, 117, 2);
-    cursor: pointer;
-}
-
-/*Navigation*/
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -71,8 +52,6 @@ nav {
     align-items: flex-end;
 }
 
-/*Header*/
-
 header {
     display: flex;
     flex-direction: column;
@@ -93,8 +72,8 @@ h3 {
 }
 
 #headerImage {
-    background-image: url(/img/vegetables-4583549_1280.jpg);
-    height: 300px;
+    background-image: url(/img/brokoli-auflauf.jpg);
+    height: 370px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -145,8 +124,6 @@ h3 {
     background-color: rgba(238, 236, 236, 0.986);
     border-radius: 8px;
 }
-
-/*Main*/
 
 main {
     display: flex;
@@ -205,8 +182,6 @@ tr {
     gap: 24px;
 }
 
-/*Footer*/
-
 footer {
     width: 100%;
     height: 100px;
@@ -228,10 +203,20 @@ footer {
     height: 48px;
 }
 
+button {
+    background-color: green;
+    border-radius: 4px;
+    border: none;
+    color: black;
+    height: 32px;
+    width: 120px;
+}
+
 #datenschutzLink {
     display: flex;
     justify-content: center;
 }
+
 /*Responsive Menu*/
 
 .content {
@@ -270,72 +255,105 @@ footer {
 }
 
 @media (max-width: 1000px) {
-    #naviLinks {
-        display: none;
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Raleway', sans-serif;
     }
 
-    #naviMenuIcon {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+        box-shadow: 0 2px 4px 1px lightgray;
+    }
+
+    #naviLogo {
+        margin-left: 20px;
         display: flex;
         align-items: center;
-        margin-right: 160px;
-        cursor: pointer;
     }
 
-    #headerImage {
-        margin-left: 40px;
-        margin-right: 40px;
+    #naviLinks {
+        margin-right: 20px;
+        margin-bottom: 4px;
+        gap: 24px;
+        display: flex;
+        align-items: flex-end;
     }
 
     h1 {
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 40px;
+
+    }
+
+    #headerImage {
+        background-image: url(/img/vegetables-4583549_1280.jpg);
+        height: 370px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 8px;
     }
 
     #iconsContainer {
-        margin-left: 40px;
+        margin-left: 20px;
+        display: flex;
+        gap: 24px;
     }
 
     #calculator {
-        margin-left: 40px;
-        flex-wrap: wrap;
+        margin-top: 40px;
+        margin-left: 20px;
+        display: flex;
+        gap: 12px;
+        height: fit-content;
     }
 
     #ingredientsTable {
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 12px;
     }
 
     #recipe {
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-
-    #credit {
-        margin-left: 40px;
-    }
-
-    #footerIconContainer {
-        margin-right: 40px;
-    }
-}
-
-@media (max-width: 800px) {
-    #headerImage {
-        height: 200px;
         margin-left: 20px;
         margin-right: 20px;
     }
 
-    #calculator {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
+    #credit {
+        margin-left: 20px;
         margin-bottom: 40px;
-        align-items: center;
     }
 
-    #ingredientsTable {
-        text-align: center;
+    footer {
+        width: 100%;
+        height: 100px;
+        background-color: gray;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #footerIconContainer {
+        margin-right: 20px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+    #naviLinks {
+        display: none;
     }
 
     #respMenuButton {
@@ -365,86 +383,36 @@ footer {
         gap: 12px;
     }
 
-    h1 {
-        margin-left: 20px;
-        margin-right: 20px;
-        text-align: center;
-    }
-
-    #iconsContainer {
-        margin-left: 20px;
-        gap: 12px;
-    }
-
-    #clockIcon,
-    #brainIcon,
-    #calendarIcon {
-        width: 100px;
-        height: 24px;
-        font-size: 12px;
-        margin-top: 16px;
-    }
-
-    .iconImage {
-        height: 16px;
-    }
-
-    #calculator {
-        margin-left: 20px;
-        gap: 8px;
-    }
-
-    #ingredientsTable {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    #recipe {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    #credit {
-        margin-left: 20px;
-    }
-
     #footerIconContainer {
-        margin-right: 20px;
-        gap: 8px;
-
-    }
-
-    #footerIcon {
-        height: 32px;
+        display: none;
     }
 
     #datenschutzLink {
         display: none;
     }
-
-    #footerIconContainer {
-        display: none;
-    }
+    
 }
 
 @media (max-width: 530px) {
-    #naviLogo {
-        margin-left: 8px;
-    }
-
-    #naviImage {
-        height: 64px;
-    }
-
-    #naviLinks {
-        margin-right: 16px;
+    #calculator {
         flex-direction: column;
-        align-items: flex-end;
-        background-color: white;
-        position: absolute;
-        top: 100px;
-        right: 0;
-        width: 200px;
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 40px;
+        align-items: center;
+    }
+    h1 {
+        margin-left: 16px;
+        margin-right: 16px;
+        text-align: center;
+    }
+
+    #ingredientsTable {
+        text-align: center;
+    }
+
+    #datenschutzLink {
+        display: none;
     }
 
     #iconsContainer {
@@ -462,27 +430,26 @@ footer {
         margin-right: 16px;
         text-align: center;
     }
+
+    #footerIconContainer {
+        display: none;
+    }
+
     #menuButtonPosition {
         margin-right: 8px;
     }
+
+    #naviImage {
+        height: 64px;
+    }
+    #credit {
+        margin-left: 16px;
+        margin-right: 16px;
+        text-align: center;
+    }
+    #profile {
+        justify-content: center;
+    }
+
 }
 
-@media (max-width: 320px) {
-    #naviLinks {
-        width: 100px;
-        right: 0;
-    }
-
-    #naviLinks a {
-        font-size: 12px;
-    }
-
-    #footerIconContainer {
-        margin-right: 8px;
-        gap: 4px;
-    }
-
-    #footerIcon {
-        height: 24px;
-    }
-}
