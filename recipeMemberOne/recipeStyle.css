@@ -37,6 +37,24 @@ h3 {
     margin-left: 0px;
 }
 
+/* Button*/
+
+button {
+    background-color: green;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    height: 32px;
+    width: 120px;
+    box-shadow: 1px 1px 2px 1px black;
+}
+
+button:hover {
+    background-color: rgb(2, 117, 2);
+    cursor: pointer;
+    transition: 80ms;
+}
+
 /*Navigation*/
 nav {
     display: flex;
@@ -200,15 +218,6 @@ footer {
 
 #footerIcon {
     height: 48px;
-}
-
-button {
-    background-color: green;
-    border-radius: 4px;
-    border: none;
-    color: white;
-    height: 32px;
-    width: 120px;
 }
 
 #datenschutzLink {
