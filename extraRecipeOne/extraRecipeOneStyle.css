@@ -1,17 +1,14 @@
 body {
     margin: 0;
-    height: 100vh;
+    max-width: 1920px;
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
 }
 
 @font-face {
-    font-family: Raleway;
-    src: url("/fonts/raleway/Raleway-Italic-VariableFont_wght.ttf");
-    font-family: Raleway;
-    font-weight: bold;
-    src: url("/fonts/raleway/Raleway-VariableFont_wght.ttf");
+    font-family: Raleway; src: url("/fonts/raleway/Raleway-Italic-VariableFont_wght.ttf");
+    font-family: Raleway; font-weight: bold; src: url("/fonts/raleway/Raleway-VariableFont_wght.ttf");
 }
 
 a {
@@ -24,6 +21,20 @@ a:hover {
     text-decoration: underline;
     text-decoration-thickness: 4px;
     text-underline-offset: 4px;
+}
+
+h1 {
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 60px;
+}
+
+h2 {
+    margin-left: 0px;
+}
+
+h3 {
+    margin-left: 0px;
 }
 
 /* Button*/
@@ -44,7 +55,6 @@ button:hover {
 }
 
 /*Navigation*/
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -71,25 +81,14 @@ nav {
     align-items: flex-end;
 }
 
-/*Header*/
+#menuButtonPosition {
+    display: none;
+}
 
+/*Header*/
 header {
     display: flex;
     flex-direction: column;
-}
-
-h1 {
-    margin-left: 160px;
-    margin-right: 160px;
-    margin-top: 60px;
-}
-
-h2 {
-    margin-left: 0px;
-}
-
-h3 {
-    margin-left: 0px;
 }
 
 #headerImage {
@@ -105,6 +104,7 @@ h3 {
 
 #iconsContainer {
     margin-left: 160px;
+    margin-right: 160px;
     display: flex;
     gap: 24px;
 }
@@ -147,7 +147,6 @@ h3 {
 }
 
 /*Main*/
-
 main {
     display: flex;
     flex-direction: column;
@@ -155,7 +154,7 @@ main {
 }
 
 #calculator {
-    margin-top: 56px;
+    margin-top: 60px;
     margin-left: 160px;
     display: flex;
     gap: 12px;
@@ -192,13 +191,6 @@ tr {
     margin-bottom: 40px;
 }
 
-#profilePicture {
-    height: 64px;
-    width: 64px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
 #profile {
     display: flex;
     align-items: center;
@@ -206,7 +198,6 @@ tr {
 }
 
 /*Footer*/
-
 footer {
     width: 100%;
     height: 100px;
@@ -232,6 +223,13 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+#profilePicture {
+    width: auto;
+    height: 64px;
+    border-radius: 50%;
+}
+
 /*Responsive Menu*/
 
 .content {
@@ -269,73 +267,57 @@ footer {
     display: none;
 }
 
+/* Responsiveness */ 
+
 @media (max-width: 1000px) {
+    #naviLogo {
+        margin-left: 80px;
+    }
+
     #naviLinks {
-        display: none;
-    }
-
-    #naviMenuIcon {
-        display: flex;
-        align-items: center;
-        margin-right: 160px;
-        cursor: pointer;
-    }
-
-    #headerImage {
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-right: 80px;
+        gap: 16px;
     }
 
     h1 {
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+
+    #headerImage {
+        margin-left: 80px;
+        margin-right: 80px;
     }
 
     #iconsContainer {
-        margin-left: 40px;
+        margin-left: 80px;
+        margin-right: 80px;
     }
 
     #calculator {
-        margin-left: 40px;
-        flex-wrap: wrap;
+        margin-left: 80px;
+        margin-right: 80px;
     }
 
     #ingredientsTable {
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: 80px;
+        margin-right: 80px;
     }
 
     #recipe {
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: 80px;
+        margin-right: 80px;
     }
 
     #credit {
-        margin-left: 40px;
-    }
-
-    #footerIconContainer {
-        margin-right: 40px;
+        margin-left: 80px;
+        margin-right: 80px;
     }
 }
 
 @media (max-width: 800px) {
-    #headerImage {
-        height: 200px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    #calculator {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-        margin-bottom: 40px;
-        align-items: center;
-    }
-
-    #ingredientsTable {
-        text-align: center;
+    #naviLinks {
+        display: none;
     }
 
     #respMenuButton {
@@ -352,9 +334,11 @@ footer {
         display: flex;
     }
 
-    #responsiveMenu {
-        display: block;
-        position: relative;
+    #naviLogo {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        margin-left: 80px;
     }
 
     #menuButtonPosition {
@@ -365,66 +349,78 @@ footer {
         gap: 12px;
     }
 
-    h1 {
-        margin-left: 20px;
-        margin-right: 20px;
-        text-align: center;
-    }
-
-    #iconsContainer {
-        margin-left: 20px;
-        gap: 12px;
-    }
-
-    #clockIcon,
-    #brainIcon,
-    #calendarIcon {
-        width: 100px;
-        height: 24px;
-        font-size: 12px;
-        margin-top: 16px;
-    }
-
-    .iconImage {
-        height: 16px;
-    }
-
-    #calculator {
-        margin-left: 20px;
-        gap: 8px;
-    }
-
-    #ingredientsTable {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    #recipe {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    #credit {
-        margin-left: 20px;
-    }
-
     #footerIconContainer {
-        margin-right: 20px;
-        gap: 8px;
-
-    }
-
-    #footerIcon {
-        height: 32px;
+        display: none;
     }
 
     #datenschutzLink {
         display: none;
     }
+}
+
+
+@media (max-width: 700px) {
+
+    #menuButtonPosition {
+        margin-right: 40px;
+    }
+
+    #headerImage {
+        margin-left: 40px;
+        margin-right: 40px;
+        width: 300px;
+    }
+
+    #naviLogo {
+        margin-left: 40px;
+    }
+
+   h1 {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    #headerImage {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #iconsContainer {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #calculator {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #ingredientsTable {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #recipe {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #credit {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
 
     #footerIconContainer {
-        display: none;
+        margin-right: 40px;
     }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+
 }
 
 @media (max-width: 530px) {
@@ -436,15 +432,26 @@ footer {
         height: 64px;
     }
 
-    #naviLinks {
+    #datenschutzLink {
+        display: none;
+    }
+
+    #footerIconContainer {
+        display: none;
+    }
+
+    #menuButtonPosition {
+        margin-right: 8px;
+    }
+
+    h1 {
         margin-right: 16px;
-        flex-direction: column;
-        align-items: flex-end;
-        background-color: white;
-        position: absolute;
-        top: 100px;
-        right: 0;
-        width: 200px;
+        margin-left: 16px;
+    }
+
+    #headerImage {
+        margin-left: 16px;
+        margin-right: 16px;
     }
 
     #iconsContainer {
@@ -453,8 +460,32 @@ footer {
         display: flex;
         flex-direction: column;
         height: fit-content;
+    }
+
+    #clockIcon {
+        margin-top: 0;
+    }
+
+    #brainIcon {
+        margin-top: 0;
+    }
+
+    #calendarIcon {
+        margin-top: 0;
+    }
+
+    #calculator {
+        margin-left: 16px;
+        margin-right: 16px;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 0px;
+    }
+
+    #ingredientsTable {
+        margin-left: 16px;
+        margin-right: 16px;
+        text-align: center;
     }
 
     #recipe {
@@ -462,27 +493,15 @@ footer {
         margin-right: 16px;
         text-align: center;
     }
-    #menuButtonPosition {
-        margin-right: 8px;
-    }
-}
 
-@media (max-width: 320px) {
-    #naviLinks {
-        width: 100px;
-        right: 0;
+    #credit {
+        margin-left: 16px;
+        margin-right: 16px;
+        text-align: center;
     }
 
-    #naviLinks a {
-        font-size: 12px;
-    }
-
-    #footerIconContainer {
-        margin-right: 8px;
-        gap: 4px;
-    }
-
-    #footerIcon {
-        height: 24px;
+    #profile {
+        display: flex;
+        justify-content: center;
     }
 }
