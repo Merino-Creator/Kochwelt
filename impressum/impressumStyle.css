@@ -24,6 +24,10 @@ a:hover {
     text-underline-offset: 4px;
 }
 
+.content {
+    height: 100vh;
+}
+
 /* Button*/
 
 button {
@@ -72,13 +76,16 @@ nav {
     display: none;
 }
 
+header {
+    display: flex;
+}
+
 /*Main*/
 main {
     margin-left: 160px;
     margin-right: 160px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex: 1;
 }
 
@@ -91,6 +98,8 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    position: absolute;
+    bottom: 0;
 }
 
 #naviLogoFooter {

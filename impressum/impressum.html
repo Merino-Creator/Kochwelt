@@ -11,95 +11,103 @@
 
 <body>
 
-<div class="content">
-    <nav>
-        <div id="naviLogoHeader">
-            <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo" /></a>
-        </div>
-        <div id="naviLinks">
+    <div class="content">
+        <nav>
+            <div id="naviLogoHeader">
+                <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo" /></a>
+            </div>
+            <div id="naviLinks">
+                <a href="/index.html">Start</a>
+                <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
+                <a href="/contactFormular/contakt.html">Kontakt</a>
+                <a href="/impressum/impressum.html">Impressum</a>
+            </div>
+
+            <div role="navigationbutton" id="menuButtonPosition">
+                <p id="respMenuText" style="color: rgb(143, 143, 143);">MENU</p>
+                <button id="respMenuButton" onclick="toggleRespMenu()">☰</button>
+            </div>
+        </nav>
+
+        <div role="navigationresponsivemenu" id="resp_menu" class="resp_menu_box resp_menu_closed">
             <a href="/index.html">Start</a>
             <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
             <a href="/contactFormular/contakt.html">Kontakt</a>
             <a href="/impressum/impressum.html">Impressum</a>
+            <a href="/datenschutz/datenschutz.html">Datenschutz</a>
+            <a href="https://www.facebook.com/?locale=de_DE">Facebook</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://x.com/">X</a>
         </div>
 
-        <div role="navigationbutton" id="menuButtonPosition">
-            <p id="respMenuText" style="color: rgb(143, 143, 143);">MENU</p>
-            <button id="respMenuButton" onclick="toggleRespMenu()">☰</button>
-        </div>
-    </nav>
+        <header>
+            <div>
+                
+            </div>
+        </header>
 
-    <div role="navigationresponsivemenu" id="resp_menu" class="resp_menu_box resp_menu_closed">
-        <a href="/index.html">Start</a>
-        <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
-        <a href="/contactFormular/contakt.html">Kontakt</a>
-        <a href="/impressum/impressum.html">Impressum</a>
-        <a href="/datenschutz/datenschutz.html">Datenschutz</a>
-        <a href="https://www.facebook.com/?locale=de_DE">Facebook</a>
-        <a href="https://www.instagram.com/">Instagram</a>
-        <a href="https://x.com/">X</a>
+        <main>
+
+            <div id="impressumMemberOne">
+                <h1>Impressum</h1>
+
+                <p>
+                    Daniel St&uuml;rmer<br />
+                    Banzhaldenstrasse 89<br />
+                    70469 Stuttgart
+                </p>
+
+                <h2>Kontakt</h2>
+                <p>Telefon:<br>
+                    015754232786<br />
+                    E-Mail:<br>
+                    stuermer.dan137@gmail.com</p>
+
+                <p>Quelle: <a href="https://www.e-recht24.de">e-recht24.de</a></p>
+            </div>
+
+            <div id="impressumMemberTwo">
+                <h1>Impressum</h1>
+
+                <p>Virxhin Bytyqi<br />
+                    Regensburger Stra&szlig;e 2<br />
+                    93197 Zeitlarn</p>
+
+                <h2>Kontakt</h2>
+                <p>Telefon:<br>
+                    017663882475<br />
+                    E-Mail:<br>
+                    xhini95@gmail.com</p>
+
+                <p>Quelle: <a href="https://www.e-recht24.de">e-Recht24.de</a></p>
+            </div>
+
+
+            <div id="impressumMemberThree">
+                <h1>Impressum</h1>
+            </div>
+
+        </main>
+
+        <footer>
+            <div id="naviLogoFooter">
+                <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
+            </div>
+            <div id="datenschutzLink">
+                <a href="/datenschutz/datenschutz.html">
+                    <p>Datenschutz</p>
+                </a>
+            </div>
+            <div id="footerIconContainer">
+                <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img id="footerIcon"
+                        src="/img/icons/square-facebook-brands-solid-full.svg" alt="facebook logo"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img id="footerIcon"
+                        src="/img/icons/square-instagram-brands-solid-full.svg" alt="instagram logo"></a>
+                <a href="https://x.com/" target="_blank"><img id="footerIcon"
+                        src="/img/icons/square-x-twitter-brands-solid-full.svg" alt="X logo"></a>
+            </div>
+        </footer>
     </div>
-
-    <main>
-        <div id="impressumMemberOne">
-            <h1>Impressum</h1>
-
-            <p>
-                Daniel St&uuml;rmer<br />
-                Banzhaldenstrasse 89<br />
-                70469 Stuttgart
-            </p>
-
-            <h2>Kontakt</h2>
-            <p>Telefon:<br>
-                015754232786<br />
-                E-Mail:<br>
-                stuermer.dan137@gmail.com</p>
-
-            <p>Quelle: <a href="https://www.e-recht24.de">e-recht24.de</a></p>
-        </div>
-
-        <div id="impressumMemberTwo">
-            <h1>Impressum</h1>
-
-            <p>Virxhin Bytyqi<br />
-                Regensburger Stra&szlig;e 2<br />
-                93197 Zeitlarn</p>
-
-            <h2>Kontakt</h2>
-            <p>Telefon:<br>
-                017663882475<br />
-                E-Mail:<br>
-                xhini95@gmail.com</p>
-
-            <p>Quelle: <a href="https://www.e-recht24.de">e-Recht24.de</a></p>
-        </div>
-
-
-        <div id="impressumMemberThree">
-            <h1>Impressum</h1>
-        </div>
-    </main>
-
-    <footer>
-        <div id="naviLogoFooter">
-            <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
-        </div>
-        <div id="datenschutzLink">
-            <a href="/datenschutz/datenschutz.html">
-                <p>Datenschutz</p>
-            </a>
-        </div>
-        <div id="footerIconContainer">
-            <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img id="footerIcon"
-                    src="/img/icons/square-facebook-brands-solid-full.svg" alt="facebook logo"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img id="footerIcon"
-                    src="/img/icons/square-instagram-brands-solid-full.svg" alt="instagram logo"></a>
-            <a href="https://x.com/" target="_blank"><img id="footerIcon" src="/img/icons/square-x-twitter-brands-solid-full.svg"
-                    alt="X logo"></a>
-        </div>
-    </footer>
-</div>
 
 </body>
 
