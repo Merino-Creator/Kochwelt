@@ -318,6 +318,9 @@ footer {
     #naviLogoFooter {
         margin-left: 80px;
     }
+    #footerIconContainer {
+        margin-right: 80px;
+    }
 }
 
 @media (max-width: 800px) {
