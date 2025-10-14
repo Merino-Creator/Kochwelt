@@ -216,4 +216,7 @@ footer {
     footer {
         height: 80px;
     }
+    #menuButtonPosition {
+        margin-right: 8px;
+    }
 }
