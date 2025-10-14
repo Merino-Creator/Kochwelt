@@ -106,6 +106,21 @@ footer {
     display: flex;
     align-items: center;
 }
+#footerIconContainer {
+    margin-right: 160px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+#footerIcon {
+    height: 48px;
+}
+
+#datenschutzLink {
+    display: flex;
+    justify-content: center;
+}
 
 /*Responsive Menu*/
 
