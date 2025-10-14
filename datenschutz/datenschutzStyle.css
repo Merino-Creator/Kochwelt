@@ -201,29 +201,35 @@ footer {
     #respMenuText {
         display: flex;
     }
-
+    #menuButtonPosition {
+        margin-right: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
     #naviLogoHeader {
-        margin-left: 16px;
+        margin-left: 40px;
     }
 
     #footerIconContainer {
-        margin-right: 16px;
+        margin-right: 40px;
     }
 
     #generator_results {
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     #naviLogoFooter {
-        margin-left: 16px;
+        margin-left: 40px;
     }
 }
 
 @media (max-width: 700px) {
     #generator_results {
-        margin-left: 8px;
-        margin-right: 8px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     #menuButtonPosition {
@@ -241,7 +247,7 @@ footer {
 
 @media (max-width: 530px) {
     #generator_results {
-        margin-left: 4px;
-        margin-right: 4px;
+        margin-left: 16px;
+        margin-right: 16px;
     }
 }
