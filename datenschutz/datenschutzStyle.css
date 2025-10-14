@@ -31,7 +31,7 @@ button {
     background-color: rgb(0, 161, 0);
     border-radius: 4px;
     border: none;
-    color: black;
+    color: white;
     height: 32px;
     width: 120px;
     box-shadow: 1px 1px 2px 1px black;
@@ -178,6 +178,7 @@ footer {
     #naviLogoFooter {
         margin-left: 80px;
     }
+
     #naviLinks {
         margin-right: 80px;
     }
@@ -201,6 +202,7 @@ footer {
     #respMenuText {
         display: flex;
     }
+
     #menuButtonPosition {
         margin-right: 40px;
         display: flex;
@@ -208,6 +210,7 @@ footer {
         align-items: center;
         gap: 12px;
     }
+
     #naviLogoHeader {
         margin-left: 40px;
     }
@@ -222,7 +225,9 @@ footer {
     }
 
     #naviLogoFooter {
-        margin-left: 40px;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -249,5 +254,36 @@ footer {
     #generator_results {
         margin-left: 16px;
         margin-right: 16px;
+        text-align: center;
+    }
+
+    #naviLogoHeader {
+        margin-left: 8px;
+    }
+
+    #naviImage {
+        height: 64px;
+    }
+
+    #naviLinks {
+        margin-right: 16px;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: white;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 200px;
+        box-shadow: 0 2px 4px 1px lightgray;
+        padding: 16px;
+        display: none;
+    }
+
+    #menuButtonPosition {
+        margin-right: 8px;
+    }
+
+    h1 {
+        font-size: 28px;
     }
 }
