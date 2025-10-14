@@ -104,3 +104,143 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+/*Responsive Menu*/
+
+.content {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.resp_menu_box {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: 180px;
+    height: 250px;
+
+    position: absolute;
+    top: 100px;
+    right: 0;
+
+    transition: all 250ms ease-in-out;
+}
+
+.resp_menu_closed {
+    transform: translateX(100%);
+}
+
+#respMenuButton {
+    display: none;
+}
+
+#respMenuText {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    #naviLogo {
+        margin-left: 80px;
+    }
+
+    #naviLinks {
+        margin-right: 80px;
+        gap: 16px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    #naviLinks {
+        display: none;
+    }
+
+    #respMenuButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        font-size: large;
+        font-weight: bold;
+        background-color: lightgray;
+    }
+
+    #respMenuText {
+        display: flex;
+    }
+
+    #naviLogo {
+        margin-left: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #responsiveMenu {
+        display: block;
+        position: relative;
+    }
+
+    #menuButtonPosition {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 80px;
+        gap: 12px;
+    }
+
+    #footerIconContainer {
+        display: none;
+    }
+
+    #datenschutzLink {
+        display: none;
+    }
+}
+
+
+@media (max-width: 700px) {
+    #naviLogo {
+        margin-left: 40px;
+    }
+
+    #menuButtonPosition {
+        margin-right: 40px;
+    }
+
+    #footerIconContainer {
+        margin-right: 40px;
+    }
+
+}
+
+@media (max-width: 530px) {
+    #naviLogo {
+        margin-left: 8px;
+    }
+
+    #naviImage {
+        height: 64px;
+    }
+
+    #naviLinks {
+        margin-right: 16px;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: white;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 200px;
+        box-shadow: 0 2px 4px 1px lightgray;
+        padding: 16px;
+        display: none;
+    }
+
+    #menuButtonPosition {
+        margin-right: 8px;
+    }
+}
