@@ -222,3 +222,280 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+/*Responsive Menu*/
+
+.content {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.resp_menu_box {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: 180px;
+    height: 250px;
+
+    position: absolute;
+    top: 100px;
+    right: 0;
+
+    transition: all 250ms ease-in-out;
+}
+
+.resp_menu_closed {
+    transform: translateX(100%);
+}
+
+#respMenuButton {
+    display: none;
+}
+
+#respMenuText {
+    display: none;
+}
+
+
+/* Responsiveness */ 
+
+@media (max-width: 1000px) {
+    #naviLogo {
+        margin-left: 80px;
+    }
+
+    #naviLinks {
+        margin-right: 80px;
+        gap: 16px;
+    }
+
+    h1 {
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+
+    #headerImage {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #iconsContainer {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #calculator {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #ingredientsTable {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #recipe {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #credit {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+}
+
+@media (max-width: 800px) {
+    #naviLinks {
+        display: none;
+    }
+
+    #respMenuButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        font-size: large;
+        font-weight: bold;
+        background-color: lightgray;
+    }
+
+    #respMenuText {
+        display: flex;
+    }
+
+    #naviLogo {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        margin-left: 80px;
+    }
+
+    #menuButtonPosition {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 80px;
+        gap: 12px;
+    }
+
+    #footerIconContainer {
+        display: none;
+    }
+
+    #datenschutzLink {
+        display: none;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    #menuButtonPosition {
+        margin-right: 40px;
+    }
+
+    #headerImage {
+        margin-left: 40px;
+        margin-right: 40px;
+        width: 300px;
+    }
+
+    #naviLogo {
+        margin-left: 40px;
+    }
+
+    h1 {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    #headerImage {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #iconsContainer {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #calculator {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #ingredientsTable {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #recipe {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #credit {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #footerIconContainer {
+        margin-right: 40px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+
+}
+
+@media (max-width: 530px) {
+    #naviLogo {
+        margin-left: 8px;
+    }
+
+    #naviImage {
+        height: 64px;
+    }
+
+    #datenschutzLink {
+        display: none;
+    }
+
+    #footerIconContainer {
+        display: none;
+    }
+
+    #menuButtonPosition {
+        margin-right: 8px;
+    }
+
+    h1 {
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+
+    #headerImage {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    #iconsContainer {
+        margin-left: 16px;
+        margin-right: 16px;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    #clockIcon {
+        margin-top: 0;
+    }
+
+    #brainIcon {
+        margin-top: 0;
+    }
+
+    #calendarIcon {
+        margin-top: 0;
+    }
+
+    #calculator {
+        margin-left: 16px;
+        margin-right: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #ingredientsTable {
+        margin-left: 16px;
+        margin-right: 16px;
+        text-align: center;
+    }
+
+    #recipe {
+        margin-left: 16px;
+        margin-right: 16px;
+        text-align: center;
+    }
+
+    #credit {
+        margin-left: 16px;
+        margin-right: 16px;
+        text-align: center;
+    }
+
+    #profile {
+        display: flex;
+        justify-content: center;
+    }
+}
