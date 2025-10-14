@@ -442,12 +442,21 @@ button {
         align-items: flex-start;
         gap: 8px;
         margin-bottom: 40px;
+        align-items: center;
     }
 
     #datenschutzLink {
         display: none;
     }
-
+    #iconsContainer {
+        margin-left: 16px;
+        margin-right: 16px;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+         gap: 0px;
+    }
     #footerIconContainer {
         display: none;
     }
