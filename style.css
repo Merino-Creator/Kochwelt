@@ -62,7 +62,7 @@ nav {
     box-shadow: 0 2px 4px 1px lightgray;
 }
 
-#naviLogo {
+#naviLogoHeader {
     margin-left: 160px;
     display: flex;
     align-items: center;
@@ -175,6 +175,12 @@ footer {
     justify-content: center;
 }
 
+#naviLogoFooter {
+    margin-left: 160px;
+    display: flex;
+    align-items: center;
+}
+
 #footerIconContainer {
     margin-right: 160px;
     display: flex;
@@ -229,7 +235,7 @@ footer {
 }
 
 @media (max-width: 1000px) {
-    #naviLogo {
+    #naviLogoHeader {
         margin-left: 80px;
     }
 
@@ -248,15 +254,18 @@ footer {
         margin-right: 80px;
         flex-wrap: wrap;
         gap: 24px;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     #mainContainerTwoBox {
         margin-left: 80px;
         margin-right: 80px;
-        flex-wrap: wrap;
         gap: 24px;
         justify-content: center;
+    }
+
+    #naviLogoFooter {
+        margin-left: 80px;
     }
 }
 
@@ -279,10 +288,15 @@ footer {
         display: flex;
     }
 
-    #naviLogo {
+    #naviLogoHeader {
         margin-left: 40px;
         display: flex;
         justify-content: center;
+    }
+
+    header {
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     #mainContainerOneBoxes {
@@ -290,7 +304,7 @@ footer {
         margin-right: 40px;
         flex-wrap: wrap;
         gap: 24px;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     #mainContainerTwoBox {
@@ -310,8 +324,14 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 80px;
+        margin-right: 40px;
         gap: 12px;
+    }
+
+    #naviLogoFooter {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
     }
 
     #footerIconContainer {
@@ -325,7 +345,7 @@ footer {
 
 
 @media (max-width: 700px) {
-    #naviLogo {
+    #naviLogoHeader {
         margin-left: 40px;
     }
 
