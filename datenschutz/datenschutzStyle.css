@@ -162,40 +162,24 @@ footer {
 
 
 @media (max-width: 1000px) {
-    #naviLinks {
-        display: none;
-    }
-
-    #respMenuButton {
-        display: block;
-        margin-right: 160px;
-        align-self: center;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-
-    #respMenuText {
-        display: block;
-        margin-right: 8px;
-        font-weight: bold;
-    }
-
     #naviLogoHeader {
-        margin-left: 32px;
+        margin-left: 80px;
     }
 
     #footerIconContainer {
-        margin-right: 32px;
+        margin-right: 80px;
     }
 
     #generator_results {
-        margin-left: 32px;
-        margin-right: 32px;
+        margin-left: 80px;
+        margin-right: 80px;
     }
 
     #naviLogoFooter {
-        margin-left: 32px;
+        margin-left: 80px;
+    }
+    #naviLinks {
+        margin-right: 80px;
     }
 }
 
