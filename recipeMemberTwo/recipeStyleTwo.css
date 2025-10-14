@@ -63,7 +63,7 @@ nav {
     box-shadow: 0 2px 4px 1px lightgray;
 }
 
-#naviLogo {
+#naviLogoHeader {
     margin-left: 160px;
     display: flex;
     align-items: center;
@@ -207,6 +207,9 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
 }
+#naviLogoFooter {
+    margin-left: 160px;
+}
 
 #footerIconContainer {
     margin-right: 160px;
@@ -269,7 +272,7 @@ footer {
 /* Responsiveness */ 
 
 @media (max-width: 1000px) {
-    #naviLogo {
+    #naviLogoHeader {
         margin-left: 80px;
     }
 
@@ -312,6 +315,9 @@ footer {
         margin-left: 80px;
         margin-right: 80px;
     }
+    #naviLogoFooter {
+        margin-left: 80px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -333,10 +339,9 @@ footer {
         display: flex;
     }
 
-    #naviLogo {
+    #naviLogoHeader {
         display: flex;
         justify-content: center;
-        margin-left: 0;
         margin-left: 80px;
     }
 
@@ -355,6 +360,11 @@ footer {
     #datenschutzLink {
         display: none;
     }
+    #naviLogoFooter {
+        margin-left: 0px;
+        justify-content: center;
+        display: flex;
+    }
 }
 
 
@@ -370,7 +380,7 @@ footer {
         width: 300px;
     }
 
-    #naviLogo {
+    #naviLogoHeader {
         margin-left: 40px;
     }
 
@@ -420,10 +430,11 @@ footer {
         gap: 16px;
     }
 
+
 }
 
 @media (max-width: 530px) {
-    #naviLogo {
+    #naviLogoHeader {
         margin-left: 8px;
     }
 
