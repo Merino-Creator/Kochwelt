@@ -1,17 +1,14 @@
 body {
     margin: 0;
-    height: 100vh;
+    max-width: 1920px;
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
 }
 
 @font-face {
-    font-family: Raleway;
-    src: url("/fonts/raleway/Raleway-Italic-VariableFont_wght.ttf");
-    font-family: Raleway;
-    font-weight: bold;
-    src: url("/fonts/raleway/Raleway-VariableFont_wght.ttf");
+    font-family: Raleway; src: url("/fonts/raleway/Raleway-Italic-VariableFont_wght.ttf");
+    font-family: Raleway; font-weight: bold; src: url("/fonts/raleway/Raleway-VariableFont_wght.ttf");
 }
 
 a {
@@ -26,6 +23,38 @@ a:hover {
     text-underline-offset: 4px;
 }
 
+h1 {
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 60px;
+}
+
+h2 {
+    margin-left: 0px;
+}
+
+h3 {
+    margin-left: 0px;
+}
+
+/* Button*/
+
+button {
+    background-color: green;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    height: 32px;
+    width: 120px;
+    box-shadow: 1px 1px 2px 1px black;
+}
+
+button:hover {
+    background-color: rgb(2, 117, 2);
+    cursor: pointer;
+}
+
+/*Navigation*/
 nav {
     display: flex;
     justify-content: space-between;
@@ -52,28 +81,19 @@ nav {
     align-items: flex-end;
 }
 
+#menuButtonPosition {
+    display: none;
+}
+
+/*Header*/
 header {
     display: flex;
     flex-direction: column;
 }
 
-h1 {
-    margin-left: 160px;
-    margin-right: 160px;
-    margin-top: 60px;
-}
-
-h2 {
-    margin-left: 0px;
-}
-
-h3 {
-    margin-left: 0px;
-}
-
 #headerImage {
-    background-image: url(/img/brokoli-auflauf.jpg);
-    height: 370px;
+    background-image: url(/img/vegetables-4583549_1280.jpg);
+    height: 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,6 +104,7 @@ h3 {
 
 #iconsContainer {
     margin-left: 160px;
+    margin-right: 160px;
     display: flex;
     gap: 24px;
 }
@@ -125,6 +146,7 @@ h3 {
     border-radius: 8px;
 }
 
+/*Main*/
 main {
     display: flex;
     flex-direction: column;
@@ -132,7 +154,7 @@ main {
 }
 
 #calculator {
-    margin-top: 56px;
+    margin-top: 60px;
     margin-left: 160px;
     display: flex;
     gap: 12px;
@@ -169,19 +191,13 @@ tr {
     margin-bottom: 40px;
 }
 
-#profilePicture {
-    height: 64px;
-    width: 64px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
 #profile {
     display: flex;
     align-items: center;
     gap: 24px;
 }
 
+/*Footer*/
 footer {
     width: 100%;
     height: 100px;
@@ -203,18 +219,15 @@ footer {
     height: 48px;
 }
 
-button {
-    background-color: green;
-    border-radius: 4px;
-    border: none;
-    color: black;
-    height: 32px;
-    width: 120px;
-}
-
 #datenschutzLink {
     display: flex;
     justify-content: center;
+}
+
+#profilePicture {
+    width: auto;
+    height: 64px;
+    border-radius: 50%;
 }
 
 /*Responsive Menu*/
@@ -254,100 +267,51 @@ button {
     display: none;
 }
 
+/* Responsiveness */ 
+
 @media (max-width: 1000px) {
-    body {
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        font-family: 'Raleway', sans-serif;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        height: 100px;
-        box-shadow: 0 2px 4px 1px lightgray;
-    }
-
     #naviLogo {
-        margin-left: 20px;
-        display: flex;
-        align-items: center;
+        margin-left: 80px;
     }
 
     #naviLinks {
-        margin-right: 20px;
-        margin-bottom: 4px;
-        gap: 24px;
-        display: flex;
-        align-items: flex-end;
+        margin-right: 80px;
+        gap: 16px;
     }
 
     h1 {
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 40px;
-
+        margin-right: 80px;
+        margin-left: 80px;
     }
 
     #headerImage {
-        background-image: url(/img/vegetables-4583549_1280.jpg);
-        height: 370px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin-left: 20px;
-        margin-right: 20px;
-        border-radius: 8px;
+        margin-left: 80px;
+        margin-right: 80px;
     }
 
     #iconsContainer {
-        margin-left: 20px;
-        display: flex;
-        gap: 24px;
+        margin-left: 80px;
+        margin-right: 80px;
     }
 
     #calculator {
-        margin-top: 40px;
-        margin-left: 20px;
-        display: flex;
-        gap: 12px;
-        height: fit-content;
+        margin-left: 80px;
+        margin-right: 80px;
     }
 
     #ingredientsTable {
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 12px;
+        margin-left: 80px;
+        margin-right: 80px;
     }
 
     #recipe {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 80px;
+        margin-right: 80px;
     }
 
     #credit {
-        margin-left: 20px;
-        margin-bottom: 40px;
-    }
-
-    footer {
-        width: 100%;
-        height: 100px;
-        background-color: gray;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    #footerIconContainer {
-        margin-right: 20px;
-        display: flex;
-        justify-content: flex-end;
-        gap: 16px;
+        margin-left: 80px;
+        margin-right: 80px;
     }
 }
 
@@ -370,9 +334,11 @@ button {
         display: flex;
     }
 
-    #responsiveMenu {
-        display: block;
-        position: relative;
+    #naviLogo {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        margin-left: 80px;
     }
 
     #menuButtonPosition {
@@ -390,45 +356,84 @@ button {
     #datenschutzLink {
         display: none;
     }
-    
 }
 
-@media (max-width: 530px) {
-    #calculator {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-        margin-bottom: 40px;
-        align-items: center;
+
+@media (max-width: 700px) {
+
+    #menuButtonPosition {
+        margin-right: 40px;
     }
-    h1 {
-        margin-left: 16px;
-        margin-right: 16px;
-        text-align: center;
+
+    #headerImage {
+        margin-left: 40px;
+        margin-right: 40px;
+        width: 300px;
+    }
+
+    #naviLogo {
+        margin-left: 40px;
+    }
+
+   h1 {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    #headerImage {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #iconsContainer {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #calculator {
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     #ingredientsTable {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #recipe {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #credit {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #footerIconContainer {
+        margin-right: 40px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
+        gap: 16px;
+    }
+
+}
+
+@media (max-width: 530px) {
+    #naviLogo {
+        margin-left: 8px;
+    }
+
+    #naviImage {
+        height: 64px;
     }
 
     #datenschutzLink {
         display: none;
-    }
-
-    #iconsContainer {
-        margin-left: 16px;
-        margin-right: 16px;
-        display: flex;
-        flex-direction: column;
-        height: fit-content;
-        align-items: center;
-        gap: 0px;
-    }
-
-    #recipe {
-        margin-left: 16px;
-        margin-right: 16px;
-        text-align: center;
     }
 
     #footerIconContainer {
@@ -439,17 +444,64 @@ button {
         margin-right: 8px;
     }
 
-    #naviImage {
-        height: 64px;
+    h1 {
+        margin-right: 16px;
+        margin-left: 16px;
     }
+
+    #headerImage {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    #iconsContainer {
+        margin-left: 16px;
+        margin-right: 16px;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    #clockIcon {
+        margin-top: 0;
+    }
+
+    #brainIcon {
+        margin-top: 0;
+    }
+
+    #calendarIcon {
+        margin-top: 0;
+    }
+
+    #calculator {
+        margin-left: 16px;
+        margin-right: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #ingredientsTable {
+        margin-left: 16px;
+        margin-right: 16px;
+        text-align: center;
+    }
+
+    #recipe {
+        margin-left: 16px;
+        margin-right: 16px;
+        text-align: center;
+    }
+
     #credit {
         margin-left: 16px;
         margin-right: 16px;
         text-align: center;
     }
+
     #profile {
+        display: flex;
         justify-content: center;
     }
-
 }
-
