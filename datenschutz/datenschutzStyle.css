@@ -173,6 +173,19 @@ footer {
         display: none;
     }
 
+    #responsiveMenu {
+        display: block;
+        position: relative;
+    }
+
+    #menuButtonPosition {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 40px;
+        gap: 12px;
+    }
+
     #datenschutzLink {
         display: none;
     }
