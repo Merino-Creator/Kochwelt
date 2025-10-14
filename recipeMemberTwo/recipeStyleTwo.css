@@ -217,7 +217,7 @@ button {
     justify-content: center;
 }
 
-   /*Responsive Menu*/
+/*Responsive Menu*/
 
 .content {
     position: relative;
@@ -241,7 +241,7 @@ button {
 
     transition: all 250ms ease-in-out;
 }
-            
+
 .resp_menu_closed {
     transform: translateX(100%);
 }
@@ -368,7 +368,8 @@ button {
     #respMenuText {
         display: flex;
     }
-   #responsiveMenu {
+
+    #responsiveMenu {
         display: block;
         position: relative;
     }
@@ -379,52 +380,6 @@ button {
         align-items: center;
         margin-right: 80px;
         gap: 12px;
-    }
-
-    .menu-toggle {
-        display: inline-block;
-        font-size: 24px;
-        width: 40px;
-        height: 40px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        background: #fff;
-        cursor: pointer;
-        position: fixed;
-        top: 30px;
-        right: 20px;
-        z-index: 1100;
-        position: static;
-    }
-
-    #responsiveNavLinks {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        position: fixed;
-        top: 100px;
-        left: 0;
-        width: 260px;
-        height: calc(100vh - 100px);
-        padding: 16px;
-        background: #fff;
-        box-shadow: 2px 0 10px rgba(0, 0, 0, .15);
-        z-index: 1090;
-        transform: translateX(-100%);
-        transition: transform .2s ease-out;
-    }
-
-    #responsiveNavLinks.open {
-        transform: translateX(0);
-    }
-
-    .responsiveNavLink {
-        padding: 10px 8px;
-        border-radius: 6px;
-    }
-
-    .responsiveNavLink:hover {
-        background: #f3f4f6;
     }
 
     #footerIconContainer {
@@ -445,9 +400,14 @@ button {
         align-items: center;
     }
 
+    #ingredientsTable {
+        text-align: center;
+    }
+
     #datenschutzLink {
         display: none;
     }
+
     #iconsContainer {
         margin-left: 16px;
         margin-right: 16px;
@@ -455,14 +415,23 @@ button {
         flex-direction: column;
         height: fit-content;
         align-items: center;
-         gap: 0px;
+        gap: 0px;
     }
+
+    #recipe {
+        margin-left: 16px;
+        margin-right: 16px;
+        text-align: center;
+    }
+
     #footerIconContainer {
         display: none;
     }
+
     #menuButtonPosition {
         margin-right: 40px;
     }
+
     #naviImage {
         height: 64px;
     }
@@ -489,6 +458,7 @@ button {
     #headerImage {
         height: 250px;
     }
+
     #menu-toggle {
         width: 44px;
         height: 44px;
@@ -499,6 +469,7 @@ button {
         font-size: 24px;
         align-items: center;
     }
+
     #iconsContainer {
         margin-left: 0px;
         justify-content: center;
@@ -530,6 +501,7 @@ button {
         margin-right: 0px;
         padding: 8px;
     }
+
     #h3 {
         font-size: 18px;
         align-items: center;
