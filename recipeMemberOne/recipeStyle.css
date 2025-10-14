@@ -465,17 +465,19 @@ button {
         margin-right: 16px;
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: center;
     }
 
     #ingredientsTable {
         margin-left: 16px;
         margin-right: 16px;
+        text-align: center;
     }
 
     #recipe {
         margin-left: 16px;
         margin-right: 16px;
+        text-align: center;
     }
 
     #credit {
