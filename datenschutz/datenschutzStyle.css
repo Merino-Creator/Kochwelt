@@ -7,8 +7,11 @@ body {
 }
 
 @font-face {
-    font-family: Raleway; src: url("/fonts/raleway/Raleway-Italic-VariableFont_wght.ttf");
-    font-family: Raleway; font-weight: bold; src: url("/fonts/raleway/Raleway-VariableFont_wght.ttf");
+    font-family: Raleway;
+    src: url("/fonts/raleway/Raleway-Italic-VariableFont_wght.ttf");
+    font-family: Raleway;
+    font-weight: bold;
+    src: url("/fonts/raleway/Raleway-VariableFont_wght.ttf");
 }
 
 a {
@@ -39,7 +42,7 @@ button:hover {
     cursor: pointer;
 }
 
-/*Navigation*/ 
+/*Navigation*/
 nav {
     display: flex;
     justify-content: space-between;
@@ -70,7 +73,7 @@ nav {
 footer {
     width: 100%;
     height: 100px;
-    background-color:lightgray;
+    background-color: lightgray;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -103,6 +106,23 @@ footer {
     display: flex;
     align-items: center;
 }
+
+#footerIconContainer {
+    margin-right: 160px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+#footerIcon {
+    height: 48px;
+}
+
+#datenschutzLink {
+    display: flex;
+    justify-content: center;
+}
+
 /*Responsive Menu*/
 
 .content {
@@ -141,13 +161,49 @@ footer {
 }
 
 
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
     #naviLogoHeader {
-        margin-left: 16px;
+        margin-left: 80px;
     }
 
+    #footerIconContainer {
+        margin-right: 80px;
+    }
+
+    #generator_results {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #naviLogoFooter {
+        margin-left: 80px;
+    }
     #naviLinks {
-        margin-right: 16px;
+        margin-right: 80px;
+    }
+}
+
+@media (max-width: 800px) {
+    #naviLinks {
+        display: none;
+    }
+
+    #respMenuButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        font-size: large;
+        font-weight: bold;
+        background-color: lightgray;
+    }
+
+    #respMenuText {
+        display: flex;
+    }
+
+    #naviLogoHeader {
+        margin-left: 16px;
     }
 
     #footerIconContainer {
@@ -164,59 +220,28 @@ footer {
     }
 }
 
-@media(max-width: 800px) {
-    #naviLinks {
-        display: none;
-    }
-    #respMenuButton {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        font-size: large;
-        font-weight: bold;
-        background-color: lightgray;
-    }
-
-    #respMenuText {
-        display: flex;
-    }
-
-
-    #footerIconContainer {
-        display: none;
-    }
-
-    #responsiveMenu {
-        display: block;
-        position: relative;
+@media (max-width: 700px) {
+    #generator_results {
+        margin-left: 8px;
+        margin-right: 8px;
     }
 
     #menuButtonPosition {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin-right: 40px;
-        gap: 12px;
+    }
+
+    #footerIconContainer {
+        display: none;
     }
 
     #datenschutzLink {
         display: none;
     }
 }
-@media(max-width: 530px) {
-    #naviImage {
-        height: 60px;
-    }
 
-    nav {
-        height: 80px;
-    }
-
-    footer {
-        height: 80px;
-    }
-    #menuButtonPosition {
-        margin-right: 8px;
+@media (max-width: 530px) {
+    #generator_results {
+        margin-left: 4px;
+        margin-right: 4px;
     }
 }
