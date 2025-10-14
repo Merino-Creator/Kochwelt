@@ -106,6 +106,7 @@ footer {
     display: flex;
     align-items: center;
 }
+
 #footerIconContainer {
     margin-right: 160px;
     display: flex;
@@ -160,30 +161,45 @@ footer {
 }
 
 
-@media(max-width: 1000px) {
-    #naviLogoHeader {
-        margin-left: 16px;
+@media (max-width: 1000px) {
+    #naviLinks {
+        display: none;
     }
 
-    #naviLinks {
-        margin-right: 16px;
+    #respMenuButton {
+        display: block;
+        margin-right: 160px;
+        align-self: center;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    #respMenuText {
+        display: block;
+        margin-right: 8px;
+        font-weight: bold;
+    }
+
+    #naviLogoHeader {
+        margin-left: 32px;
     }
 
     #footerIconContainer {
-        margin-right: 16px;
+        margin-right: 32px;
     }
 
     #generator_results {
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: 32px;
+        margin-right: 32px;
     }
 
     #naviLogoFooter {
-        margin-left: 16px;
+        margin-left: 32px;
     }
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
     #naviLinks {
         display: none;
     }
@@ -202,22 +218,36 @@ footer {
         display: flex;
     }
 
-
-    #footerIconContainer {
-        display: none;
+    #naviLogoHeader {
+        margin-left: 16px;
     }
 
-    #responsiveMenu {
-        display: block;
-        position: relative;
+    #footerIconContainer {
+        margin-right: 16px;
+    }
+
+    #generator_results {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    #naviLogoFooter {
+        margin-left: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    #generator_results {
+        margin-left: 8px;
+        margin-right: 8px;
     }
 
     #menuButtonPosition {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin-right: 40px;
-        gap: 12px;
+    }
+
+    #footerIconContainer {
+        display: none;
     }
 
     #datenschutzLink {
@@ -225,47 +255,9 @@ footer {
     }
 }
 
-@media(max-width: 700px) {
-    #naviLogoHeader {
-        margin-left: 32px;
-    }
-
-    header {
-        margin-left: 32px;
-        margin-right: 32px;
-    }
-
-    #mainContainerOneBoxes {
-        margin-left: 32px;
-        margin-right: 32px;
-        flex-wrap: wrap;
-        gap: 24px;
-        justify-content: space-between;
-    }
-
-    #mainContainerTwoBox {
-        margin-left: 32px;
-        margin-right: 32px;
-        flex-wrap: wrap;
-        gap: 24px;
-        justify-content: center;
-    }
-}
-
-@media(max-width: 530px) {
-    #naviImage {
-        height: 60px;
-    }
-
-    nav {
-        height: 80px;
-    }
-
-    footer {
-        height: 80px;
-    }
-
-    #menuButtonPosition {
-        margin-right: 8px;
+@media (max-width: 530px) {
+    #generator_results {
+        margin-left: 4px;
+        margin-right: 4px;
     }
 }
