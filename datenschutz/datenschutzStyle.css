@@ -48,7 +48,7 @@ nav {
     box-shadow: 0 2px 4px 1px lightgray;
 }
 
-#naviLogo {
+#naviLogoHeader {
     margin-left: 160px;
     display: flex;
     align-items: center;
@@ -96,4 +96,97 @@ footer {
 #datenschutzLink {
     display: flex;
     justify-content: center;
+}
+
+#naviLogoFooter {
+    margin-left: 160px;
+    display: flex;
+    align-items: center;
+}
+/*Responsive Menu*/
+
+.content {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.resp_menu_box {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: 180px;
+    height: 250px;
+
+    position: absolute;
+    top: 100px;
+    right: 0;
+
+    transition: all 250ms ease-in-out;
+}
+
+.resp_menu_closed {
+    transform: translateX(100%);
+}
+
+#respMenuButton {
+    display: none;
+}
+
+#respMenuText {
+    display: none;
+}
+
+
+@media(max-width: 1000px) {
+    #naviLogoHeader {
+        margin-left: 16px;
+    }
+
+    #naviLinks {
+        margin-right: 16px;
+    }
+
+    #footerIconContainer {
+        margin-right: 16px;
+    }
+
+    #generator_results {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    #naviLogoFooter {
+        margin-left: 16px;
+    }
+}
+
+@media(max-width: 800px) {
+    #naviLinks {
+        display: none;
+    }
+
+    #footerIconContainer {
+        display: none;
+    }
+
+    #datenschutzLink {
+        display: none;
+    }
+}
+@media(max-width: 530px) {
+    #naviImage {
+        height: 60px;
+    }
+
+    nav {
+        height: 80px;
+    }
+
+    footer {
+        height: 80px;
+    }
 }
