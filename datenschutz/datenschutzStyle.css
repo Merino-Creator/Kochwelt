@@ -7,8 +7,11 @@ body {
 }
 
 @font-face {
-    font-family: Raleway; src: url("/fonts/raleway/Raleway-Italic-VariableFont_wght.ttf");
-    font-family: Raleway; font-weight: bold; src: url("/fonts/raleway/Raleway-VariableFont_wght.ttf");
+    font-family: Raleway;
+    src: url("/fonts/raleway/Raleway-Italic-VariableFont_wght.ttf");
+    font-family: Raleway;
+    font-weight: bold;
+    src: url("/fonts/raleway/Raleway-VariableFont_wght.ttf");
 }
 
 a {
@@ -39,7 +42,7 @@ button:hover {
     cursor: pointer;
 }
 
-/*Navigation*/ 
+/*Navigation*/
 nav {
     display: flex;
     justify-content: space-between;
@@ -70,7 +73,7 @@ nav {
 footer {
     width: 100%;
     height: 100px;
-    background-color:lightgray;
+    background-color: lightgray;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -103,6 +106,7 @@ footer {
     display: flex;
     align-items: center;
 }
+
 /*Responsive Menu*/
 
 .content {
@@ -168,6 +172,7 @@ footer {
     #naviLinks {
         display: none;
     }
+
     #respMenuButton {
         display: flex;
         justify-content: center;
@@ -204,6 +209,34 @@ footer {
         display: none;
     }
 }
+
+@media(max-width: 700px) {
+    #naviLogoHeader {
+        margin-left: 32px;
+    }
+
+    header {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    #mainContainerOneBoxes {
+        margin-left: 32px;
+        margin-right: 32px;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: space-between;
+    }
+
+    #mainContainerTwoBox {
+        margin-left: 32px;
+        margin-right: 32px;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+    }
+}
+
 @media(max-width: 530px) {
     #naviImage {
         height: 60px;
@@ -216,6 +249,7 @@ footer {
     footer {
         height: 80px;
     }
+
     #menuButtonPosition {
         margin-right: 8px;
     }
