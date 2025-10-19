@@ -137,6 +137,7 @@ footer {
     display: flex;
     justify-content: center;
 }
+<<<<<<< HEAD
 
 /*Responsive Menu*/
 
@@ -144,6 +145,11 @@ footer {
     display: flex;
     flex-direction: column;
     height: 100%;
+=======
+/*Responsive Menu*/
+
+.content {
+>>>>>>> 808c89ffe765351f2a36544411f47fa5dff47f25
     position: relative;
     overflow-x: hidden;
 }
@@ -188,27 +194,49 @@ footer {
         gap: 16px;
     }
 
+<<<<<<< HEAD
     main {
+=======
+    header {
+>>>>>>> 808c89ffe765351f2a36544411f47fa5dff47f25
         margin-left: 80px;
         margin-right: 80px;
     }
 
+<<<<<<< HEAD
     #footerIconContainer {
         margin-right: 80px;
     }
 
+=======
+>>>>>>> 808c89ffe765351f2a36544411f47fa5dff47f25
     #naviLogoFooter {
         margin-left: 80px;
     }
 
+<<<<<<< HEAD
 }
 
+=======
+>>>>>>> 808c89ffe765351f2a36544411f47fa5dff47f25
 @media (max-width: 800px) {
     #naviLinks {
         display: none;
     }
+<<<<<<< HEAD
 
     #respMenuButton {
+=======
+    #naviLogoHeader {
+        margin-left: 80px;
+    }
+
+    #naviLinks {
+        margin-right: 80px;
+        gap: 16px;
+    }
+     #respMenuButton {
+>>>>>>> 808c89ffe765351f2a36544411f47fa5dff47f25
         display: flex;
         justify-content: center;
         align-items: center;
@@ -222,12 +250,83 @@ footer {
         display: flex;
     }
 
+<<<<<<< HEAD
     #naviLogoHeader {
         margin-left: 40px;
         display: flex;
         justify-content: center;
     }
 
+=======
+
+    header {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+     #footerIconContainer {
+        display: none;
+    }
+
+    #datenschutzLink {
+        display: none;
+    }
+}   
+
+@media (max-width: 700px) {
+    #naviLogoHeader {
+        margin-left: 40px;
+    }
+
+    #naviLinks {
+        margin-right: 40px;
+        gap: 12px;
+    }
+
+    header {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #mainContainerOneBoxes {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #mainContainerTwoBox {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #naviLogoFooter {
+        margin-left: 40px;
+    }
+}
+
+    #mainContainerOneBoxes {
+        margin-left: 40px;
+        margin-right: 40px;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: space-between;
+    }
+
+    #mainContainerTwoBox {
+        margin-left: 40px;
+        margin-right: 40px;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    #naviLogoFooter {
+        margin-left: 40px;
+    }
+}
+@media (max-width: 530px) {
+    #naviLinks {
+        display: none;
+    }
+
+>>>>>>> 808c89ffe765351f2a36544411f47fa5dff47f25
     #responsiveMenu {
         display: block;
         position: relative;
@@ -241,11 +340,14 @@ footer {
         gap: 12px;
     }
 
+<<<<<<< HEAD
     main {
         margin-left: 40px;
         margin-right: 40px;
     }
 
+=======
+>>>>>>> 808c89ffe765351f2a36544411f47fa5dff47f25
     #naviLogoFooter {
         margin-left: 0;
         display: flex;
@@ -260,6 +362,7 @@ footer {
         display: none;
     }
 }
+<<<<<<< HEAD
 
 
 @media (max-width: 700px) {
@@ -311,4 +414,25 @@ footer {
     #menuButtonPosition {
         margin-right: 8px;
     }
+=======
+    #mainContainerOneBoxes {
+        margin-left: 40px;
+        margin-right: 40px;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    #mainContainerTwoBox {
+        margin-left: 40px;
+        margin-right: 40px;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    #naviLogoFooter {
+        margin-left: 40px;
+    }
+>>>>>>> 808c89ffe765351f2a36544411f47fa5dff47f25
 }
