@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
@@ -11,27 +11,27 @@
 
 <body>
 
-<div class="content">
-    <nav>
+<div role="contentinfo" class="content">
+    <nav aria-label="Hauptnavigation">
         <div id="naviLogoHeader">
-            <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
+            <a href="/index.html" aria-current="page"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
         </div>
 
-        <div role="navigation" id="naviLinks">
+        <div id="naviLinks">
             <a href="/index.html">Start</a>
             <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
             <a href="/contactFormular/contakt.html">Kontakt</a>
             <a href="/impressum/impressum.html">Impressum</a>
         </div>
 
-        <div role="navigationbutton" id="menuButtonPosition">
-            <p id="respMenuText" style="color: rgb(143, 143, 143);">MENU</p>
+        <div id="menuButtonPosition">
+            <p id="respMenuText" style="color: rgb(88, 88, 88);">MENU</p>
             <button id="respMenuButton" onclick="toggleRespMenu()">☰</button>
         </div>
 
     </nav>
 
-    <div role="navigationresponsivemenu" id="resp_menu" class="resp_menu_box resp_menu_closed">
+    <div aria-controls="resp_menu" id="resp_menu" class="resp_menu_box resp_menu_closed">
         <a href="/index.html">Start</a>
         <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
         <a href="/contactFormular/contakt.html">Kontakt</a>
@@ -77,10 +77,10 @@
             </div>
         </div>
 
-            <div id="mainContainerTwo">
-                <h2>Salat - Der stetige Begleiter.</h2>
+            <section aria-labelledby="salat-h" id="mainContainerTwo">
+                <h2 id="salat-h">Salat - Der stetige Begleiter.</h2>
                 <div id="mainContainerTwoBox">
-                    <p>Ob leicht im Sommer oder herzhaft im Winter – Salate sind wahre Alleskönner. Mit ihrer Vielfalt
+                    <p id="salat-desc">Ob leicht im Sommer oder herzhaft im Winter – Salate sind wahre Alleskönner. Mit ihrer Vielfalt
                         an
                         Zutaten passen sie sich jeder Jahreszeit und jedem Gericht mühelos an. Als frische Beilage,
                         bunte
@@ -89,12 +89,13 @@
                         Gegrilltem, Pasta, Fisch oder einem deftigen Braten – ein gut abgestimmter Salat rundet jedes
                         Menü
                         perfekt ab.</p>
-                        <a href="/extraRecipeTwo/extraRecipeTwo.html"><img id="mainContainerTwoImage" src="/img/salad.jpg" alt="Salat"></a>
+                        <a href="/extraRecipeTwo/extraRecipeTwo.html" aria-labelledby="salat-h salat-desc">
+                        <img id="mainContainerTwoImage" src="/img/salad.jpg" alt=""></a>
                 </div>
-            </div>
+            </section>
     </main>
 
-        <footer>
+        <footer aria-label="Soziale Medien">
             <div id="naviLogoFooter">
                 <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
             </div>
