@@ -82,6 +82,10 @@ nav {
     align-items: flex-end;
 }
 
+#menuButtonPosition {
+    display: none;
+}
+
 /*Header*/
 
 header {
