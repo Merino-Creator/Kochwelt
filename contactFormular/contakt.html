@@ -11,70 +11,77 @@
 </head>
 
 <body>
-  <nav>
-    <div id="naviLogoHeader">
-      <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
-    </div>
-    <div id="naviLinks">
+
+  <div class="content">
+
+    <nav>
+      <div id="naviLogoHeader">
+        <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
+      </div>
+      <div id="naviLinks">
+        <a href="/index.html">Start</a>
+        <a href="#" onclick="randomRecipe()">Rezept des Tages</a>
+        <a href="/contactFormular/contakt.html">Kontakt</a>
+        <a href="/impressum/impressum.html">Impressum</a>
+      </div>
+
+      <div role="navigationbutton" id="menuButtonPosition">
+        <p id="respMenuText" style="color: rgb(143, 143, 143);">MENU</p>
+        <button id="respMenuButton" onclick="toggleRespMenu()">☰</button>
+      </div>
+    </nav>
+
+    <div role="navigationresponsivemenu" id="resp_menu" class="resp_menu_box resp_menu_closed">
       <a href="/index.html">Start</a>
       <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
       <a href="/contactFormular/contakt.html">Kontakt</a>
       <a href="/impressum/impressum.html">Impressum</a>
+      <a href="/datenschutz/datenschutz.html">Datenschutz</a>
+      <a href="https://www.facebook.com/?locale=de_DE">Facebook</a>
+      <a href="https://www.instagram.com/">Instagram</a>
+      <a href="https://x.com/">X</a>
     </div>
 
-    <div role="navigationbutton" id="menuButtonPosition">
-      <p id="respMenuText" style="color: rgb(143, 143, 143);">MENU</p>
-      <button id="respMenuButton" onclick="toggleRespMenu()">☰</button>
-    </div>
-  </nav>
+    <main>
+      <form onsubmit="sendMail(event)" action="https://formspree.io/f/mgvnlewo" method="POST">
+        <div id="contactFormular">
+          <h2>Kontaktiere uns</h2>
 
-  <div role="navigationresponsivemenu" id="resp_menu" class="resp_menu_box resp_menu_closed">
-            <a href="/index.html">Start</a>
-            <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
-            <a href="/contactFormular/contakt.html">Kontakt</a>
-            <a href="/impressum/impressum.html">Impressum</a>
-            <a href="/datenschutz/datenschutz.html">Datenschutz</a>
-            <a href="https://www.facebook.com/?locale=de_DE">Facebook</a>
-            <a href="https://www.instagram.com/">Instagram</a>
-            <a href="https://x.com/">X</a>
+          <h3>Dein Name:</h3>
+          <input id="nameBox" type="text">
+          <h3>Deine E-Mail:</h3>
+          <input id="mailBox" type="email" name="email">
+          <h3>Deine Nachricht:</h3>
+          <input id="messageBox" type="text" name="message">
+          <div id="buttonContainer">
+            <button id="button" type="submit">Abschicken</button>
+          </div>
         </div>
+    </main>
 
-  <main>
-    <form onsubmit="sendMail(event)" action="https://formspree.io/f/mgvnlewo" method="POST">
-      <div id="contactFormular">
-        <h2>Kontaktiere uns</h2>
-
-        <h3>Dein Name:</h3>
-        <input id="nameBox" type="text">
-        <h3>Deine E-Mail:</h3>
-        <input id="mailBox" type="email" name="email">
-        <h3>Deine Nachricht:</h3>
-        <input id="messageBox" type="text" name="message">
-        <div id="buttonContainer">
-          <button id="button" type="submit">Abschicken</button>
-        </div>
+    <footer>
+      <div id="naviLogoFooter">
+        <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
       </div>
-  </main>
+      <div id="datenschutzLink">
+        <a href="/datenschutz/datenschutz.html">
+          <p>Datenschutz</p>
+        </a>
+      </div>
+      <div id="footerIconContainer">
+        <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img id="footerIcon"
+            src="/img/icons/square-facebook-brands-solid-full.svg" alt="facebook logo"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img id="footerIcon"
+            src="/img/icons/square-instagram-brands-solid-full.svg" alt="instagram logo"></a>
+        <a href="https://x.com/" target="_blank"><img id="footerIcon"
+            src="/img/icons/square-x-twitter-brands-solid-full.svg" alt="X logo"></a>
+      </div>
+    </footer>
 
-  <footer>
-    <div id="naviLogoFooter">
-      <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
-    </div>
-    <div id="datenschutzLink">
-      <a href="/datenschutz/datenschutz.html">
-        <p>Datenschutz</p>
-      </a>
-    </div>
-    <div id="footerIconContainer">
-      <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img id="footerIcon"
-          src="/img/icons/square-facebook-brands-solid-full.svg" alt="facebook logo"></a>
-      <a href="https://www.instagram.com/" target="_blank"><img id="footerIcon"
-          src="/img/icons/square-instagram-brands-solid-full.svg" alt="instagram logo"></a>
-      <a href="https://x.com/" target="_blank"><img id="footerIcon"
-          src="/img/icons/square-x-twitter-brands-solid-full.svg" alt="X logo"></a>
-    </div>
-  </footer>
+  </div>
+
 </body>
+
 <script src="contactScript.js" defer></script>
 
 </html>

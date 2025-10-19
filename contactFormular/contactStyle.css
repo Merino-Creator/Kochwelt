@@ -25,6 +25,7 @@ a:hover {
 }
 
 /* Button*/
+
 button {
     background-color: green;
     border-radius: 4px;
@@ -41,6 +42,7 @@ button:hover {
 }
 
 /*Navigation*/ 
+
 nav {
     display: flex;
     justify-content: space-between;
