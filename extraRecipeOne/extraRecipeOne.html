@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemüsepfanne</title>
+    <link rel="stylesheet" href="extraRecipeOneStyle.css">
+    <link rel="icon" href="/img/logo_small.png" type="image/png">
+    
+</head>
+<body>
+<div class="content">
+    <nav aria-label="HauptnavigationextraRecipeOne">
+        <div id="naviLogoHeader">
+            <a href="/index.html" aria-current="page"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
+        </div>
+
+        <div id="naviLinks">
+            <a href="/index.html">Start</a>
+            <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
+            <a href="/contactFormular/contakt.html">Kontakt</a>
+            <a href="/impressum/impressum.html">Impressum</a>
+        </div>
+
+        <div id="menuButtonPosition">
+            <p id="respMenuText" style="color: rgb(88, 88, 88);">MENU</p>
+            <button id="respMenuButton" onclick="toggleRespMenu()">☰</button>
+        </div>
+
+    </nav>
+
+    <div id="resp_menu" aria-label="Mobiles Menü" class="resp_menu_box resp_menu_closed">
+        <a href="/index.html">Start</a>
+        <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
+        <a href="/contactFormular/contakt.html">Kontakt</a>
+        <a href="/impressum/impressum.html">Impressum</a>
+        <a href="/datenschutz/datenschutz.html">Datenschutz</a>
+        <a href="https://www.facebook.com/?locale=de_DE">Facebook</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://x.com/">X</a>
+    </div>
+        <header>
+             <h1>Vegetarische Gemüsepfanne</h1>
+             <div id="headerImage"></div>
+             <div id="iconsContainer">
+             <div id="clockIcon">
+                  <img class="iconImage" src="/img/icons/clock-regular.svg" alt="">
+                   <p>40 Min.</p>
+                    </div>
+             <div id="brainIcon">
+                   <img class="iconImage" src="/img/icons/brain-solid.svg" alt="">
+                    <p>einfach</p>
+                    </div>
+             <div id="calendarIcon">
+                   <img class="iconImage" src="/img/icons/calendar-alt-regular.svg" alt="">
+                    <p>01.10.2025</p>
+                    </div>
+                  </div>
+               </header>
+    <main>
+        <div id="calculator">
+            <label for="peopleCount">Zutaten für:</label>
+            <input id="peopleCount" type="number" min="1" placeholder="4" required>
+            <button id="button" onclick="changeAmount()">Portionen</button>
+        </div>
+
+        <table id="ingredientsTable">
+            <tr class="tableRowColorOne">
+                <td data-original="1.5">6 Tomate(n)</td>
+            </tr>
+            <tr>
+                <td data-original="0.5">2 Paprikaschote(n)</td>
+            </tr>
+            <tr class="tableRowColorOne">
+                <td data-original="0.25">1 kleine Zucchini</td>
+            </tr>
+            <tr>
+                <td data-original="0.25">1 Paket Champignons</td>
+            </tr>
+            <tr class="tableRowColorOne">
+                <td data-original="12.5">50 g Mehl</td>
+            </tr>
+            <tr>
+                <td data-original="0.25">1 EL Olivenöl</td>
+            </tr>
+            <tr class="tableRowColorOne">
+                <td data-original="0.5">2 Zwiebel(n)</td>
+            </tr>
+            <tr>
+                <td data-original="0.25">1 Becher Sahne</td>
+            </tr>
+            <tr class="tableRowColorOne">
+                <td data-original="0.25">1 EL Paprikapulver, edelsüßes</td>
+            </tr>
+        </table>
+       
+        <div id="recipe">
+            <h2>Zubereitung</h2>
+            <div id="makingOff">
+                <p>
+                        1. Das Gemüse waschen und klein schneiden.
+                    <br>2. Anschließend einen guten Schuss Olivenöl in eine Pfanne geben. Die Zwiebeln kurz darin anbraten,
+                    <br> bis sie glasig sind. Zuerst die Paprika hinzugeben, dann nach und nach die Zucchini, Champignons und am Ende die Tomaten zugeben. Das Ganze etwas anbraten.
+                    <br> Schließlich mit Salz, Pfeffer, Paprikapulver und den Kräutern würzen. Am Ende noch die Sahne hinzugeben.
+                    <br>3. Die Mischung kurz aufkochen lassen und mit Salz, Pfeffer und Muskat kräftig würzen.
+                    <br>4. Die Gemüsepfanne kann als Beilage zu Reis, Nudeln oder Tofu serviert werden. Alternativ eignet sie sich auch hervorragend als eigenständiges Gericht.
+                    <h4> Guten Appetit! </h4>
+                </p>
+            </div>
+        </div>
+        <div id="credit">
+            <h3>Rezept erstellt von</h3>
+            <div id="profile">
+                <img src="/img/Bild.jpg" id="profilePicture" alt="profilepicture">
+                <p>Virxhin Bytyqi</p>
+            </div>
+        </div>
+
+    </main>
+<footer>
+    <div id="naviLogoFooter">
+        <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
+    </div>
+    <div id="datenschutzLink">
+        <a href="/datenschutz/datenschutz.html"><p>Datenschutz</p></a>
+    </div>
+    <div id="footerIconContainer">
+        <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img id="footerIcon" src="/img/icons/square-facebook-brands-solid-full.svg" alt="facebook logo"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img id="footerIcon" src="/img/icons/square-instagram-brands-solid-full.svg" alt="instagram logo"></a>
+        <a href="https://x.com/" target="_blank"><img id="footerIcon" src="/img/icons/square-x-twitter-brands-solid-full.svg" alt="X logo"></a>
+    </div>
+</footer>
+    
+</body>
+   <script src="/extraRecipeOne/extraRecipeOneScript.js"></script>
+</html>

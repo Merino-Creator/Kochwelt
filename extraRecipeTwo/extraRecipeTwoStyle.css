@@ -7,11 +7,8 @@ body {
 }
 
 @font-face {
-    font-family: Raleway;
-    src: url("/fonts/raleway/Raleway-Italic-VariableFont_wght.ttf");
-    font-family: Raleway;
-    font-weight: bold;
-    src: url("/fonts/raleway/Raleway-VariableFont_wght.ttf");
+    font-family: Raleway; src: url("/fonts/raleway/Raleway-Italic-VariableFont_wght.ttf");
+    font-family: Raleway; font-weight: bold; src: url("/fonts/raleway/Raleway-VariableFont_wght.ttf");
 }
 
 a {
@@ -27,13 +24,17 @@ a:hover {
 }
 
 h1 {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 60px;
 }
 
 h2 {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-left: 0px;
+}
+
+h3 {
+    margin-left: 0px;
 }
 
 /* Button*/
@@ -54,6 +55,7 @@ button:hover {
 }
 
 /*Navigation*/
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -73,102 +75,132 @@ nav {
 }
 
 #naviLinks {
-    margin-bottom: 4px;
     margin-right: 160px;
+    margin-bottom: 4px;
     gap: 24px;
     display: flex;
     align-items: flex-end;
 }
 
-#responsiveNavLinks {
-    display: none;
-}
-
-#menuButtonPosition {
-    display: none;
-}
-
 /*Header*/
+
 header {
-    margin-left: 160px;
-    margin-right: 160px;
-    margin-top: 80px;
-    margin-bottom: 80px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
 #headerImage {
-    height: 220px;
+    background-image: url(/img/salad.jpg);
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 160px;
+    margin-right: 160px;
     border-radius: 8px;
 }
 
-#headerText {
+#iconsContainer {
+    margin-left: 160px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 24px;
+    gap: 24px;
+}
+
+.iconImage {
+    height: 20px;
+}
+
+#clockIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 120px;
+    height: 28px;
+    margin-top: 32px;
+    background-color: rgba(238, 236, 236, 0.986);
+    border-radius: 8px;
+}
+
+#brainIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 120px;
+    height: 28px;
+    margin-top: 32px;
+    background-color: rgba(238, 236, 236, 0.986);
+    border-radius: 8px;
+}
+
+#calendarIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 120px;
+    height: 28px;
+    margin-top: 32px;
+    background-color: rgba(238, 236, 236, 0.986);
+    border-radius: 8px;
 }
 
 /*Main*/
+
 main {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 
-#mainContainerOne {
+#calculator {
+    margin-top: 56px;
+    margin-left: 160px;
     display: flex;
-    flex-direction: column;
-    background-color: lightgray;
-    text-align: center;
-    padding-top: 40px;
+    gap: 12px;
+    height: fit-content;
 }
 
-#mainContainerOneBoxes {
+label {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+}
+
+#ingredientsTable {
     margin-left: 160px;
     margin-right: 160px;
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin-top: 12px;
 }
 
-#mainContainerOneImages {
-    height: 160px;
-    width: 180px;
+tr {
+    height: 28px;
     border-radius: 8px;
 }
 
-#mainContainerTwo {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 80px;
+.tableRowColorOne {
+    background-color: lightgray;
 }
 
-#mainContainerTwoBox {
-    display: flex;
-    justify-content: space-between;
+#recipe {
     margin-left: 160px;
     margin-right: 160px;
-    margin-top: 40px;
-    text-align: start;
+}
+
+#credit {
+    margin-left: 160px;
+    margin-bottom: 40px;
+}
+
+#profile {
+    display: flex;
+    align-items: center;
     gap: 24px;
 }
 
-#mainContainerTwoImage {
-    height: 160px;
-    width: 180px;
-    border-radius: 8px;
-}
-
 /*Footer*/
+
 footer {
     width: 100%;
     height: 100px;
-    background-color: lightgray;
+    background-color: gray;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -177,8 +209,6 @@ footer {
 
 #naviLogoFooter {
     margin-left: 160px;
-    display: flex;
-    align-items: center;
 }
 
 #footerIconContainer {
@@ -234,6 +264,9 @@ footer {
     display: none;
 }
 
+
+/* Responsiveness */ 
+
 @media (max-width: 1000px) {
     #naviLogoHeader {
         margin-left: 80px;
@@ -244,28 +277,47 @@ footer {
         gap: 16px;
     }
 
-    header {
+    h1 {
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+
+    #headerImage {
         margin-left: 80px;
         margin-right: 80px;
     }
 
-    #mainContainerOneBoxes {
+    #iconsContainer {
         margin-left: 80px;
         margin-right: 80px;
-        flex-wrap: wrap;
-        gap: 24px;
-        justify-content: space-between;
     }
 
-    #mainContainerTwoBox {
+    #calculator {
         margin-left: 80px;
         margin-right: 80px;
-        gap: 24px;
-        justify-content: center;
+    }
+
+    #ingredientsTable {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #recipe {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #credit {
+        margin-left: 80px;
+        margin-right: 80px;
     }
 
     #naviLogoFooter {
         margin-left: 80px;
+    }
+
+    #footerIconContainer {
+        margin-right: 80px;
     }
 }
 
@@ -289,42 +341,16 @@ footer {
     }
 
     #naviLogoHeader {
-        margin-left: 40px;
         display: flex;
         justify-content: center;
-    }
-
-    header {
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-
-    #mainContainerOneBoxes {
-        margin-left: 40px;
-        margin-right: 40px;
-        flex-wrap: wrap;
-        gap: 24px;
-        justify-content: space-between;
-    }
-
-    #mainContainerTwoBox {
-        margin-left: 40px;
-        margin-right: 40px;
-        flex-wrap: wrap;
-        gap: 24px;
-        justify-content: center;
-    }
-
-    #responsiveMenu {
-        display: block;
-        position: relative;
+        margin-left: 80px;
     }
 
     #menuButtonPosition {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 40px;
+        margin-right: 80px;
         gap: 12px;
     }
 
@@ -345,25 +371,54 @@ footer {
 
 
 @media (max-width: 700px) {
-    #naviLogoHeader {
-        margin-left: 40px;
-    }
 
     #menuButtonPosition {
         margin-right: 40px;
     }
 
-    #mainContainerOneBoxes {
+    #headerImage {
         margin-left: 40px;
         margin-right: 40px;
-        display: block;
-        text-align: center;
+        width: 300px;
     }
 
-    #mainContainerTwoBox {
+    #naviLogoHeader {
+        margin-left: 40px;
+    }
+
+    h1 {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    #headerImage {
         margin-left: 40px;
         margin-right: 40px;
-        text-align: center;
+    }
+
+    #iconsContainer {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #calculator {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #ingredientsTable {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #recipe {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #credit {
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     #footerIconContainer {
@@ -375,28 +430,8 @@ footer {
         align-items: center;
         text-align: center;
         gap: 16px;
-        margin-left: 40px;
-        margin-right: 40px;
     }
 
-    #headerText {
-        margin-left: 0;
-        align-items: center;
-    }
-
-    #headerImage {
-        height: auto;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    #mainContainerTwoImage {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-    }
 }
 
 @media (max-width: 530px) {
@@ -408,43 +443,76 @@ footer {
         height: 64px;
     }
 
-    #naviLinks {
-        margin-right: 16px;
-        flex-direction: column;
-        align-items: flex-end;
-        background-color: white;
-        position: absolute;
-        top: 100px;
-        right: 0;
-        width: 200px;
-        box-shadow: 0 2px 4px 1px lightgray;
-        padding: 16px;
+    #datenschutzLink {
         display: none;
     }
 
-    header {
-        margin-left: 16px;
-        margin-right: 16px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-    }
-
-    #mainContainerOneBoxes {
-        margin-left: 16px;
-        margin-right: 16px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #mainContainerTwoBox {
-        margin-left: 16px;
-        margin-right: 16px;
-        flex-direction: column;
-        align-items: center;
+    #footerIconContainer {
+        display: none;
     }
 
     #menuButtonPosition {
         margin-right: 8px;
+    }
+
+    h1 {
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+
+    #headerImage {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    #iconsContainer {
+        margin-left: 16px;
+        margin-right: 16px;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    #clockIcon {
+        margin-top: 0;
+    }
+
+    #brainIcon {
+        margin-top: 0;
+    }
+
+    #calendarIcon {
+        margin-top: 0;
+    }
+
+    #calculator {
+        margin-left: 16px;
+        margin-right: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #ingredientsTable {
+        margin-left: 16px;
+        margin-right: 16px;
+        text-align: center;
+    }
+
+    #recipe {
+        margin-left: 16px;
+        margin-right: 16px;
+        text-align: center;
+    }
+
+    #credit {
+        margin-left: 16px;
+        margin-right: 16px;
+        text-align: center;
+    }
+
+    #profile {
+        display: flex;
+        justify-content: center;
     }
 }

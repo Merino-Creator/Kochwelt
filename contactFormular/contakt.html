@@ -1,53 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
-    <link rel="stylesheet" href="contactStyle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt</title>
+  <link rel="stylesheet" href="contactStyle.css">
+  <link rel="icon" href="/img/logo_small.png" type="image/png">
+  
 </head>
 
 <body>
+  <nav>
+    <div id="naviLogo">
+      <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
+    </div>
+    <div id="naviLinks">
+      <a href="/index.html">Start</a>
+      <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
+      <a href="/contactFormular/contakt.html">Kontakt</a>
+      <a href="/impressum/impressum.html">Impressum</a>
+    </div>
+  </nav>
 
-    <nav>
-        <div id="naviLogo">
-            <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
-        </div>
-        <div id="naviLinks">
-            <a href="/index.html">Start</a>
-            <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
-            <a href="/contactFormular/contakt.html">Kontakt</a>
-            <a href="/impressum/impressum.html">Impressum</a>
-        </div>
-    </nav>
+  <header>
+    <div></div>
+  </header>
 
-    <main>
-        <div id="contactFormular">
-            <h2>Kontaktiere uns</h2>
-            <h3>Dein Name:</h3>
-            <input id="nameBox" type="text">
-            <h3>Deine E-Mail:</h3>
-            <input id="mailBox" type="text">
-            <h3>Deine Nachricht:</h3>
-            <input id="messageBox" type="text">
-            <div id="buttonContainer">
-                <button id="button">Abschicken</button>
-            </div>
-        </div>
-    </main>
+  <main>
+    <form onsubmit="sendMail(event)" action="https://formspree.io/f/mgvnlewo" method="POST">
+      <div id="contactFormular">
+        <h2>Kontaktiere uns</h2>
 
-    <footer>
-        <div id="naviLogo">
-            <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
+        <h3>Dein Name:</h3>
+        <input id="nameBox" type="text">
+        <h3>Deine E-Mail:</h3>
+        <input id="mailBox" type="email" name="email">
+        <h3>Deine Nachricht:</h3>
+        <input id="messageBox" type="text" name="message">
+        <div id="buttonContainer">
+          <button id="button" type="submit">Abschicken</button>
         </div>
-        <div id="footerIconContainer">
-            <img id="footerIcon" src="/img/icons/square-facebook-brands-solid-full.svg" alt="facebook logo">
-            <img id="footerIcon" src="/img/icons/square-instagram-brands-solid-full.svg" alt="instagram logo">
-            <img id="footerIcon" src="/img/icons/square-x-twitter-brands-solid-full.svg" alt="X logo">
-        </div>
-    </footer>
+      </div>
+  </main>
 
+  <footer>
+    <div id="naviLogo">
+      <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
+    </div>
+    <div id="datenschutzLink">
+      <a href="/datenschutz/datenschutz.html">
+        <p>Datenschutz</p>
+      </a>
+    </div>
+    <div id="footerIconContainer">
+      <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img id="footerIcon"
+          src="/img/icons/square-facebook-brands-solid-full.svg" alt="facebook logo"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img id="footerIcon"
+          src="/img/icons/square-instagram-brands-solid-full.svg" alt="instagram logo"></a>
+      <a href="https://x.com/" target="_blank"><img id="footerIcon"
+          src="/img/icons/square-x-twitter-brands-solid-full.svg" alt="X logo"></a>
+    </div>
+  </footer>
 </body>
-
+  <script src="contactScript.js" defer></script>
 </html>

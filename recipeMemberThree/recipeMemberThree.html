@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rezept: Zutaten & Zubereitung</title>
+  <link rel="stylesheet" href="/recipeMemberThree/recipeMemberThree.css" />
+  <script src="/recipeMemberThree/recipeMemeberThree.js" defer></script>
+  <link rel="icon" href="/img/logo_small.png" type="image/png">
+</head>
+
+<body>
+
+  <main class="overlay">
+
+    <nav>
+      <iframe title="header" src="/header/header_frame.html" frameborder="0"></iframe>
+    </nav>
+
+    <header class="header">
+      <h1 id="rezeptTitel">Rezept</h1>
+
+      <!-- Theme-Toggle: folgt System, kann per Button überschrieben werden -->
+      <button id="themeToggleBtn" class="buttonDarkmode" type="button">
+        Theme: System
+      </button>
+    </header>
+
+
+
+
+
+    <img class="sauerbratenPic" src="/img/sauerbraten.png" alt="Bild von Sauerbraten">
+
+
+
+    <div class="schwierigkeitZeitDatum">
+
+
+      <div class="cookTime"><img class="img" src="../img/icons/clock-regular.svg" alt="">
+        <p>15 Min</p>
+      </div>
+      <div class="howHeavy"><img class="img" src="../img/icons/brain-solid.svg" alt="">
+        <p>Mittel</p>
+      </div>
+
+      <div class="DateToday"><img class="img" src="../img/icons/calendar-alt-regular.svg" alt="">
+        <p>Datum</p>
+      </div>
+
+
+    </div>
+
+
+    <section class="controls">
+      <label for="AnzahlPersonen">Zutaten für</label>
+      <input id="AnzahlPersonen" type="number" value="4" min="1" step="1" />
+      <button id="calculateButton" type="button">Portionen anpassen</button>
+    </section>
+
+    <section id="zutaten"></section>
+    <section id="zubereitung"></section>
+  </main>
+
+  <iframe title="Footer" class="footer" src="/footer/footer_frame.html" frameborder="0"></iframe>
+</body>
+
+</html>
