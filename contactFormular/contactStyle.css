@@ -24,6 +24,14 @@ a:hover {
     text-underline-offset: 4px;
 }
 
+h2 {
+    margin-left: 16px;
+}
+
+h3 {
+    margin-left: 16px;
+}
+
 /* Button*/
 
 button {
@@ -318,5 +326,14 @@ footer {
 
     #menuButtonPosition {
         margin-right: 8px;
+    }
+
+    #contactFormular {
+        height: 400px;
+        width: 250px;
+    }
+
+    #messageBox {
+        width: 210px;
     }
 }
