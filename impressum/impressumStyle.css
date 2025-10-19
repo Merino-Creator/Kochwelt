@@ -24,12 +24,7 @@ a:hover {
     text-underline-offset: 4px;
 }
 
-.content {
-    height: 100vh;
-}
-
 /* Button*/
-
 button {
     background-color: green;
     border-radius: 4px;
@@ -76,17 +71,26 @@ nav {
     display: none;
 }
 
-header {
-    display: flex;
-}
-
 /*Main*/
 main {
     margin-left: 160px;
     margin-right: 160px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex: 1;
+}
+
+#impressumMemberOne {
+    width: 230px;
+}
+
+#impressumMemberTwo {
+    width: 230px;
+}
+
+#impressumMemberThree {
+    width: 230px;
 }
 
 /*Footer*/
@@ -98,8 +102,6 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
 }
 
 #naviLogoFooter {
@@ -125,6 +127,9 @@ footer {
 /*Responsive Menu*/
 
 .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     position: relative;
     overflow-x: hidden;
 }
@@ -254,6 +259,14 @@ footer {
 
     #footerIconContainer {
         margin-right: 40px;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
     }
 
 }
