@@ -11,18 +11,36 @@
 </head>
 
 <body>
-  <nav>
-    <div id="naviLogo">
-      <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
-    </div>
-    <div id="naviLinks">
-      <a href="/index.html">Start</a>
-      <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
-      <a href="/contactFormular/contakt.html">Kontakt</a>
-      <a href="/impressum/impressum.html">Impressum</a>
-    </div>
-  </nav>
+<div role="contentinfo" class="content">
+    <nav aria-label="Hauptnavigation">
+        <div id="naviLogoHeader">
+            <a href="/index.html" aria-current="page"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
+        </div>
 
+        <div id="naviLinks">
+            <a href="/index.html">Start</a>
+            <a href="#" onclick="randomRecipe()">Rezept des Tages</a>
+            <a href="/contactFormular/contakt.html">Kontakt</a>
+            <a href="/impressum/impressum.html">Impressum</a>
+        </div>
+
+        <div id="menuButtonPosition">
+            <p id="respMenuText" style="color: rgb(88, 88, 88);">MENU</p>
+            <button id="respMenuButton" onclick="toggleRespMenu()">☰</button>
+        </div>
+
+    </nav>
+
+    <div aria-controls="resp_menu" id="resp_menu" class="resp_menu_box resp_menu_closed">
+        <a href="/index.html">Start</a>
+        <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
+        <a href="/contactFormular/contakt.html">Kontakt</a>
+        <a href="/impressum/impressum.html">Impressum</a>
+        <a href="/datenschutz/datenschutz.html">Datenschutz</a>
+        <a href="https://www.facebook.com/?locale=de_DE">Facebook</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://x.com/">X</a>
+    </div>
   <main>
     <form onsubmit="sendMail(event)" action="https://formspree.io/f/mgvnlewo" method="POST">
       <div id="contactFormular">

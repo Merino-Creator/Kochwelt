@@ -148,3 +148,203 @@ footer {
     display: flex;
     justify-content: center;
 }
+/*Responsive Menu*/
+
+.content {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.resp_menu_box {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: 180px;
+    height: 250px;
+
+    position: absolute;
+    top: 100px;
+    right: 0;
+
+    transition: all 250ms ease-in-out;
+}
+
+.resp_menu_closed {
+    transform: translateX(100%);
+}
+
+#respMenuButton {
+    display: none;
+}
+
+#respMenuText {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    #naviLogoHeader {
+        margin-left: 80px;
+    }
+
+    #naviLinks {
+        margin-right: 80px;
+        gap: 16px;
+    }
+
+    header {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #naviLogoFooter {
+        margin-left: 80px;
+    }
+
+@media (max-width: 800px) {
+    #naviLinks {
+        display: none;
+    }
+    #naviLogoHeader {
+        margin-left: 80px;
+    }
+
+    #naviLinks {
+        margin-right: 80px;
+        gap: 16px;
+    }
+     #respMenuButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        font-size: large;
+        font-weight: bold;
+        background-color: lightgray;
+    }
+
+    #respMenuText {
+        display: flex;
+    }
+
+
+    header {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+     #footerIconContainer {
+        display: none;
+    }
+
+    #datenschutzLink {
+        display: none;
+    }
+}   
+
+@media (max-width: 700px) {
+    #naviLogoHeader {
+        margin-left: 40px;
+    }
+
+    #naviLinks {
+        margin-right: 40px;
+        gap: 12px;
+    }
+
+    header {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #mainContainerOneBoxes {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #mainContainerTwoBox {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #naviLogoFooter {
+        margin-left: 40px;
+    }
+}
+
+    #mainContainerOneBoxes {
+        margin-left: 40px;
+        margin-right: 40px;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: space-between;
+    }
+
+    #mainContainerTwoBox {
+        margin-left: 40px;
+        margin-right: 40px;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    #naviLogoFooter {
+        margin-left: 40px;
+    }
+}
+@media (max-width: 530px) {
+    #naviLinks {
+        display: none;
+    }
+
+    #responsiveMenu {
+        display: block;
+        position: relative;
+    }
+
+    #menuButtonPosition {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 40px;
+        gap: 12px;
+    }
+
+    #naviLogoFooter {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #footerIconContainer {
+        display: none;
+    }
+
+    #datenschutzLink {
+        display: none;
+    }
+}
+        margin-right: 40px;
+    }
+
+    #mainContainerOneBoxes {
+        margin-left: 40px;
+        margin-right: 40px;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    #mainContainerTwoBox {
+        margin-left: 40px;
+        margin-right: 40px;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    #naviLogoFooter {
+        margin-left: 40px;
+    }
+}
