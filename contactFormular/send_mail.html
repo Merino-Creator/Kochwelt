@@ -5,21 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gesendet</title>
     <link rel="stylesheet" href="contactStyle.css">
+    <link rel="stylesheet" href="./send_mail.css">
     <link rel="icon" href="/img/logo_small.png" type="image/png">
   </head>
 
   <body>
+  <div class="content">
+
     <nav>
-      <div id="naviLogo">
+      <div id="naviLogoHeader">
         <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
       </div>
       <div id="naviLinks">
         <a href="/index.html">Start</a>
-        <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
+        <a href="#" onclick="randomRecipe()">Rezept des Tages</a>
         <a href="/contactFormular/contakt.html">Kontakt</a>
         <a href="/impressum/impressum.html">Impressum</a>
       </div>
+
+      <div role="navigationbutton" id="menuButtonPosition">
+        <p id="respMenuText" style="color: rgb(88, 88, 88);">MENU</p>
+        <button id="respMenuButton" onclick="toggleRespMenu()">☰</button>
+      </div>
     </nav>
+
+    <div role="navigationresponsivemenu" id="resp_menu" class="resp_menu_box resp_menu_closed">
+      <a href="/index.html">Start</a>
+      <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
+      <a href="/contactFormular/contakt.html">Kontakt</a>
+      <a href="/impressum/impressum.html">Impressum</a>
+      <a href="/datenschutz/datenschutz.html">Datenschutz</a>
+      <a href="https://www.facebook.com/?locale=de_DE">Facebook</a>
+      <a href="https://www.instagram.com/">Instagram</a>
+      <a href="https://x.com/">X</a>
+    </div>
 
     <header>
       <div>
