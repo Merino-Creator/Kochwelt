@@ -71,26 +71,23 @@ nav {
     display: none;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    margin-top: 40px;
+}
+
+h1 {
+    width: 221px;
+}
+
 /*Main*/
 main {
-    margin-left: 160px;
-    margin-right: 160px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex: 1;
-}
-
-#impressumMemberOne {
-    width: 230px;
-}
-
-#impressumMemberTwo {
-    width: 230px;
-}
-
-#impressumMemberThree {
-    width: 230px;
 }
 
 /*Footer*/
