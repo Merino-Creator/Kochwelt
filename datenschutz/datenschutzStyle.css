@@ -160,6 +160,10 @@ footer {
     display: none;
 }
 
+#menuButtonPosition {
+    display: none;
+}
+
 
 @media (max-width: 1000px) {
     #naviLogoHeader {
@@ -233,17 +237,6 @@ footer {
 
     #datenschutzLink {
         display: none;
-    }
-}
-
-@media (max-width: 700px) {
-    #generator_results {
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-
-    #menuButtonPosition {
-        margin-right: 40px;
     }
 }
 
