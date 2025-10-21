@@ -217,6 +217,7 @@ footer {
 
     #footerIconContainer {
         margin-right: 40px;
+        display: none;
     }
 
     #generator_results {
@@ -228,10 +229,6 @@ footer {
         margin-left: 0;
         display: flex;
         justify-content: center;
-    }
-
-    #footerIconContainer {
-        display: none;
     }
 
     #datenschutzLink {
