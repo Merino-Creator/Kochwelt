@@ -37,6 +37,12 @@ h3 {
     margin-left: 0px;
 }
 
+td {
+    padding-left: 12px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
 /* Button*/
 
 button {
@@ -500,13 +506,17 @@ footer {
     #ingredientsTable {
         margin-left: 16px;
         margin-right: 16px;
+        text-align: start;
+    }
+
+    h2 {
         text-align: center;
     }
 
     #recipe {
         margin-left: 16px;
         margin-right: 16px;
-        text-align: center;
+        text-align: start;
     }
 
     #credit {
