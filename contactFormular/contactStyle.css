@@ -49,19 +49,39 @@ button:hover {
     background-color: rgb(2, 117, 2);
 }
 
-/*Navigation*/ 
-
+/*Navigation*/
 nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 100px;
     box-shadow: 0 2px 4px 1px lightgray;
 }
 
+#naviLogoHeader {
+    margin-left: 160px;
+    display: flex;
+    align-items: center;
+}
+
 #naviImage {
     height: 80px;
+}
+
+#naviLinks {
+    margin-bottom: 4px;
+    margin-right: 160px;
+    gap: 24px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#responsiveNavLinks {
+    display: none;
+}
+
+#menuButtonPosition {
+    display: none;
 }
 
 /*Main*/
@@ -110,7 +130,7 @@ main {
 footer {
     width: 100%;
     height: 100px;
-    background-color:lightgray;
+    background-color: lightgray;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -118,10 +138,28 @@ footer {
 }
 
 #naviLogoFooter {
+    margin-left: 160px;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
+
+#footerIconContainer {
+    margin-right: 160px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+#footerIcon {
+    height: 48px;
+}
+
+#datenschutzLink {
+    display: flex;
+    justify-content: center;
+}
+
+/*Responsive Menu*/
 
 .content {
     display: flex;
@@ -129,6 +167,36 @@ footer {
     height: 100%;
     position: relative;
     overflow-x: hidden;
+}
+
+.resp_menu_box {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: 180px;
+    height: 250px;
+
+    position: absolute;
+    top: 100px;
+    right: 0;
+
+    transition: all 125ms ease-in-out;
+}
+
+.resp_menu_closed {
+    transform: translateX(100%);
+}
+
+#respMenuButton {
+    display: none;
+}
+
+#respMenuText {
+    display: none;
 }
 
 @media (max-width: 1000px) {
