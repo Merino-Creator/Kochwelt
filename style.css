@@ -140,6 +140,10 @@ main {
     border-radius: 8px;
 }
 
+#mainContainerOneImages:hover {
+    border: solid 2px green;
+}
+
 #mainContainerTwo {
     display: flex;
     flex-direction: column;
@@ -161,6 +165,10 @@ main {
 #mainContainerTwoImage {
     height: 240px;
     border-radius: 8px;
+}
+
+#mainContainerTwoImage:hover {
+    border: solid 2px green;
 }
 
 /*Footer*/
