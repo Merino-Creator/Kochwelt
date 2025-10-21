@@ -40,22 +40,39 @@ button:hover {
     background-color: rgb(2, 117, 2);
 }
 
-/*Navigation*/ 
+/*Navigation*/
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     height: 100px;
     box-shadow: 0 2px 4px 1px lightgray;
 }
 
 #naviLogoHeader {
+    margin-left: 160px;
     display: flex;
     align-items: center;
 }
 
 #naviImage {
     height: 80px;
+}
+
+#naviLinks {
+    margin-bottom: 4px;
+    margin-right: 160px;
+    gap: 24px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#responsiveNavLinks {
+    display: none;
+}
+
+#menuButtonPosition {
+    display: none;
 }
 
 /*Main*/
@@ -71,7 +88,7 @@ main {
 footer {
     width: 100%;
     height: 100px;
-    background-color:lightgray;
+    background-color: lightgray;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -79,10 +96,28 @@ footer {
 }
 
 #naviLogoFooter {
+    margin-left: 160px;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
+
+#footerIconContainer {
+    margin-right: 160px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+#footerIcon {
+    height: 48px;
+}
+
+#datenschutzLink {
+    display: flex;
+    justify-content: center;
+}
+
+/*Responsive Menu*/
 
 .content {
     display: flex;
@@ -92,9 +127,76 @@ footer {
     overflow-x: hidden;
 }
 
+.resp_menu_box {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: 180px;
+    height: 250px;
+
+    position: absolute;
+    top: 100px;
+    right: 0;
+
+    transition: all 125ms ease-in-out;
+}
+
+.resp_menu_closed {
+    transform: translateX(100%);
+}
+
+#respMenuButton {
+    display: none;
+}
+
+#respMenuText {
+    display: none;
+}
+
+/* Responsiveness */
+
+@media (max-width: 1000px) {
+    #naviLogoHeader {
+        margin-left: 80px;
+    }
+
+    #naviLinks {
+        margin-right: 80px;
+        gap: 16px;
+    }
+
+    main {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #footerIconContainer {
+        margin-right: 80px;
+    }
+
+    #naviLogoFooter {
+        margin-left: 80px;
+    }
+
+}
+
 @media (max-width: 800px) {
     #naviLinks {
         display: none;
+    }
+
+    #respMenuButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        font-size: large;
+        font-weight: bold;
+        background-color: lightgray;
     }
 
     #respMenuText {
@@ -102,10 +204,15 @@ footer {
     }
 
     #naviLogoHeader {
+        margin-left: 40px;
         display: flex;
         justify-content: center;
     }
 
+    #responsiveMenu {
+        display: block;
+        position: relative;
+    }
 
     #menuButtonPosition {
         display: flex;
@@ -113,6 +220,11 @@ footer {
         align-items: center;
         margin-right: 40px;
         gap: 12px;
+    }
+
+    main {
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     #naviLogoFooter {
@@ -132,6 +244,17 @@ footer {
 
 
 @media (max-width: 700px) {
+    #naviLogoHeader {
+        margin-left: 40px;
+    }
+
+    #menuButtonPosition {
+        margin-right: 40px;
+    }
+
+    #footerIconContainer {
+        margin-right: 40px;
+    }
 
     main {
         flex-direction: column;
@@ -144,27 +267,19 @@ footer {
 }
 
 @media (max-width: 530px) {
-
-    #naviImage {
-        height: 64px;
+    #naviLogoHeader {
+        margin-left: 8px;
     }
 
-    #naviLinks {
-        margin-right: 16px;
-        flex-direction: column;
-        align-items: flex-end;
-        background-color: white;
-        position: absolute;
-        top: 100px;
-        right: 0;
-        width: 200px;
-        box-shadow: 0 2px 4px 1px lightgray;
-        padding: 16px;
-        display: none;
+    #naviImage {
+         height: 56px;
+    }
+
+    #menuButtonPosition {
+        margin-right: 8px;
     }
 
     main {
         text-align: center;
     }
-
 }

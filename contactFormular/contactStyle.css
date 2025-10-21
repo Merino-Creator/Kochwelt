@@ -199,6 +199,8 @@ footer {
     display: none;
 }
 
+/* Responsiveness */
+
 @media (max-width: 1000px) {
     #naviLogoHeader {
         margin-left: 80px;
