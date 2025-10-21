@@ -105,11 +105,17 @@ main {
 #nameBox {
     margin-left: 16px;
     margin-right: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
 }
 
 #mailBox {
     margin-left: 16px;
     margin-right: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
 }
 
 #messageBox {
@@ -118,6 +124,9 @@ main {
     margin-left: 16px;
     margin-right: 16px;
     margin-bottom: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
 }
 
 #buttonContainer {
