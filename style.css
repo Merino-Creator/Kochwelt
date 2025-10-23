@@ -138,10 +138,11 @@ main {
     height: 160px;
     width: 180px;
     border-radius: 8px;
+    border: solid 2px green;
 }
 
 #mainContainerOneImages:hover {
-    border: solid 2px green;
+    border: solid 2px white;
 }
 
 #mainContainerTwo {
@@ -165,10 +166,11 @@ main {
 #mainContainerTwoImage {
     height: 240px;
     border-radius: 8px;
+    border: solid 2px green;
 }
 
 #mainContainerTwoImage:hover {
-    border: solid 2px green;
+    border: solid 2px white;
 }
 
 /*Footer*/
