@@ -1,335 +1,531 @@
-/* =========
-   Grundlayout & Design-Tokens
-   ========= */
-:root{
-  /* Light-Default (wird ggf. von prefers-color-scheme: dark überschrieben) */
-  --bg: #f4f6f8;
-  --card: #ffffff;
-  --text: #0f172a;
-  --muted: #6b778d;
-  --primary: #2d58b7;
-  --radius: 14px;
-  --shadow: 0 10px 30px rgba(2, 6, 23, .08);
-
-  /* Zebra-Töne + Border */
-  --tone-1: #fefefe;
-  --tone-2: #f6f7fb;
-  --zebra-border: #e0e3ea;
-
-  /* Zubereitungskarte */
-  --prep-bg: #ffffff;
-  --prep-border: #e9edf2;
-}
-
-/* System-Dark als Standard, falls kein Override via data-theme */
-
-@media (prefers-color-scheme: dark){
-  :root{
-    --bg: #0b1220;
-    --card: #0f172a;
-    --text: #e6e8ee;
-    --muted: #969180;
-    --primary: #60a5fa;
-    --shadow: 0 10px 30px rgba(0,0,0,.45);
-
-    --tone-1: #121a2c;
-    --tone-2: #0e1628;
-    --zebra-border: #2a3855;
-
-    --prep-bg: #0e162a;
-    --prep-border: #213055;
-  }
-}
-
-/* Explizite Overrides per Button:
-   body[data-theme="light"] / body[data-theme="dark"] */
-
-
-body[data-theme="light"]{
-
-
-  --bg: #f4f6f8;
-  --card: #ffffff;
-  --text: #0f172a;
-  --muted: #6b778d;
-  --primary: #2d58b7;
-  --shadow: 0 10px 30px rgba(2, 6, 23, .08);
-  --tone-1: #fefefe;
-  --tone-2: #f6f7fb;
-  --zebra-border: #e0e3ea;
-  --prep-bg: #ffffff;
-  --prep-border: #e9edf2;
-}
-body[data-theme="dark"]{
-  --bg: #0b1220;
-  --card: #0f172a;
-  --text: #e6e8ee;
-  --muted: #93a3b8;
-  --primary: #60a5fa;
-  --shadow: 0 10px 30px rgba(0,0,0,.45);
-  --tone-1: #121a2c;
-  --tone-2: #0e1628;
-  --zebra-border: #2a3855;
-  --prep-bg: #0e162a;
-  --prep-border: #213055;
-}
-
-/* =========
-   Base
-   ========= */
-
-
-   /* Das ist eine globale CSS-Regel (ein „Reset“): */
-*, *::before, *::after { box-sizing: border-box; }
-
-
-
-html, body { height: 100%; }
-body{
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 24px;
-}
-
-.overlay{
-  width: min(100%, 980px);
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  background: var(--card);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 24px 24px 16px;
-}
-
-/* =========
-   Header
-   ========= */
-
-
-.nav {
+body {
+    margin: 0;
+    max-width: 1920px;
     display: flex;
-    
-    width: 100vw;
-    width: 100vh;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+}
+
+@font-face {
+    font-family: Raleway; src: url("/fonts/raleway/Raleway-Italic-VariableFont_wght.ttf");
+    font-family: Raleway; font-weight: bold; src: url("/fonts/raleway/Raleway-VariableFont_wght.ttf");
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 4px;
+}
+
+h1 {
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 60px;
+}
+
+h2 {
+    margin-left: 0px;
+}
+
+h3 {
+    margin-left: 0px;
+}
+
+td {
+    padding-left: 12px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+/* Button*/
+
+button {
+    background-color: green;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    height: 32px;
+    width: 120px;
+    box-shadow: 1px 1px 2px 1px black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(2, 117, 2);
+}
+
+/*Navigation*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 2px 4px 1px lightgray;
+}
+
+#naviLogoHeader {
+    margin-left: 160px;
+    display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    
 }
 
-iframe {
-  width: 100%;
+#naviImage {
+    height: 80px;
 }
 
-
-
-.navLinks {  
-  
-  display: flex;
-  min-width: 10px;
-
-    
-}
-
-
-
-
-.header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-}
-#rezeptTitel{
-  margin: 0;
-  font-size: clamp(1.4rem, 2vw, 2rem);
-  letter-spacing: .2px;
-}
-
-.buttonDarkmode{
-  padding: 10px 14px;
-  border: 0;
-  border-radius: 10px;
-  background: var(--primary);
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform .05s ease, filter .2s ease;
-}
-.buttonDarkmode:hover{ filter: brightness(1.05); }
-.buttonDarkmode:active{ transform: translateY(1px); }
-
-
-
-.sauerbratenPic { 
-  
-  display: flex;
-  max-width: auto;}
-
-
-  .schwierigkeitZeitDatum {
-
+#naviLinks {
+    margin-right: 160px;
+    margin-bottom: 4px;
+    gap: 24px;
     display: flex;
-    justify-content: start, space-between;
-    height: 55px;
-    
-  }
+    align-items: flex-end;
+}
 
-  .cookTime, .howHeavy, .DateToday {
-    
+#menuButtonPosition {
+    display: none;
+}
+
+/*Header*/
+header {
     display: flex;
-    margin-right: 10px;
-    align-content: center;
+    flex-direction: column;
+}
+
+#headerImage {
+    background-image: url(/img/sauerbraten.png);
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 160px;
+    margin-right: 160px;
+    border-radius: 8px;
+}
+
+#iconsContainer {
+    margin-left: 160px;
+    margin-right: 160px;
+    display: flex;
+    gap: 24px;
+}
+
+.iconImage {
+    height: 20px;
+}
+
+#clockIcon {
+    display: flex;
+    align-items: center;
     justify-content: space-around;
-    gap: 10px;
-  
-    background-color: rgba(238, 236, 236 );
-    border-radius: 10px;
-    padding: 10px;
-   
-  
-  }
-
-  .img {width: 20px;}
-
-
-
-
-  
-
-
-
-/* =========
-   Controls
-   ========= */
-
-
-.controls{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 12px 16px;
-  padding: 10px 12px;
- 
-}
-.controls label{ color: var(--muted); }
-.controls input[type="number"]{
-  width: 100px;
-  appearance: textfield;
-  padding: 10px 12px;
-  border: 1px solid color-mix(in oklab, var(--prep-border), var(--text) 12%);
-  border-radius: 10px;
-  background: var(--card);
-  color: var(--text);
-  font-size: 16px;
-}
-.controls button{
-  padding: 10px 14px;
-  border: 0;
-  border-radius: 0px;
-  background: #008000 ;
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform .05s ease, filter .2s ease;
-}
-.controls button:hover{ filter: brightness(1.05); }
-.controls button:active{ transform: translateY(1px); }
-
-
-
-
-/* =========
-   Karten / Sektionen
-   ========= */
-section#zutaten,
-section#zubereitung{
-  background: var(--card);
-  border: 1px solid var(--prep-border);
-  border-radius: calc(var(--radius) - 2px);
-  padding: 16px 18px;
+    width: 120px;
+    height: 28px;
+    margin-top: 32px;
+    background-color: rgba(238, 236, 236, 0.986);
+    border-radius: 8px;
 }
 
-#zutaten h2, #zubereitung h2{
-  margin: 0 0 8px;
-  font-size: 1.1rem;
-  color: var(--muted);
-  font-weight: 700;
-  letter-spacing: .3px;
+#brainIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 120px;
+    height: 28px;
+    margin-top: 32px;
+    background-color: rgba(238, 236, 236, 0.986);
+    border-radius: 8px;
 }
 
-/* =========
-   Zutatenliste
-   ========= */
-.zutatenListe{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+#calendarIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 120px;
+    height: 28px;
+    margin-top: 32px;
+    background-color: rgba(238, 236, 236, 0.986);
+    border-radius: 8px;
+}
+
+/*Main*/
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#calculator {
+    margin-top: 56px;
+    margin-left: 160px;
+    display: flex;
+    gap: 12px;
+    height: fit-content;
+}
+
+label {
+    display: flex;
+    align-items: center;
+}
+
+#ingredientsTable {
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 12px;
+}
+
+tr {
+    height: 28px;
+    border-radius: 8px;
+}
+
+.tableRowColorOne {
+    background-color: lightgray;
+}
+
+#recipe {
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+#credit {
+    margin-left: 160px;
+    margin-bottom: 40px;
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#naviLogoFooter {
+    margin-left: 160px;
+}
+
+#footerIconContainer {
+    margin-right: 160px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+#footerIcon {
+    height: 48px;
+}
+
+#datenschutzLink {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+#profilePicture {
+    height: auto;
+    width: 64px;
+    border-radius: 50%;     
+}
+
+/*Responsive Menu*/
+
+.content {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.resp_menu_box {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: 180px;
+    height: 250px;
+
+    position: absolute;
+    top: 100px;
+    right: 0;
+
+    transition: all 250ms ease-in-out;
+}
+
+.resp_menu_closed {
+    transform: translateX(100%);
+}
+
+#respMenuButton {
+    display: none;
+}
+
+#respMenuText {
+    display: none;
+}
+
+/* Responsiveness */ 
+
+@media (max-width: 1000px) {
+    #naviLogoHeader {
+        margin-left: 80px;
+    }
+
+    #naviLinks {
+        margin-right: 80px;
+        gap: 16px;
+    }
+
+    h1 {
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+
+    #headerImage {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #iconsContainer {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #calculator {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #ingredientsTable {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #recipe {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #credit {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #naviLogoFooter {
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 800px) {
+    #naviLinks {
+        display: none;
+    }
+
+    #respMenuButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        font-size: large;
+        font-weight: bold;
+        background-color: lightgray;
+    }
+
+    #respMenuText {
+        display: flex;
+    }
+
+    #naviLogoHeader {
+        display: flex;
+        justify-content: center;
+        margin-left: 80px;
+    }
+
+    #menuButtonPosition {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 80px;
+        gap: 12px;
+    }
+
+    #naviLogoFooter {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #footerIconContainer {
+        display: none;
+    }
+
+    #datenschutzLink {
+        display: none;
+    }
 }
 
 
-.zutatenListe li{
-  border: 1px solid transparent;
-  border-radius: 12px;
-  padding: 10px 12px;
-  background: var(--tone-1);          /* hell */
+@media (max-width: 700px) {
+
+    #menuButtonPosition {
+        margin-right: 40px;
+    }
+
+    #headerImage {
+        margin-left: 40px;
+        margin-right: 40px;
+        width: 300px;
+    }
+
+    #naviLogoHeader {
+        margin-left: 40px;
+    }
+
+   h1 {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    #headerImage {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #iconsContainer {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #calculator {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #ingredientsTable {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #recipe {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #credit {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #footerIconContainer {
+        margin-right: 40px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+
 }
 
-/* Zebra ab ERSTEM Eintrag (Rindfleisch) */
-.zutatenListe li:nth-child(odd){
-  background: var(--tone-2);          /* grau */
-  border-color: var(--zebra-border);  /* graue Umrandung */
+@media (max-width: 530px) {
+    #naviLogoHeader {
+        margin-left: 8px;
+    }
+
+    #naviImage {
+        height: 64px;
+    }
+
+    #datenschutzLink {
+        display: none;
+    }
+
+    #footerIconContainer {
+        display: none;
+    }
+
+    #menuButtonPosition {
+        margin-right: 8px;
+    }
+
+    h1 {
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+
+    #headerImage {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    #iconsContainer {
+        margin-left: 16px;
+        margin-right: 16px;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    #clockIcon {
+        margin-top: 0;
+    }
+
+    #brainIcon {
+        margin-top: 0;
+    }
+
+    #calendarIcon {
+        margin-top: 0;
+    }
+
+    #calculator {
+        margin-left: 16px;
+        margin-right: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #ingredientsTable {
+        margin-left: 16px;
+        margin-right: 16px;
+        text-align: start;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #recipe {
+        margin-left: 16px;
+        margin-right: 16px;
+        text-align: start;
+    }
+
+    #credit {
+        margin-left: 16px;
+        margin-right: 16px;
+        text-align: center;
+    }
+
+    #profile {
+        display: flex;
+        justify-content: center;
+    }
 }
-
-.zutatenListe .amount{ min-width: 110px; font-weight: 700; }
-.zutatenListe .title{ flex: 1; }
-
-/* =========
-   Zubereitung
-   ========= */
-.zubereitungListe{
-  margin: 0;
-  padding-left: 22px; /* für OL-Zahlen */
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.zubereitungListe li{
-  background: var(--prep-bg);
-  border: 1px solid var(--prep-border);
-  border-radius: 12px;
-  padding: 12px 14px;
-}
-
-/* =========
-   Footer
-   ========= */
-.footer{
-  display: block;
-  width: min(100%, 980px);
-  height: 120px;
-  margin: 12px auto 0;
-  border: 0;
-  border-radius: calc(var(--radius) - 2px);
-  box-shadow: var(--shadow);
-}
-
-/* =========
-   Responsive
-   ========= */
-@media (max-width: 640px){
-  .controls{ justify-content: center; }
-  .zutatenListe .amount{ min-width: 90px; }
-}
-
-

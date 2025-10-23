@@ -40,4 +40,4 @@ function randomRecipe() {
     const randomPage = pages[randomIndex];
 
     window.location.href = randomPage;
-  }
+}
