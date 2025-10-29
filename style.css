@@ -37,12 +37,10 @@ h2 {
 }
 
 /* PageWrapper*/
-#pageWrapper {
+.pageWrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   max-width: 1920px;
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -64,11 +62,17 @@ button:hover {
 
 /*Navigation*/
 nav {
-    display: flex;
-    justify-content: space-between;
     width: 100%;
     height: 100px;
     box-shadow: 0 2px 4px 1px lightgray;
+}
+
+#naviContent {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 #naviLogoHeader {
@@ -123,15 +127,20 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    flex: 1;
 }
 
 #mainContainerOne {
+    background-color: lightgray;
+}
+
+#mainContainerOneContent {
     display: flex;
     flex-direction: column;
     background-color: lightgray;
     text-align: center;
     padding-top: 40px;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 #mainContainerOneBoxes {
@@ -187,10 +196,15 @@ footer {
     width: 100%;
     height: 100px;
     background-color: lightgray;
+}
+
+#footerContent {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 100px;
 }
 
 #naviLogoFooter {
@@ -221,6 +235,7 @@ footer {
 .content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 100%;
     position: relative;
     overflow-x: hidden;
