@@ -153,10 +153,15 @@ footer {
     width: 100%;
     height: 100px;
     background-color: lightgray;
+}
+
+#footerContent {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 100px;
 }
 
 #naviLogoFooter {
