@@ -11,138 +11,150 @@
 </head>
 
 <body>
-<div class="content">
-    <nav>
-        <div id="naviLogoHeader">
-            <a href="/index.html" aria-current="page"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
+
+    <div id="pageWrapper">
+        <div class="content">
+            <nav>
+                <div id="naviLogoHeader">
+                    <a href="/index.html" aria-current="page"><img id="naviImage" src="/img/logo.png"
+                            alt="Kochwelt Logo"></a>
+                </div>
+
+                <div id="naviLinks">
+                    <a href="/index.html">Start</a>
+                    <a href="#" onclick="randomRecipe()">Rezept des Tages</a>
+                    <a href="/contactFormular/contakt.html">Kontakt</a>
+                    <a href="/impressum/impressum.html">Impressum</a>
+                </div>
+
+                <div role="navigationbutton" id="menuButtonPosition">
+                    <p id="respMenuText" style="color: rgb(88, 88, 88);">MENU</p>
+                    <button id="respMenuButton" onclick="toggleRespMenu()">☰</button>
+                </div>
+
+            </nav>
+
+            <div role="navigationresponsivemenu" id="resp_menu" class="resp_menu_box resp_menu_closed">
+                <a href="/index.html">Start</a>
+                <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
+                <a href="/contactFormular/contakt.html">Kontakt</a>
+                <a href="/impressum/impressum.html">Impressum</a>
+                <a href="/datenschutz/datenschutz.html">Datenschutz</a>
+                <a href="https://www.facebook.com/?locale=de_DE">Facebook</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://x.com/">X</a>
+            </div>
+
+            <header>
+                <h1>Burger mit Camembert</h1>
+                <div id="headerImage"></div>
+                <div id="iconsContainer">
+                    <div id="clockIcon">
+                        <img class="iconImage" src="/img/icons/clock-regular.svg" alt="">
+                        <p>20 Min.</p>
+                    </div>
+                    <div id="brainIcon">
+                        <img class="iconImage" src="/img/icons/brain-solid.svg" alt="">
+                        <p>einfach</p>
+                    </div>
+                    <div id="calendarIcon">
+                        <img class="iconImage" src="/img/icons/calendar-alt-regular.svg" alt="">
+                        <p>01.10.2025</p>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <div id="calculator">
+                    <label for="peopleCount">Zutaten für:</label>
+                    <input id="peopleCount" type="number" min="1" placeholder="1" required>
+                    <button id="button" onclick="changeAmount()">Portionen</button>
+                </div>
+                <table id="ingredientsTable">
+                    <tr class="tableRowColorOne">
+                        <td data-original="60">60 g Feldsalat</td>
+                    </tr>
+                    <tr>
+                        <td data-original="2">2 Laugenbrötchen</td>
+                    </tr>
+                    <tr class="tableRowColorOne">
+                        <td data-original="80">80 g Camembert</td>
+                    </tr>
+                    <tr>
+                        <td data-original="240">240 g Rinderhackfleisch</td>
+                    </tr>
+                    <tr class="tableRowColorOne">
+                        <td data-original="10">10 g Wildpreiselbeeren</td>
+                    </tr>
+                    <tr>
+                        <td data-original="1">1 EL Pflanzenöl</td>
+                    </tr>
+                    <tr class="tableRowColorOne">
+                        <td data-original="20">20 g Röstzwiebeln</td>
+                    </tr>
+                    <tr>
+                        <td data-original="2">2 TL Körniger Senf</td>
+                    </tr>
+                </table>
+
+                <div id="recipe">
+                    <h2>Zubereitung</h2>
+                    <div id="makingOff">
+                        <p>
+                            1. Den Salat waschen und abtropfen lassen.
+                            <br>2. Das Rinderhackfleisch in einer mittelgroßen Schüssel mit Salz und Pfeffer würzen und
+                            gut mischen.
+                            <br>3. Das Hackfleisch zu Burger-Patties formen.
+                            <br>4. Käse in feine Scheiben schneiden.
+                            <br>5. In einer Pfanne Pflanzenöl auf mittlerer bis hoher Stufe erhitzen und Burger-Patties
+                            2 Minuten von jeder Seite braten.
+                            <br>6. Hitze reduzieren und Camembert auf den Patties verteilen. Bei geschlossenem Deckel
+                            weiter braten, bis der Käse geschmolzen ist.
+                            <br>7. Laugenbrötchen halbieren und beide Hälften mit körnigem Senf bestreichen.
+                            <br>8. Laugenbrötchen mit Feldsalat, Camembert-Patty, Preiselbeeren und Röstzwiebeln belegen
+                            und genießen.
+                        <h4> Guten Appetit! </h4>
+                        </p>
+                    </div>
+                </div>
+
+                <div id="credit">
+                    <h3>Rezept von</h3>
+                    <div id="profile">
+                        <img src="/img/ProfilePicture.jpg" id="profilePicture" alt="profilepicture">
+                        <p>Daniel Stürmer</p>
+                    </div>
+                </div>
+
+            </main>
+
+            <footer>
+                <div id="naviLogoFooter">
+                    <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
+                </div>
+                <div id="datenschutzLink">
+                    <a href="/datenschutz/datenschutz.html">
+                        <p>Datenschutz</p>
+                    </a>
+                    <a href="/impressum/impressum.html">
+                        <p>Impressum</p>
+                    </a>
+                </div>
+                <div id="footerIconContainer">
+                    <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img id="footerIcon"
+                            src="/img/icons/square-facebook-brands-solid-full.svg" alt="facebook logo"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img id="footerIcon"
+                            src="/img/icons/square-instagram-brands-solid-full.svg" alt="instagram logo"></a>
+                    <a href="https://x.com/" target="_blank"><img id="footerIcon"
+                            src="/img/icons/square-x-twitter-brands-solid-full.svg" alt="X logo"></a>
+                </div>
+            </footer>
         </div>
 
-        <div id="naviLinks">
-            <a href="/index.html">Start</a>
-            <a href="#" onclick="randomRecipe()">Rezept des Tages</a>
-            <a href="/contactFormular/contakt.html">Kontakt</a>
-            <a href="/impressum/impressum.html">Impressum</a>
-        </div>
-
-        <div role="navigationbutton" id="menuButtonPosition">
-            <p id="respMenuText" style="color: rgb(88, 88, 88);">MENU</p>
-            <button id="respMenuButton" onclick="toggleRespMenu()">☰</button>
-        </div>
-        
-    </nav>
-
-    <div role="navigationresponsivemenu" id="resp_menu" class="resp_menu_box resp_menu_closed">
-        <a href="/index.html">Start</a>
-        <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
-        <a href="/contactFormular/contakt.html">Kontakt</a>
-        <a href="/impressum/impressum.html">Impressum</a>
-        <a href="/datenschutz/datenschutz.html">Datenschutz</a>
-        <a href="https://www.facebook.com/?locale=de_DE">Facebook</a>
-        <a href="https://www.instagram.com/">Instagram</a>
-        <a href="https://x.com/">X</a>
     </div>
-
-    <header>
-        <h1>Burger mit Camembert</h1>
-        <div id="headerImage"></div>
-        <div id="iconsContainer">
-            <div id="clockIcon">
-                <img class="iconImage" src="/img/icons/clock-regular.svg" alt="">
-                <p>20 Min.</p>
-            </div>
-            <div id="brainIcon">
-                <img class="iconImage" src="/img/icons/brain-solid.svg" alt="">
-                <p>einfach</p>
-            </div>
-            <div id="calendarIcon">
-                <img class="iconImage" src="/img/icons/calendar-alt-regular.svg" alt="">
-                <p>01.10.2025</p>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <div id="calculator">
-            <label for="peopleCount">Zutaten für:</label>
-            <input id="peopleCount" type="number" min="1" placeholder="1" required>
-            <button id="button" onclick="changeAmount()">Portionen</button>
-        </div>
-        <table id="ingredientsTable">
-            <tr class="tableRowColorOne">
-                <td data-original="60">60 g Feldsalat</td>
-            </tr>
-            <tr>
-                <td data-original="2">2 Laugenbrötchen</td>
-            </tr>
-            <tr class="tableRowColorOne">
-                <td data-original="80">80 g Camembert</td>
-            </tr>
-            <tr>
-                <td data-original="240">240 g Rinderhackfleisch</td>
-            </tr>
-            <tr class="tableRowColorOne">
-                <td data-original="10">10 g Wildpreiselbeeren</td>
-            </tr>
-            <tr>
-                <td data-original="1">1 EL Pflanzenöl</td>
-            </tr>
-            <tr class="tableRowColorOne">
-                <td data-original="20">20 g Röstzwiebeln</td>
-            </tr>
-            <tr>
-                <td data-original="2">2 TL Körniger Senf</td>
-            </tr>
-        </table>
-
-        <div id="recipe">
-            <h2>Zubereitung</h2>
-            <div id="makingOff">
-                <p>
-                        1. Den Salat waschen und abtropfen lassen.
-                    <br>2. Das Rinderhackfleisch in einer mittelgroßen Schüssel mit Salz und Pfeffer würzen und gut mischen.
-                    <br>3. Das Hackfleisch zu Burger-Patties formen.
-                    <br>4. Käse in feine Scheiben schneiden.
-                    <br>5. In einer Pfanne Pflanzenöl auf mittlerer bis hoher Stufe erhitzen und Burger-Patties 2 Minuten von jeder Seite braten.
-                    <br>6. Hitze reduzieren und Camembert auf den Patties verteilen. Bei geschlossenem Deckel weiter braten, bis der Käse geschmolzen ist.
-                    <br>7. Laugenbrötchen halbieren und beide Hälften mit körnigem Senf bestreichen.
-                    <br>8. Laugenbrötchen mit Feldsalat, Camembert-Patty, Preiselbeeren und Röstzwiebeln belegen und genießen.
-                    <h4> Guten Appetit! </h4>
-                </p>
-            </div>
-        </div>
-
-        <div id="credit">
-            <h3>Rezept von</h3>
-            <div id="profile">
-                <img src="/img/ProfilePicture.jpg" id="profilePicture" alt="profilepicture">
-                <p>Daniel Stürmer</p>
-            </div>
-        </div>
-
-    </main>
-
-    <footer>
-        <div id="naviLogoFooter">
-            <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
-        </div>
-        <div id="datenschutzLink">
-            <a href="/datenschutz/datenschutz.html">
-                <p>Datenschutz</p>
-            </a>
-            <a href="/impressum/impressum.html">
-                <p>Impressum</p>
-            </a>
-        </div>
-        <div id="footerIconContainer">
-            <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img id="footerIcon" src="/img/icons/square-facebook-brands-solid-full.svg" alt="facebook logo"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img id="footerIcon" src="/img/icons/square-instagram-brands-solid-full.svg" alt="instagram logo"></a>
-            <a href="https://x.com/" target="_blank"><img id="footerIcon" src="/img/icons/square-x-twitter-brands-solid-full.svg" alt="X logo"></a>
-        </div>
-    </footer>
-</div>
 
 </body>
 
-    <script src="/recipeMemberOne/script.js"></script>
+<script src="/recipeMemberOne/script.js"></script>
 
 </html>

@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    max-width: 1920px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
@@ -24,6 +24,17 @@ a:hover {
     text-decoration: underline;
     text-decoration-thickness: 4px;
     text-underline-offset: 4px;
+}
+
+/* PageWrapper*/
+#pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
 }
 
 /*Button*/
@@ -67,6 +78,17 @@ nav {
     gap: 24px;
     display: flex;
     align-items: flex-end;
+}
+
+/*Main*/
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-left: 160px;
+    margin-right: 160px;
 }
 
 /*Footer*/
@@ -129,6 +151,9 @@ footer {
 .content {
     position: relative;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .resp_menu_box {

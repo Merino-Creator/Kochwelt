@@ -11,110 +11,124 @@
 
 <body>
 
-<div role="contentinfo" class="content">
-    <nav aria-label="Hauptnavigation">
-        <div id="naviLogoHeader">
-            <a href="/index.html" aria-current="page"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
-        </div>
+    <div id="pageWrapper">
 
-        <div id="naviLinks">
-            <a href="/index.html">Start</a>
-            <a href="#" onclick="randomRecipe()">Rezept des Tages</a>
-            <a href="/contactFormular/contakt.html">Kontakt</a>
-            <a href="/impressum/impressum.html">Impressum</a>
-        </div>
-
-        <div id="menuButtonPosition">
-            <p id="respMenuText" style="color: rgb(88, 88, 88);">MENU</p>
-            <button id="respMenuButton" onclick="toggleRespMenu()">☰</button>
-        </div>
-
-    </nav>
-
-    <div aria-controls="resp_menu" id="resp_menu" class="resp_menu_box resp_menu_closed">
-        <a href="/index.html">Start</a>
-        <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
-        <a href="/contactFormular/contakt.html">Kontakt</a>
-        <a href="/impressum/impressum.html">Impressum</a>
-        <a href="/datenschutz/datenschutz.html">Datenschutz</a>
-        <a href="https://www.facebook.com/?locale=de_DE">Facebook</a>
-        <a href="https://www.instagram.com/">Instagram</a>
-        <a href="https://x.com/">X</a>
-    </div>
-
-    <header>
-        <img id="headerImage" src="/img/vegetables-4583549_1280.jpg" alt="Gemüsepfanne">
-        <div id="headerText">
-            <h1>Gemüsepfanne – gesund und vielseitig</h1>
-            <p>Eine Gemüsepfanne ist nicht nur schnell zubereitet, sondern auch ein echtes Multitalent in der Küche. Sie
-                steckt voller Vitamine, Mineralstoffe und Ballaststoffe – ideal für eine bewusste Ernährung. Ob mit
-                Reis, Nudeln, Fleisch, Tofu oder einfach pur: Die Kombinationen sind grenzenlos. Dabei lässt sich
-                frisches oder tiefgekühltes Gemüse ganz nach Saison und Geschmack verwenden. Einfach, lecker und rundum
-                gesund!</p>
-            <a href="/extraRecipeOne/extraRecipeOne.html"><button>Ausprobieren</button></a>
-        </div>
-    </header>
-
-    <main>
-        <div id="mainContainerOne">
-            <h2>Lust auf was Neues?</h2>
-            <div id="mainContainerOneBoxes">
-                    <div>
-                        <a href="/recipeMemberOne/recipeMemberOne.html"><img id="mainContainerOneImages"
-                                src="/img/burger.jpg" alt="Burger"></a>
-                        <p>Camembert Burger</p>
-                    </div>
-                    <div>
-                        <a href="/recipeMemberTwo/recipeMemberTwo.html"><img id="mainContainerOneImages"
-                                src="/img/brokoli-auflauf.jpg" alt="Brokkoli Auflauf"></a>
-                        <p>Brokkoli Auflauf</p>
-                    </div>
-                    <div>
-                        <a href="/recipeMemberThree/recipeMemberThree.html"><img id="mainContainerOneImages"
-                                src="/img/sauerbraten.png" alt="Sauerbraten"></a>
-                        <p>Sauerbraten</p>
-                    </div>
-            </div>
-        </div>
-
-            <section aria-labelledby="salat-h" id="mainContainerTwo">
-                <h2 id="salat-h">Salat - Der stetige Begleiter.</h2>
-                <div id="mainContainerTwoBox">
-                    <p id="salat-desc">Ob leicht im Sommer oder herzhaft im Winter – Salate sind wahre Alleskönner. Mit ihrer Vielfalt
-                        an
-                        Zutaten passen sie sich jeder Jahreszeit und jedem Gericht mühelos an. Als frische Beilage,
-                        bunte
-                        Vorspeise oder eigenständige Mahlzeit bringen sie Farbe, Vitamine und Genuss auf den Teller. Ob
-                        zu
-                        Gegrilltem, Pasta, Fisch oder einem deftigen Braten – ein gut abgestimmter Salat rundet jedes
-                        Menü
-                        perfekt ab.</p>
-                        <a href="/extraRecipeTwo/extraRecipeTwo.html" aria-labelledby="salat-h salat-desc">
-                        <img id="mainContainerTwoImage" src="/img/salad.jpg" alt=""></a>
+        <div role="contentinfo" class="content">
+            <nav aria-label="Hauptnavigation">
+                <div id="naviLogoHeader">
+                    <a href="/index.html" aria-current="page"><img id="naviImage" src="/img/logo.png"
+                            alt="Kochwelt Logo"></a>
                 </div>
-            </section>
-    </main>
 
-        <footer aria-label="Soziale Medien">
-            <div id="naviLogoFooter">
-                <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
-            </div>
-            <div id="datenschutzLink" class="datenschutzLink">
-                <a href="/datenschutz/datenschutz.html">
-                    <p>Datenschutz</p>
-                </a>
-                <a href="/impressum/impressum.html">
-                    <p>Impressum</p>
-                </a>
-            </div>
-            <div id="footerIconContainer" class="footerIconContainer">
-                <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img id="footerIcon" src="/img/icons/square-facebook-brands-solid-full.svg" alt="facebook logo"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img id="footerIcon" src="/img/icons/square-instagram-brands-solid-full.svg" alt="instagram logo"></a>
-                <a href="https://x.com/" target="_blank"><img id="footerIcon" src="/img/icons/square-x-twitter-brands-solid-full.svg" alt="X logo"></a>
-            </div>
-        </footer>
+                <div id="naviLinks">
+                    <a href="/index.html">Start</a>
+                    <a href="#" onclick="randomRecipe()">Rezept des Tages</a>
+                    <a href="/contactFormular/contakt.html">Kontakt</a>
+                    <a href="/impressum/impressum.html">Impressum</a>
+                </div>
 
-</div>
+                <div id="menuButtonPosition">
+                    <p id="respMenuText" style="color: rgb(88, 88, 88);">MENU</p>
+                    <button id="respMenuButton" onclick="toggleRespMenu()">☰</button>
+                </div>
+
+            </nav>
+
+            <div aria-controls="resp_menu" id="resp_menu" class="resp_menu_box resp_menu_closed">
+                <a href="/index.html">Start</a>
+                <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
+                <a href="/contactFormular/contakt.html">Kontakt</a>
+                <a href="/impressum/impressum.html">Impressum</a>
+                <a href="/datenschutz/datenschutz.html">Datenschutz</a>
+                <a href="https://www.facebook.com/?locale=de_DE">Facebook</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://x.com/">X</a>
+            </div>
+
+            <header>
+                <img id="headerImage" src="/img/vegetables-4583549_1280.jpg" alt="Gemüsepfanne">
+                <div id="headerText">
+                    <h1>Gemüsepfanne – gesund und vielseitig</h1>
+                    <p>Eine Gemüsepfanne ist nicht nur schnell zubereitet, sondern auch ein echtes Multitalent in der
+                        Küche. Sie
+                        steckt voller Vitamine, Mineralstoffe und Ballaststoffe – ideal für eine bewusste Ernährung. Ob
+                        mit
+                        Reis, Nudeln, Fleisch, Tofu oder einfach pur: Die Kombinationen sind grenzenlos. Dabei lässt
+                        sich
+                        frisches oder tiefgekühltes Gemüse ganz nach Saison und Geschmack verwenden. Einfach, lecker und
+                        rundum
+                        gesund!</p>
+                    <a href="/extraRecipeOne/extraRecipeOne.html"><button>Ausprobieren</button></a>
+                </div>
+            </header>
+
+            <main>
+                <div id="mainContainerOne">
+                    <h2>Lust auf was Neues?</h2>
+                    <div id="mainContainerOneBoxes">
+                        <div>
+                            <a href="/recipeMemberOne/recipeMemberOne.html"><img id="mainContainerOneImages"
+                                    src="/img/burger.jpg" alt="Burger"></a>
+                            <p>Camembert Burger</p>
+                        </div>
+                        <div>
+                            <a href="/recipeMemberTwo/recipeMemberTwo.html"><img id="mainContainerOneImages"
+                                    src="/img/brokoli-auflauf.jpg" alt="Brokkoli Auflauf"></a>
+                            <p>Brokkoli Auflauf</p>
+                        </div>
+                        <div>
+                            <a href="/recipeMemberThree/recipeMemberThree.html"><img id="mainContainerOneImages"
+                                    src="/img/sauerbraten.png" alt="Sauerbraten"></a>
+                            <p>Sauerbraten</p>
+                        </div>
+                    </div>
+                </div>
+
+                <section aria-labelledby="salat-h" id="mainContainerTwo">
+                    <h2 id="salat-h">Salat - Der stetige Begleiter.</h2>
+                    <div id="mainContainerTwoBox">
+                        <p id="salat-desc">Ob leicht im Sommer oder herzhaft im Winter – Salate sind wahre Alleskönner.
+                            Mit ihrer Vielfalt
+                            an
+                            Zutaten passen sie sich jeder Jahreszeit und jedem Gericht mühelos an. Als frische Beilage,
+                            bunte
+                            Vorspeise oder eigenständige Mahlzeit bringen sie Farbe, Vitamine und Genuss auf den Teller.
+                            Ob
+                            zu
+                            Gegrilltem, Pasta, Fisch oder einem deftigen Braten – ein gut abgestimmter Salat rundet
+                            jedes
+                            Menü
+                            perfekt ab.</p>
+                        <a href="/extraRecipeTwo/extraRecipeTwo.html" aria-labelledby="salat-h salat-desc">
+                            <img id="mainContainerTwoImage" src="/img/salad.jpg" alt=""></a>
+                    </div>
+                </section>
+            </main>
+
+            <footer aria-label="Soziale Medien">
+                <div id="naviLogoFooter">
+                    <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
+                </div>
+                <div id="datenschutzLink" class="datenschutzLink">
+                    <a href="/datenschutz/datenschutz.html">
+                        <p>Datenschutz</p>
+                    </a>
+                    <a href="/impressum/impressum.html">
+                        <p>Impressum</p>
+                    </a>
+                </div>
+                <div id="footerIconContainer" class="footerIconContainer">
+                    <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img id="footerIcon"
+                            src="/img/icons/square-facebook-brands-solid-full.svg" alt="facebook logo"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img id="footerIcon"
+                            src="/img/icons/square-instagram-brands-solid-full.svg" alt="instagram logo"></a>
+                    <a href="https://x.com/" target="_blank"><img id="footerIcon"
+                            src="/img/icons/square-x-twitter-brands-solid-full.svg" alt="X logo"></a>
+                </div>
+            </footer>
+
+        </div>
+    </div>
 
 
 </body>

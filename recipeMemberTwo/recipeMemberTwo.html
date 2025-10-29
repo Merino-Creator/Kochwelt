@@ -11,133 +11,148 @@
 </head>
 
 <body>
-<div  class="content">
-    <nav aria-label="HauptnavigationrecipeMemberTwo">
-        <div id="naviLogoHeader">
-            <a href="/index.html" aria-current="page"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
+
+    <div id="pageWrapper">
+        <div class="content">
+            <nav aria-label="HauptnavigationrecipeMemberTwo">
+                <div id="naviLogoHeader">
+                    <a href="/index.html" aria-current="page"><img id="naviImage" src="/img/logo.png"
+                            alt="Kochwelt Logo"></a>
+                </div>
+
+                <div id="naviLinks">
+                    <a href="/index.html">Start</a>
+                    <a href="#" onclick="randomRecipe()">Rezept des Tages</a>
+                    <a href="/contactFormular/contakt.html">Kontakt</a>
+                    <a href="/impressum/impressum.html">Impressum</a>
+                </div>
+
+                <div id="menuButtonPosition">
+                    <p id="respMenuText" style="color: rgb(88, 88, 88);">MENU</p>
+                    <button id="respMenuButton" onclick="toggleRespMenu()">☰</button>
+                </div>
+
+            </nav>
+
+            <div id="resp_menu" class="resp_menu_box resp_menu_closed">
+                <a href="/index.html">Start</a>
+                <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
+                <a href="/contactFormular/contakt.html">Kontakt</a>
+                <a href="/impressum/impressum.html">Impressum</a>
+                <a href="/datenschutz/datenschutz.html">Datenschutz</a>
+                <a href="https://www.facebook.com/?locale=de_DE" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a href="https://x.com/" target="_blank">X</a>
+            </div>
+
+            <header>
+                <h1>Brokkoli-Kartoffeln-Auflauf</h1>
+                <div id="headerImage"></div>
+                <div id="iconsContainer">
+                    <div id="clockIcon">
+                        <img class="iconImage" src="/img/icons/clock-regular.svg" alt="">
+                        <p>35 Min.</p>
+                    </div>
+                    <div id="brainIcon">
+                        <img class="iconImage" src="/img/icons/brain-solid.svg" alt="">
+                        <p>einfach</p>
+                    </div>
+                    <div id="calendarIcon">
+                        <img class="iconImage" src="/img/icons/calendar-alt-regular.svg" alt="">
+                        <p>01.10.2025</p>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <div id="calculator">
+                    <label for="peopleCount">Zutaten für:</label>
+                    <input id="peopleCount" type="number" min="1" placeholder="4" required>
+                    <button id="button" onclick="changeAmount()">Portionen</button>
+                </div>
+                <table id="ingredientsTable">
+                    <tr class="tableRowColorOne">
+                        <td data-original="200">800 g Pellkartoffeln</td>
+                    </tr>
+                    <tr>
+                        <td data-original="150">600 g Brokkoli frisch oder TK</td>
+                    </tr>
+                    <tr class="tableRowColorOne">
+                        <td data-original="125">500 ml Milch</td>
+                    </tr>
+                    <tr>
+                        <td data-original="10">40 g Butter</td>
+                    </tr>
+                    <tr class="tableRowColorOne">
+                        <td data-original="12.5">50 g Mehl</td>
+                    </tr>
+                    <tr>
+                        <td data-original="0.25">1 TL Salz</td>
+                    </tr>
+                    <tr class="tableRowColorOne">
+                        <td data-original="0.25">1 Prise Muskat</td>
+                    </tr>
+                    <tr>
+                        <td data-original="37.5">150 g geraspelter Käse Emmentaler & Mozzarella</td>
+                    </tr>
+                </table>
+
+                <article id="recipe">
+                    <h2>Anleitung</h2>
+                    <div id="makingOff">
+                        <p>
+                            1. Kartoffeln als Pellkartoffeln kochen, noch warm pellen und in Scheiben schneiden.
+                            <br>2. Brokkoli in kleine Röschen teilen, 3 Minuten in kochendem Wasser garen, dann in
+                            kaltem Wasser abschrecken.
+                            <br>3. Für die Béchamelsauce: Butter in einem Topf schmelzen, Mehl einrühren und 2–3 Minuten
+                            anschwitzen.
+                            <br>4. Nach und nach die Milch dazugeben und gut rühren, damit keine Klümpchen entstehen.
+                            Sauce leicht köcheln lassen und mit Salz, Pfeffer und Muskat kräftig würzen.
+                            <br>5. Milch, Butter, Mehl, Salz und Muskat in den Mixtopf geben und den Messbecher
+                            einsetzen. Nun für 7 Minuten/90°/Stufe 4 köcheln lassen.
+                            <br>6. Kartoffelscheiben und Brokkoliröschen in eine Auflaufform schichten, leicht mit Salz
+                            und Pfeffer würzen.
+                            <br>7. Béchamelsauce darüber gießen, Käse gleichmäßig darüber streuen.
+                            <br>8. Ca. 20 Minuten bei 170 Grad Umluft backen, bis der Käse die gewünschte Farbe bekommen
+                            hat. Wenn die Kartoffeln vom Vortag sind bzw. bereits kalt verlängert sich die Backzeit um
+                            ca. 15 Minuten.
+                        <h4> Guten Appetit! </h4>
+                        </p>
+                    </div>
+                </article>
+
+                <div id="credit">
+                    <h3>Rezept erstellt von</h3>
+                    <div id="profile">
+                        <img src="/img/Bild.jpg" id="profilePicture" alt="profilepicture">
+                        <p>Virxhin Bytyqi</p>
+                    </div>
+                </div>
+
+            </main>
+            <footer>
+                <div id="naviLogoFooter">
+                    <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
+                </div>
+                <div id="datenschutzLink">
+                    <a href="/datenschutz/datenschutz.html">
+                        <p>Datenschutz</p>
+                    </a>
+                    <a href="/impressum/impressum.html">
+                        <p>Impressum</p>
+                    </a>
+                </div>
+                <div id="footerIconContainer">
+                    <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img id="footerIcon"
+                            src="/img/icons/square-facebook-brands-solid-full.svg" alt="facebook logo"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img id="footerIcon"
+                            src="/img/icons/square-instagram-brands-solid-full.svg" alt="instagram logo"></a>
+                    <a href="https://x.com/" target="_blank"><img id="footerIcon"
+                            src="/img/icons/square-x-twitter-brands-solid-full.svg" alt="X logo"></a>
+                </div>
+            </footer>
         </div>
-
-        <div id="naviLinks">
-            <a href="/index.html">Start</a>
-            <a href="#" onclick="randomRecipe()">Rezept des Tages</a>
-            <a href="/contactFormular/contakt.html">Kontakt</a>
-            <a href="/impressum/impressum.html">Impressum</a>
-        </div>
-
-        <div id="menuButtonPosition">
-            <p id="respMenuText" style="color: rgb(88, 88, 88);">MENU</p>
-            <button id="respMenuButton" onclick="toggleRespMenu()">☰</button>
-        </div>
-
-    </nav>
-
-    <div id="resp_menu" class="resp_menu_box resp_menu_closed">
-        <a href="/index.html">Start</a>
-        <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
-        <a href="/contactFormular/contakt.html">Kontakt</a>
-        <a href="/impressum/impressum.html">Impressum</a>
-        <a href="/datenschutz/datenschutz.html">Datenschutz</a>
-        <a href="https://www.facebook.com/?locale=de_DE" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-        <a href="https://x.com/" target="_blank">X</a>
     </div>
-        
-    <header>
-        <h1>Brokkoli-Kartoffeln-Auflauf</h1>
-        <div id="headerImage"></div>
-        <div id="iconsContainer">
-            <div id="clockIcon">
-                <img class="iconImage" src="/img/icons/clock-regular.svg" alt="">
-                <p>35 Min.</p>
-            </div>
-            <div id="brainIcon">
-                <img class="iconImage" src="/img/icons/brain-solid.svg" alt="">
-                <p>einfach</p>
-            </div>
-            <div id="calendarIcon">
-                <img class="iconImage" src="/img/icons/calendar-alt-regular.svg" alt="">
-                <p>01.10.2025</p>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <div id="calculator">
-            <label for="peopleCount">Zutaten für:</label>
-            <input id="peopleCount" type="number" min="1" placeholder="4" required>
-            <button id="button" onclick="changeAmount()">Portionen</button>
-        </div>
-        <table id="ingredientsTable">
-            <tr class="tableRowColorOne">
-                <td data-original="200">800 g Pellkartoffeln</td>
-            </tr>
-            <tr>
-                <td data-original="150">600 g Brokkoli frisch oder TK</td>
-            </tr>
-            <tr class="tableRowColorOne">
-                <td data-original="125">500 ml Milch</td>
-            </tr>
-            <tr>
-                <td data-original="10">40 g Butter</td>
-            </tr>
-            <tr class="tableRowColorOne">
-                <td data-original="12.5">50 g Mehl</td>
-            </tr>
-            <tr>
-                <td data-original="0.25">1 TL Salz</td>
-            </tr>
-            <tr class="tableRowColorOne">
-                <td data-original="0.25">1 Prise Muskat</td>
-            </tr>
-            <tr>
-                <td data-original="37.5">150 g geraspelter Käse Emmentaler & Mozzarella</td>
-            </tr>
-        </table>
-
-        <article id="recipe">
-            <h2>Anleitung</h2>
-            <div id="makingOff">
-                <p>
-                        1. Kartoffeln als Pellkartoffeln kochen, noch warm pellen und in Scheiben schneiden.
-                    <br>2. Brokkoli in kleine Röschen teilen, 3 Minuten in kochendem Wasser garen, dann in kaltem Wasser abschrecken.
-                    <br>3. Für die Béchamelsauce: Butter in einem Topf schmelzen, Mehl einrühren und 2–3 Minuten anschwitzen.
-                    <br>4. Nach und nach die Milch dazugeben und gut rühren, damit keine Klümpchen entstehen. Sauce leicht köcheln lassen und mit Salz, Pfeffer und Muskat kräftig würzen.
-                    <br>5. Milch, Butter, Mehl, Salz und Muskat in den Mixtopf geben und den Messbecher einsetzen. Nun für 7 Minuten/90°/Stufe 4 köcheln lassen.
-                    <br>6. Kartoffelscheiben und Brokkoliröschen in eine Auflaufform schichten, leicht mit Salz und Pfeffer würzen.
-                    <br>7. Béchamelsauce darüber gießen, Käse gleichmäßig darüber streuen.
-                    <br>8. Ca. 20 Minuten bei 170 Grad Umluft backen, bis der Käse die gewünschte Farbe bekommen hat. Wenn die Kartoffeln vom Vortag sind bzw. bereits kalt verlängert sich die Backzeit um ca. 15 Minuten.
-                    <h4> Guten Appetit! </h4>
-                </p>
-            </div>
-        </article>
-
-        <div id="credit">
-            <h3>Rezept erstellt von</h3>
-            <div id="profile">
-                <img src="/img/Bild.jpg" id="profilePicture" alt="profilepicture">
-                <p>Virxhin Bytyqi</p>
-            </div>
-        </div>
-
-    </main>
-    <footer>
-        <div id="naviLogoFooter">
-            <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
-        </div>
-        <div id="datenschutzLink">
-            <a href="/datenschutz/datenschutz.html">
-                <p>Datenschutz</p>
-            </a>
-            <a href="/impressum/impressum.html">
-                <p>Impressum</p>
-            </a>
-        </div>
-        <div id="footerIconContainer">
-            <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img id="footerIcon" src="/img/icons/square-facebook-brands-solid-full.svg" alt="facebook logo"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img id="footerIcon" src="/img/icons/square-instagram-brands-solid-full.svg" alt="instagram logo"></a>
-            <a href="https://x.com/" target="_blank"><img id="footerIcon" src="/img/icons/square-x-twitter-brands-solid-full.svg" alt="X logo"></a>
-        </div>
-    </footer>
 
 </body>
 

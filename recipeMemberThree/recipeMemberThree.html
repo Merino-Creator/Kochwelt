@@ -11,151 +11,171 @@
 </head>
 
 <body>
-<div class="content">
-    <nav>
-        <div id="naviLogoHeader">
-            <a href="/index.html" aria-current="page"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
+
+    <div id="pageWrapper">
+        <div class="content">
+            <nav>
+                <div id="naviLogoHeader">
+                    <a href="/index.html" aria-current="page"><img id="naviImage" src="/img/logo.png"
+                            alt="Kochwelt Logo"></a>
+                </div>
+
+                <div id="naviLinks">
+                    <a href="/index.html">Start</a>
+                    <a href="#" onclick="randomRecipe()">Rezept des Tages</a>
+                    <a href="/contactFormular/contakt.html">Kontakt</a>
+                    <a href="/impressum/impressum.html">Impressum</a>
+                </div>
+
+                <div role="navigationbutton" id="menuButtonPosition">
+                    <p id="respMenuText" style="color: rgb(88, 88, 88);">MENU</p>
+                    <button id="respMenuButton" onclick="toggleRespMenu()">☰</button>
+                </div>
+
+            </nav>
+
+            <div role="navigationresponsivemenu" id="resp_menu" class="resp_menu_box resp_menu_closed">
+                <a href="/index.html">Start</a>
+                <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
+                <a href="/contactFormular/contakt.html">Kontakt</a>
+                <a href="/impressum/impressum.html">Impressum</a>
+                <a href="/datenschutz/datenschutz.html">Datenschutz</a>
+                <a href="https://www.facebook.com/?locale=de_DE">Facebook</a>
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://x.com/">X</a>
+            </div>
+
+            <header>
+                <h1>Sauerbraten</h1>
+                <div id="headerImage"></div>
+                <div id="iconsContainer">
+                    <div id="clockIcon">
+                        <img class="iconImage" src="/img/icons/clock-regular.svg" alt="">
+                        <p>150 Min.</p>
+                    </div>
+                    <div id="brainIcon">
+                        <img class="iconImage" src="/img/icons/brain-solid.svg" alt="">
+                        <p>schwierig</p>
+                    </div>
+                    <div id="calendarIcon">
+                        <img class="iconImage" src="/img/icons/calendar-alt-regular.svg" alt="">
+                        <p>01.10.2025</p>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <div id="calculator">
+                    <label for="peopleCount">Zutaten für:</label>
+                    <input id="peopleCount" type="number" min="1" placeholder="2" required>
+                    <button id="button" onclick="changeAmount()">Portionen</button>
+                </div>
+                <table id="ingredientsTable">
+                    <tr class="tableRowColorOne">
+                        <td data-original="0.6">1,2 kg Rindfleisch</td>
+                    </tr>
+                    <tr>
+                        <td data-original="1">2 Lorbeerblätter</td>
+                    </tr>
+                    <tr class="tableRowColorOne">
+                        <td data-original="0.5">1 Knollensellerie</td>
+                    </tr>
+                    <tr>
+                        <td data-original="0.5">1 große Möhre</td>
+                    </tr>
+                    <tr class="tableRowColorOne">
+                        <td data-original="1">2 Möhren</td>
+                    </tr>
+                    <tr>
+                        <td data-original="1">2 Zwiebeln</td>
+                    </tr>
+                    <tr class="tableRowColorOne">
+                        <td data-original="0.5">1 Knoblauch</td>
+                    </tr>
+                    <tr>
+                        <td data-original="1">2 Nelken</td>
+                    </tr>
+                    <tr class="tableRowColorOne">
+                        <td data-original="5">10 Pfefferkörner</td>
+                    </tr>
+                    <tr>
+                        <td data-original="2.5">5 Wachholderbeeren</td>
+                    </tr>
+                    <tr class="tableRowColorOne">
+                        <td data-original="200">400 ml Rotwein</td>
+                    </tr>
+                    <tr>
+                        <td data-original="100">200 ml Rotweinessig</td>
+                    </tr>
+                </table>
+
+                <div id="recipe">
+                    <h2>Zubereitung</h2>
+                    <div id="makingOff">
+                        <p>
+                            1. Zuallererst muss das Fleisch eingelegt werden. Dies geschieht ca. eine Woche vor dem
+                            eigentlichen Kochvorgang. <br>
+                            - Dafür das Wurzelgemüse (Möhre, Sellerie, Zwiebeln mit Schale, Knoblauch) grob klein
+                            schneiden. Das Fleisch mit dem Gemüse, den Gewürzen (Nelke, Lorbeer, Pfefferkörner,
+                            Wachholder, Salz und Zucker), Wein und dem Weinessig vermengen. <br>
+                            - In einem geschlossenen Gefäß im Kühlschrank marinieren. Selbstverständlich kann das
+                            Fleisch auch mit der Marinade vakuumiert werden, ist man im Besitz eines Vakuumiergerätes.
+                            <br>
+                            2. Nach einer Woche das Fleisch aus der Marinade nehmen, trocken legen und die Marinade
+                            durch ein Sieb gießen. Das Gemüse verwerfen. <br>
+                            3. Fett in einem Bräter erhitzen und das Fleisch darin Farbe nehmen lassen. Die in Würfel
+                            geschnittenen Zwiebeln ebenfalls zufügen und goldgelb werden lassen. <br>
+                            4. Anschließend den Honig dazu geben und mit der abgeseihten Marinade und dem Bratenfond
+                            auffüllen. Gut 2 Stunden bei mittlerer Hitze mit Deckel garen. Das Fleisch alle halbe Stunde
+                            wenden. <br>
+                            5. Nach der Garzeit das Fleisch abgedeckt zur Seite legen und das Honigbrot in die Sauce
+                            bröckeln. Sauce leise weiter köcheln lassen, bis sich das Brot aufgelöst hat. <br>
+                            6. Mit dem Pürierstab die Sauce fein durchmixen und danach noch einmal abschmecken. Nun die
+                            Rosinen zufügen. <br>
+                            7. Anrichten: Das Fleisch aufschneiden und mit der Sauce nappieren. Dazu selbst gemachte
+                            Kartoffelklöße und Rotkohl reichen! <br>
+                        <h4> Guten Appetit! </h4>
+                        </p>
+                    </div>
+                </div>
+
+                <div id="credit">
+                    <h3>Rezept von</h3>
+                    <div id="profile">
+                        <img src="/img/MyUserPic.jpg" id="profilePicture" alt="profilepicture">
+                        <p>Daniel Sack</p>
+                    </div>
+                </div>
+
+            </main>
+
+            <footer>
+                <div id="naviLogoFooter">
+                    <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
+                </div>
+                <div id="datenschutzLink">
+                    <a href="/datenschutz/datenschutz.html">
+                        <p>Datenschutz</p>
+                    </a>
+                    <a href="/impressum/impressum.html">
+                        <p>Impressum</p>
+                    </a>
+                </div>
+                <div id="footerIconContainer">
+                    <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img id="footerIcon"
+                            src="/img/icons/square-facebook-brands-solid-full.svg" alt="facebook logo"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img id="footerIcon"
+                            src="/img/icons/square-instagram-brands-solid-full.svg" alt="instagram logo"></a>
+                    <a href="https://x.com/" target="_blank"><img id="footerIcon"
+                            src="/img/icons/square-x-twitter-brands-solid-full.svg" alt="X logo"></a>
+                </div>
+            </footer>
         </div>
 
-        <div id="naviLinks">
-            <a href="/index.html">Start</a>
-            <a href="#" onclick="randomRecipe()">Rezept des Tages</a>
-            <a href="/contactFormular/contakt.html">Kontakt</a>
-            <a href="/impressum/impressum.html">Impressum</a>
-        </div>
-
-        <div role="navigationbutton" id="menuButtonPosition">
-            <p id="respMenuText" style="color: rgb(88, 88, 88);">MENU</p>
-            <button id="respMenuButton" onclick="toggleRespMenu()">☰</button>
-        </div>
-        
-    </nav>
-
-    <div role="navigationresponsivemenu" id="resp_menu" class="resp_menu_box resp_menu_closed">
-        <a href="/index.html">Start</a>
-        <a href="/recipeMemberOne/recipeMemberOne.html">Rezept des Tages</a>
-        <a href="/contactFormular/contakt.html">Kontakt</a>
-        <a href="/impressum/impressum.html">Impressum</a>
-        <a href="/datenschutz/datenschutz.html">Datenschutz</a>
-        <a href="https://www.facebook.com/?locale=de_DE">Facebook</a>
-        <a href="https://www.instagram.com/">Instagram</a>
-        <a href="https://x.com/">X</a>
     </div>
-
-    <header>
-        <h1>Sauerbraten</h1>
-        <div id="headerImage"></div>
-        <div id="iconsContainer">
-            <div id="clockIcon">
-                <img class="iconImage" src="/img/icons/clock-regular.svg" alt="">
-                <p>150 Min.</p>
-            </div>
-            <div id="brainIcon">
-                <img class="iconImage" src="/img/icons/brain-solid.svg" alt="">
-                <p>schwierig</p>
-            </div>
-            <div id="calendarIcon">
-                <img class="iconImage" src="/img/icons/calendar-alt-regular.svg" alt="">
-                <p>01.10.2025</p>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <div id="calculator">
-            <label for="peopleCount">Zutaten für:</label>
-            <input id="peopleCount" type="number" min="1" placeholder="2" required>
-            <button id="button" onclick="changeAmount()">Portionen</button>
-        </div>
-        <table id="ingredientsTable">
-            <tr class="tableRowColorOne">
-                <td data-original="0.6">1,2 kg Rindfleisch</td>
-            </tr>
-            <tr>
-                <td data-original="1">2 Lorbeerblätter</td>
-            </tr>
-            <tr class="tableRowColorOne">
-                <td data-original="0.5">1 Knollensellerie</td>
-            </tr>
-            <tr>
-                <td data-original="0.5">1 große Möhre</td>
-            </tr>
-            <tr class="tableRowColorOne">
-                <td data-original="1">2 Möhren</td>
-            </tr>
-            <tr>
-                <td data-original="1">2 Zwiebeln</td>
-            </tr>
-            <tr class="tableRowColorOne">
-                <td data-original="0.5">1 Knoblauch</td>
-            </tr>
-            <tr>
-                <td data-original="1">2 Nelken</td>
-            </tr>
-            <tr class="tableRowColorOne">
-              <td data-original="5">10 Pfefferkörner</td>
-            </tr>
-            <tr>
-              <td data-original="2.5">5 Wachholderbeeren</td>
-            </tr>
-            <tr class="tableRowColorOne">
-              <td data-original="200">400 ml Rotwein</td>
-            </tr>
-            <tr>
-              <td data-original="100">200 ml Rotweinessig</td>
-            </tr>
-        </table>
-
-        <div id="recipe">
-            <h2>Zubereitung</h2>
-            <div id="makingOff">
-                <p>
-                    1. Zuallererst muss das Fleisch eingelegt werden. Dies geschieht ca. eine Woche vor dem eigentlichen Kochvorgang. <br> 
-                     - Dafür das Wurzelgemüse (Möhre, Sellerie, Zwiebeln mit Schale, Knoblauch) grob klein schneiden. Das Fleisch mit dem Gemüse, den Gewürzen (Nelke, Lorbeer, Pfefferkörner, Wachholder, Salz und Zucker), Wein und dem Weinessig vermengen. <br> 
-                     - In einem geschlossenen Gefäß im Kühlschrank marinieren. Selbstverständlich kann das Fleisch auch mit der Marinade vakuumiert werden, ist man im Besitz eines Vakuumiergerätes. <br>
-                    2. Nach einer Woche das Fleisch aus der Marinade nehmen, trocken legen und die Marinade durch ein Sieb gießen. Das Gemüse verwerfen. <br>
-                    3. Fett in einem Bräter erhitzen und das Fleisch darin Farbe nehmen lassen. Die in Würfel geschnittenen Zwiebeln ebenfalls zufügen und goldgelb werden lassen. <br>
-                    4. Anschließend den Honig dazu geben und mit der abgeseihten Marinade und dem Bratenfond auffüllen. Gut 2 Stunden bei mittlerer Hitze mit Deckel garen. Das Fleisch alle halbe Stunde wenden. <br>
-                    5. Nach der Garzeit das Fleisch abgedeckt zur Seite legen und das Honigbrot in die Sauce bröckeln. Sauce leise weiter köcheln lassen, bis sich das Brot aufgelöst hat. <br>
-                    6. Mit dem Pürierstab die Sauce fein durchmixen und danach noch einmal abschmecken. Nun die Rosinen zufügen. <br>
-                    7. Anrichten: Das Fleisch aufschneiden und mit der Sauce nappieren. Dazu selbst gemachte Kartoffelklöße und Rotkohl reichen! <br>
-                    <h4> Guten Appetit! </h4>
-                </p>
-            </div>
-        </div>
-
-        <div id="credit">
-            <h3>Rezept von</h3>
-            <div id="profile">
-                <img src="/img/MyUserPic.jpg" id="profilePicture" alt="profilepicture">
-                <p>Daniel Sack</p>
-            </div>
-        </div>
-
-    </main>
-
-    <footer>
-        <div id="naviLogoFooter">
-            <a href="/index.html"><img id="naviImage" src="/img/logo.png" alt="Kochwelt Logo"></a>
-        </div>
-        <div id="datenschutzLink">
-            <a href="/datenschutz/datenschutz.html">
-                <p>Datenschutz</p>
-            </a>
-            <a href="/impressum/impressum.html">
-                <p>Impressum</p>
-            </a>
-        </div>
-        <div id="footerIconContainer">
-            <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img id="footerIcon" src="/img/icons/square-facebook-brands-solid-full.svg" alt="facebook logo"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img id="footerIcon" src="/img/icons/square-instagram-brands-solid-full.svg" alt="instagram logo"></a>
-            <a href="https://x.com/" target="_blank"><img id="footerIcon" src="/img/icons/square-x-twitter-brands-solid-full.svg" alt="X logo"></a>
-        </div>
-    </footer>
-</div>
 
 </body>
 
-    <script src="/recipeMemberOne/script.js"></script>
+<script src="/recipeMemberOne/script.js"></script>
 
 </html>
