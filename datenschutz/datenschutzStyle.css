@@ -27,7 +27,7 @@ a:hover {
 }
 
 /* PageWrapper*/
-#pageWrapper {
+.pageWrapper {
   display: flex;
   flex-direction: column;
   flex: 1;

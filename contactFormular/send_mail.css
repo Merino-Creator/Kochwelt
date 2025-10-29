@@ -24,7 +24,7 @@ a:hover {
 }
 
 /* PageWrapper*/
-#pageWrapper {
+.pageWrapper {
   display: flex;
   flex-direction: column;
   max-width: 1920px;
