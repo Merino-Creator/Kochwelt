@@ -1,6 +1,7 @@
 body {
     margin: 0;
     max-width: 1920px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
@@ -63,7 +64,7 @@ nav {
 }
 
 #naviLogoHeader {
-    margin-left: 320px;
+    margin-left: 160px;
     display: flex;
     align-items: center;
 }
@@ -74,7 +75,7 @@ nav {
 
 #naviLinks {
     margin-bottom: 4px;
-    margin-right: 320px;
+    margin-right: 160px;
     gap: 24px;
     display: flex;
     align-items: flex-end;
@@ -185,13 +186,13 @@ footer {
 }
 
 #naviLogoFooter {
-    margin-left: 320px;
+    margin-left: 160px;
     display: flex;
     align-items: center;
 }
 
 #footerIconContainer {
-    margin-right: 320px;
+    margin-right: 160px;
     display: flex;
     justify-content: flex-end;
     gap: 16px;
@@ -210,6 +211,9 @@ footer {
 /*Responsive Menu*/
 
 .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     position: relative;
     overflow-x: hidden;
 }
