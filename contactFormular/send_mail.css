@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    max-width: 1920px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -22,6 +21,17 @@ a:hover {
     text-decoration: underline;
     text-decoration-thickness: 4px;
     text-underline-offset: 4px;
+}
+
+/* PageWrapper*/
+#pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
 }
 
 /* Button*/
