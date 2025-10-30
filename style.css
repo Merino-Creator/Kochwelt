@@ -127,6 +127,7 @@ header {
 main {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 #mainContainerOne {
@@ -235,10 +236,9 @@ footer {
 .content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100%;
     position: relative;
     overflow-x: hidden;
+    height: 100%;
 }
 
 .resp_menu_box {
