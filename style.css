@@ -44,6 +44,13 @@ h2 {
   margin: 0 auto;
 }
 
+#pageContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
 /* Button*/
 button {
     background-color: green;
@@ -127,7 +134,6 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    flex: 1;
 }
 
 #mainContainerOne {
@@ -492,7 +498,7 @@ footer {
     }
 
     #naviLogoFooter {
-        margin-left: 0;
+        margin-left: 40px;
         display: flex;
         justify-content: center;
     }
@@ -555,7 +561,12 @@ footer {
     #menuButtonPosition {
         margin-right: 16px;
     }
+
+    #naviLogoFooter {
+        margin-left: 16px;
+    }
 }
+
 @media (max-width: 400px) {
 
     #naviLogoHeader {
