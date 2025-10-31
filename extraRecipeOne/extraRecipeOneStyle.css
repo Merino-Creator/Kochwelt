@@ -47,6 +47,13 @@ h3 {
   margin: 0 auto;
 }
 
+#pageContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
 /* Button*/
 button {
     background-color: green;
