@@ -359,12 +359,12 @@ footer {
 
 @media (max-width: 1200px) {
     #naviLogoHeader { 
-        margin-left: 80px;
+        margin-left: 160px;
     }
 
     #naviLinks {
-        margin-right: 80px;
-        gap: 16px;
+        margin-right: 160px;
+        gap: 24px;
     }
 
     header {
@@ -383,6 +383,45 @@ footer {
     #mainContainerTwoBox {
         margin-left: 80px;
         margin-right: 80px;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    #naviLogoFooter {
+        margin-left: 160px;
+    }
+
+    #footerIconContainer {
+    margin-right: 160px;
+    }
+}
+
+@media (max-width: 1000px) {
+    #naviLogoHeader {
+        margin-left: 80px;
+    }
+
+    #naviLinks {
+        margin-right: 80px;
+        gap: 16px;
+    }
+
+    header {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #mainContainerOneBoxes {
+        margin-left: 40px;
+        margin-right: 40px;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: space-between;
+    }
+
+    #mainContainerTwoBox {
+        margin-left: 40px;
+        margin-right: 40px;
         gap: 24px;
         justify-content: center;
     }
@@ -393,45 +432,6 @@ footer {
 
     #footerIconContainer {
     margin-right: 80px;
-    }
-}
-
-@media (max-width: 1000px) {
-    #naviLogoHeader {
-        margin-left: 40px;
-    }
-
-    #naviLinks {
-        margin-right: 40px;
-        gap: 16px;
-    }
-
-    header {
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-
-    #mainContainerOneBoxes {
-        margin-left: 40px;
-        margin-right: 40px;
-        flex-wrap: wrap;
-        gap: 24px;
-        justify-content: space-between;
-    }
-
-    #mainContainerTwoBox {
-        margin-left: 40px;
-        margin-right: 40px;
-        gap: 24px;
-        justify-content: center;
-    }
-
-    #naviLogoFooter {
-        margin-left: 40px;
-    }
-
-    #footerIconContainer {
-    margin-right: 40px;
     }
 }
 
