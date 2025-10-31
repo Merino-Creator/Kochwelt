@@ -250,6 +250,12 @@ footer {
         margin-right: 40px;
     }
 
+    #footerContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     #naviLogoFooter {
         margin-left: 0;
         display: flex;
