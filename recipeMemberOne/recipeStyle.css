@@ -37,12 +37,6 @@ h3 {
     margin-left: 0px;
 }
 
-td {
-    padding-left: 12px;
-    padding-bottom: 6px;
-    padding-top: 6px;
-}
-
 /* PageWrapper*/
 .pageWrapper {
     display: flex;
@@ -193,9 +187,7 @@ label {
     align-items: center;
 }
 
-#ingredientsTable {
-    margin-left: 160px;
-    margin-right: 160px;
+table {
     margin-top: 12px;
 }
 
