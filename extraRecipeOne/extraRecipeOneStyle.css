@@ -47,6 +47,7 @@ td {
 .pageWrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
@@ -171,7 +172,6 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    flex: 1;
 }
 
 #calculator {
