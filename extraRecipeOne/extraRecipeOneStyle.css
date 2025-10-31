@@ -201,7 +201,6 @@ tr {
 
 td {
     padding-left: calc((100vw - 1920px) / 2 + 160px);
-    ;
     padding-bottom: 6px;
     padding-top: 6px;
 }
