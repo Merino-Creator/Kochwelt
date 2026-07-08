@@ -33,8 +33,3 @@ Eine mehrseitige Koch-Website mit Landingpage, Rezeptseite und Kontaktformular �
 ## 🚀 Lokale Ausführung
 
 Repository klonen und `index.html` im Browser öffnen – kein Build-Tool nötig.
-
-```bash
-git clone https://github.com/<dein-username>/kochwelt.git
-cd kochwelt
-```
